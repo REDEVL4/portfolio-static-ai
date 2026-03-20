@@ -1,49 +1,48 @@
 {
-  "headline": "Data Scientist | Azure .NET Backend Engineer | Data Engineer",
+  "headline": "Data Scientist | Applied ML and Deep Learning | M.S. Data Science (UHCL) | Ex-TCS | Ex-Hexagon | Python | SQL | Azure | PyTorch | scikit-learn | Open to Work",
   "about": [
-    "I build data-intensive systems that connect applied machine learning, analytics, and production software delivery. My background combines enterprise backend engineering with graduate-level data science work across healthcare AI, graph learning, crime analytics, hunger forecasting, and multimodal modeling.",
-    "Before my M.S. in Data Science at the University of Houston-Clear Lake, I worked across Azure, .NET, distributed integrations, observability, and operational analytics in high-availability enterprise environments. I care about production reliability as much as model quality."
+    "I am a data scientist with a developer's mindset. With 2.5+ years of experience building cloud-native systems, I bridge the gap between complex datasets and production-ready applications that support dependable, decision-ready workflows.",
+    "Recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. Before my master's at UHCL, I shipped production-grade integrations across Azure, .NET, Node.js, Docker, KQL, Splunk, and enterprise data systems."
   ],
   "experience": [
     {
-      "company": "Tata Consultancy Services",
-      "role": "Azure .NET Developer / Data-Intensive Backend Engineer",
-      "location": "India",
-      "start": "2021-07",
-      "end": "2022-12",
+      "company": "University of Houston-Clear Lake",
+      "role": "Graduate Teaching Assistant - Databases, Big Data and Python",
+      "location": "Texas, United States",
+      "start": "2025-08",
+      "end": "2025-12",
       "highlights": [
-        "Engineered cloud-native backend services in C#/.NET Core, ASP.NET, and Azure for enterprise workflows spanning 10+ global airline partners.",
-        "Built ingestion and orchestration pipelines with Azure Data Factory and Durable Functions, reducing manual processing effort by 30% across production workflows.",
-        "Designed SQL analytical layers for self-service bag drop systems, achieving 99.9% data integrity and reducing manual audit effort by 35%.",
-        "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads through indexing and query tuning, reducing average query latency by 45%.",
-        "Deployed Application Insights, KQL dashboards, and Docker-based Azure DevOps CI/CD improvements, reducing incident triage time by 35% and improving release consistency."
+        "Mentored over 60 students in Databases, Big Data, and Python through labs and office hours.",
+        "Used a concept-first teaching approach to strengthen understanding rather than memorization.",
+        "Developed a structured feedback loop that improved student confidence and performance in programming assignments."
       ]
     },
     {
       "company": "Hexagon Manufacturing Intelligence",
-      "role": "Integration Developer / Reliability Engineer",
+      "role": "Integration Developer",
       "location": "India",
       "start": "2023-01",
       "end": "2023-12",
       "highlights": [
-        "Architected high-availability Dell Boomi integrations across Salesforce, NetSuite, on-prem systems, and 3 fulfillment partners.",
-        "Supported 10M+ daily transactions across distributed runtimes while sustaining 99.9% SLA uptime for business-critical workflows.",
-        "Engineered event-driven APIs, listeners, and asynchronous workflows to enable real-time synchronization across internal and partner systems.",
-        "Implemented validation and control checks across 6 ingestion pipelines, improving data consistency and reducing downstream failures.",
-        "Deployed Splunk and AppDynamics observability across 12 distributed services, reducing incident triage time by 40% and cutting MTTR by 2+ hours."
+        "Architected high-availability integration landscapes using Dell Boomi to synchronize mission-critical data across Salesforce CRM, NetSuite ERP, and on-prem databases for global inventory and payroll domains.",
+        "Engineered real-time event-driven APIs and MDM flows with listeners and API gateways, applying reliability patterns to sustain 99.9% uptime for high-traffic business workflows.",
+        "Implemented AppDynamics and Splunk observability plus a custom traceability layer for migrations, reducing production incident triage time by 40%.",
+        "Led end-to-end integration delivery, translating ambiguous business requirements into reliable technical assets through architectural reviews and gap analysis.",
+        "Collaborated across distributed teams to validate end-to-end integrations and preserve data consistency and security during enterprise rollouts."
       ]
     },
     {
-      "company": "University of Houston-Clear Lake",
-      "role": "Graduate Teaching Assistant",
-      "location": "Houston, TX",
-      "start": "2024-01",
-      "end": null,
+      "company": "Tata Consultancy Services",
+      "role": "Azure Developer",
+      "location": "India",
+      "start": "2021-07",
+      "end": "2022-12",
       "highlights": [
-        "Mentored 60+ students in Databases, Big Data (Hadoop/Spark), and Python, improving assignment accuracy and conceptual understanding across SQL, data pipelines, and analytics workflows.",
-        "Assessed 1000+ student assignments and provided actionable feedback to strengthen understanding and academic growth.",
-        "Designed and delivered hands-on lab walkthroughs on joins, normalization, query optimization, and data processing, improving student problem-solving speed.",
-        "Supported structured office hours for real-time SQL and Python debugging, reducing blockers and improving assignment turnaround time."
+        "Engineered multi-partner ingestion workflows with Azure Data Factory and Durable Functions for 10+ global airline partners.",
+        "Developed high-performance gRPC and REST microservices in .NET Core and Dapper using clean architecture patterns for scalability and maintainability.",
+        "Architected SQL analytical layers for self-service bag drop systems, achieving 99.9% data accuracy and reducing manual audit overhead by 35%.",
+        "Built real-time telemetry pipelines for Tableau dashboards and deployed Application Insights plus KQL observability to maintain 24/7 operational reliability.",
+        "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads and streamlined Docker plus Azure DevOps CI/CD to improve release quality for mission-critical services."
       ]
     }
   ],
@@ -51,8 +50,35 @@
     {
       "institution": "University of Houston-Clear Lake",
       "degree": "Master of Science in Data Science",
-      "start": "2023-08",
-      "end": "2025-05"
+      "start": "2024-01",
+      "end": "2025-12"
+    },
+    {
+      "institution": "CVR College of Engineering, Hyderabad",
+      "degree": "Bachelor of Technology in Mechanical Engineering",
+      "start": "2017-08",
+      "end": "2021-08"
+    },
+    {
+      "institution": "Narayana Junior College, India",
+      "degree": "Intermediate - Physics, Chemistry and Mathematics",
+      "start": "2015-07",
+      "end": "2017-04"
     }
+  ],
+  "topSkills": [
+    "Convolutional Neural Networks (CNN)",
+    "Natural Language Processing (NLP)",
+    "Unsupervised Learning / Clustering",
+    "K-Means",
+    "PCA",
+    "Silhouette Score"
+  ],
+  "certifications": [
+    "Autodesk Certified Professional: AutoCAD for Design and Drafting Exam Prep",
+    "Programming for Everybody (Getting Started with Python)"
+  ],
+  "honors": [
+    "On The Spot Award"
   ]
 }

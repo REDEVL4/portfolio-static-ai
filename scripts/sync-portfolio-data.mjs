@@ -148,7 +148,10 @@ async function main() {
       headline: linkedin.headline || seed.site.headline,
       about: linkedin.about || seed.site.heroSummary,
       experience: linkedin.experience || [],
-      education: linkedin.education || []
+      education: linkedin.education || [],
+      topSkills: linkedin.topSkills || [],
+      certifications: linkedin.certifications || [],
+      honors: linkedin.honors || []
     },
     projects: discoveredProjects,
     meta: {

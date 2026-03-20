@@ -5,12 +5,15 @@ async function init() {
   const about = document.getElementById("aboutCopy");
   const skills = document.getElementById("skillCloud");
   const education = document.getElementById("educationList");
+  const certifications = document.getElementById("certificationList");
+  const honors = document.getElementById("honorList");
 
   about.innerHTML = (data.profile?.about || [])
     .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
     .join("");
 
-  skills.innerHTML = (data.site?.skills || [])
+  const mergedSkills = [...new Set([...(data.site?.skills || []), ...(data.profile?.topSkills || [])])];
+  skills.innerHTML = mergedSkills
     .map((skill) => `<span class="pill">${escapeHtml(skill)}</span>`)
     .join("");
 
@@ -24,6 +27,18 @@ async function init() {
       `
     )
     .join("");
+
+  if (certifications) {
+    certifications.innerHTML = (data.profile?.certifications || [])
+      .map((item) => `<div class="education-card"><div class="fw-semibold">${escapeHtml(item)}</div></div>`)
+      .join("");
+  }
+
+  if (honors) {
+    honors.innerHTML = (data.profile?.honors || [])
+      .map((item) => `<span class="pill">${escapeHtml(item)}</span>`)
+      .join("");
+  }
 }
 
 init().catch((error) => console.error(error));
