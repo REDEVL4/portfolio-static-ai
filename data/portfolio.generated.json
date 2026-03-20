@@ -1,0 +1,598 @@
+{
+  "generatedAt": "2026-03-19T23:23:36.530Z",
+  "site": {
+    "name": "Govardhan Reddy Narala",
+    "headline": "Data Scientist and Software Engineer building applied ML, analytics, and cloud-native systems.",
+    "location": "Houston, TX",
+    "email": "reddygovardhan6826@gmail.com",
+    "githubUsername": "REDEVL4",
+    "githubUrl": "https://github.com/REDEVL4",
+    "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
+    "resumeUrl": "assets/resume.pdf",
+    "heroIntro": "I build production-grade data products, ML prototypes, and backend systems that move from research to reliable delivery.",
+    "heroSummary": [
+      "Master's in Data Science with prior software and data engineering experience across integrations, APIs, and analytics.",
+      "This portfolio is designed as a case-study-driven site: projects, architecture context, and evidence of execution."
+    ],
+    "focusAreas": [
+      "Applied machine learning",
+      "Data engineering",
+      "Backend systems",
+      "Cloud integrations"
+    ],
+    "skills": [
+      "Python",
+      "SQL",
+      "PyTorch",
+      "Spark",
+      "Azure",
+      "Node.js",
+      ".NET",
+      "PostgreSQL"
+    ],
+    "githubFollowers": 1,
+    "githubPublicRepos": 11
+  },
+  "profile": {
+    "headline": "Data Scientist | Software Engineer | Data Engineer",
+    "about": [
+      "I am a data scientist with a developer's mindset, focused on building systems that connect analytics, machine learning, and product delivery.",
+      "My experience spans cloud-native integrations, backend services, large-scale analytics, and applied machine learning projects."
+    ],
+    "experience": [
+      {
+        "company": "Hexagon",
+        "role": "Software Engineer",
+        "location": "India",
+        "start": "2021-12",
+        "end": "2023-08",
+        "highlights": [
+          "Built integration-focused software features and delivery workflows.",
+          "Worked on cloud-native services, APIs, and production support.",
+          "Contributed to reliable engineering practices around shipping and maintenance."
+        ]
+      },
+      {
+        "company": "Tata Consultancy Services",
+        "role": "Software Engineer",
+        "location": "India",
+        "start": "2021-01",
+        "end": "2021-12",
+        "highlights": [
+          "Supported enterprise integration and data-oriented engineering work.",
+          "Worked across implementation, debugging, and release delivery.",
+          "Collaborated with teams on service reliability and change requests."
+        ]
+      },
+      {
+        "company": "University of Houston-Clear Lake",
+        "role": "Teaching Assistant",
+        "location": "Houston, TX",
+        "start": "2024-01",
+        "end": null,
+        "highlights": [
+          "Supported courses and labs in data, networking, and IT topics.",
+          "Helped students with debugging, concepts, and practical assignments."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Houston-Clear Lake",
+        "degree": "Master of Science in Data Science",
+        "start": "2023-08",
+        "end": "2025-05"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "slug": "civicquest",
+      "repo": "CivicQuest",
+      "title": "CivicQuest",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "AI-supported community engagement platform for volunteering discovery, sustainability learning, and guided interaction.",
+      "tags": [
+        "Azure",
+        "Full Stack",
+        "Community",
+        "Chatbot"
+      ],
+      "stack": [
+        "Node.js",
+        "EJS",
+        "Azure Bot",
+        "Azure"
+      ],
+      "highlights": [
+        "AI-powered community engagement platform",
+        "Volunteer discovery and registration journeys",
+        "Gamified sustainability learning plus Azure bot integration"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/CivicQuest",
+        "demo": null,
+        "caseStudy": "content/case-studies/civicquest.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "CivicQuest",
+        "language": "EJS",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": " AI-powered community engagement platform that helps users discover local volunteering events, register seamlessly, learn sustainability through a gamified experience, and interact with an Azure-based chatbot — built with Node.js, Express, SQLite, and Azure services.",
+        "homepage": null,
+        "updatedAt": "2026-02-12T14:02:58Z"
+      }
+    },
+    {
+      "slug": "disease-gcn",
+      "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
+      "title": "Disease Networks for Disease Clustering",
+      "featured": true,
+      "type": "Research",
+      "summary": "Unsupervised graph convolution workflow for clustering disease relationships from disease-gene networks and ontology signals.",
+      "tags": [
+        "GCN",
+        "Unsupervised",
+        "Bioinformatics",
+        "Deep Learning"
+      ],
+      "stack": [
+        "Python",
+        "PyTorch",
+        "GCN",
+        "Gene Ontology"
+      ],
+      "highlights": [
+        "Built disease-gene network representations",
+        "Learned unsupervised embeddings for disease clustering",
+        "Combined graph structure with Gene Ontology features"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
+        "demo": null,
+        "caseStudy": "content/case-studies/disease-gcn.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-3.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
+        "language": null,
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2026-02-12T07:39:23Z"
+      }
+    },
+    {
+      "slug": "houston-crime",
+      "repo": "Houston-Crime-Type-Classification-2010-2024-",
+      "title": "Houston Crime Type Classification (2010-2024)",
+      "featured": true,
+      "type": "Machine Learning",
+      "summary": "Large-scale temporal classification project using millions of records, feature engineering, and holdout evaluation for crime prediction.",
+      "tags": [
+        "ML",
+        "Classification",
+        "Python",
+        "Big Data"
+      ],
+      "stack": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Spark",
+        "Hive"
+      ],
+      "highlights": [
+        "Processed roughly 3.6M records with a true temporal holdout",
+        "Built end-to-end feature engineering and modeling workflow",
+        "Reported macro metrics and practical evaluation tradeoffs"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-",
+        "demo": null,
+        "caseStudy": "content/case-studies/houston-crime.md",
+        "notebook": "content/notebooks/houston-crime.html",
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Houston-Crime-Type-Classification-2010-2024-",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "An end-to-end machine learning pipeline built to predict crime categories (NIBRS Description) using 14 years of Houston Police Department data (~3.6 million records), with 2024 used as a true future holdout year.",
+        "homepage": null,
+        "updatedAt": "2026-03-09T23:19:12Z"
+      }
+    },
+    {
+      "slug": "book-genre",
+      "repo": "Multimodal-Book-Genre-Classification-Clustering",
+      "title": "Multimodal Book Genre Classification and Clustering",
+      "featured": true,
+      "type": "Machine Learning",
+      "summary": "Hybrid multimodal pipeline combining image and text signals for genre prediction and clustering on large book datasets.",
+      "tags": [
+        "Computer Vision",
+        "NLP",
+        "Multimodal",
+        "Clustering"
+      ],
+      "stack": [
+        "Python",
+        "PyTorch",
+        "VGG16",
+        "LSTM"
+      ],
+      "highlights": [
+        "Combined cover images and title text in one pipeline",
+        "Supported both supervised prediction and clustering",
+        "Designed for large-scale experimentation"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering",
+        "demo": null,
+        "caseStudy": "content/case-studies/book-genre.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Multimodal-Book-Genre-Classification-Clustering",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "A scalable multimodal machine learning pipeline for book genre prediction, clustering, and segmentation using both book cover images and textual metadata (titles).  This project combines Computer Vision + NLP to automatically organize and segment large-scale book catalogs for recommendation systems and digital libraries.",
+        "homepage": null,
+        "updatedAt": "2026-02-12T05:36:41Z"
+      }
+    },
+    {
+      "slug": "zero-hunger",
+      "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
+      "title": "Zero Hunger Big Data Analytics Pipeline",
+      "featured": true,
+      "type": "Data Engineering",
+      "summary": "Distributed analytics pipeline using Hadoop ecosystem tools to transform large food and hunger datasets into queryable outputs.",
+      "tags": [
+        "Spark",
+        "Hive",
+        "Hadoop",
+        "Big Data"
+      ],
+      "stack": [
+        "HDFS",
+        "Spark",
+        "Hive",
+        "MapReduce"
+      ],
+      "highlights": [
+        "Distributed ingestion and processing pipeline",
+        "Reusable analytics tables and downstream queries",
+        "Policy-oriented analysis for hunger-related data"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
+        "demo": null,
+        "caseStudy": "content/case-studies/zero-hunger.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 1,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2026-03-07T23:29:14Z"
+      }
+    },
+    {
+      "slug": "adversarial-dnn",
+      "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
+      "title": "Adversarial Attacks on Deep Neural Networks",
+      "featured": false,
+      "type": "Research",
+      "summary": "Robustness experiments analyzing adversarial attacks, defenses, and model behavior under FGSM and PGD conditions.",
+      "tags": [
+        "Adversarial ML",
+        "Deep Learning",
+        "Security"
+      ],
+      "stack": [
+        "Python",
+        "PyTorch",
+        "FGSM",
+        "PGD"
+      ],
+      "highlights": [
+        "Studied attack effectiveness and defense behavior",
+        "Measured robustness changes across settings",
+        "Notebook-driven experimentation workflow"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks",
+        "demo": null,
+        "caseStudy": "content/case-studies/adversarial-dnn.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-3.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "This project investigates both adversarial attacks and defensive strategies for Deep Neural Networks (DNNs). While adversarial examples exploit vulnerabilities in models by introducing imperceptible perturbations, defensive methods aim to improve robustness and ensure reliable predictions.",
+        "homepage": null,
+        "updatedAt": "2025-10-01T19:33:49Z"
+      }
+    },
+    {
+      "slug": "aspnetcore-docs",
+      "repo": "AspNetCore.Docs",
+      "title": "ASP.NET Core Docs (Fork)",
+      "featured": false,
+      "type": "Documentation",
+      "summary": "Reference fork of ASP.NET Core documentation used for study and internal notes.",
+      "tags": [
+        ".NET",
+        "Docs"
+      ],
+      "stack": [
+        "C#",
+        "ASP.NET Core"
+      ],
+      "highlights": [
+        "Maintained as a working reference repo",
+        "Useful for .NET architecture and API patterns",
+        "Supports learning and implementation review"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/AspNetCore.Docs",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "AspNetCore.Docs",
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": null
+      }
+    },
+    {
+      "slug": "boomi-cicd",
+      "repo": "Boomi",
+      "title": "Boomi CI/CD Experiments",
+      "featured": false,
+      "type": "Software Engineering",
+      "summary": "Experiments around integration delivery workflows, automation, and CI/CD patterns for Boomi-based systems.",
+      "tags": [
+        "CI/CD",
+        "Integrations"
+      ],
+      "stack": [
+        "Boomi",
+        "Shell"
+      ],
+      "highlights": [
+        "Explored deployment automation for integration assets",
+        "Tested pipeline approaches for repeatable delivery",
+        "Focused on integration support tooling"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Boomi",
+        "demo": null,
+        "caseStudy": "content/case-studies/boomi.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Boomi",
+        "language": "Shell",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "For testing out the Boomi CI/CD",
+        "homepage": null,
+        "updatedAt": "2023-12-08T11:58:42Z"
+      }
+    },
+    {
+      "slug": "deploy-gh",
+      "repo": "deploy.github.io",
+      "title": "deploy.github.io",
+      "featured": false,
+      "type": "Static Site",
+      "summary": "Minimal static deployment experiment for lightweight hosting and GitHub Pages-style publication.",
+      "tags": [
+        "HTML",
+        "Static"
+      ],
+      "stack": [
+        "HTML",
+        "CSS"
+      ],
+      "highlights": [
+        "Lightweight static deployment setup",
+        "Useful baseline for simple hosting workflows",
+        "Small experiment in publishing and delivery"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/deploy.github.io",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "deploy.github.io",
+        "language": "HTML",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2021-09-09T10:06:36Z"
+      }
+    },
+    {
+      "slug": "netcore-microservices",
+      "repo": "MicroservicesUsingNetCore",
+      "title": "Microservices Using .NET Core",
+      "featured": false,
+      "type": "Software Engineering",
+      "summary": "Clean-architecture microservices system using messaging, RPC, caching, and multiple persistence layers.",
+      "tags": [
+        ".NET",
+        "Microservices",
+        "RabbitMQ",
+        "gRPC"
+      ],
+      "stack": [
+        ".NET Core",
+        "RabbitMQ",
+        "gRPC",
+        "Redis",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "highlights": [
+        "Designed loosely coupled services with clean architecture",
+        "Used RabbitMQ and gRPC for inter-service communication",
+        "Applied cache and polyglot persistence patterns"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/MicroservicesUsingNetCore",
+        "demo": null,
+        "caseStudy": "content/case-studies/netcore-microservices.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-3.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "MicroservicesUsingNetCore",
+        "language": "C#",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "Developing Loosely Coupled Application via netcore using services mongodb,redis as a Database or Cache,Postgre Sql, Sql using EntityFrameworkCore Implementing Clean Architecture with RabbitMQ,GRPC, and Ocelot Gateway",
+        "homepage": null,
+        "updatedAt": "2022-06-28T17:14:27Z"
+      }
+    },
+    {
+      "slug": "node-ecom",
+      "repo": "Node-E-Com-Use-Case-",
+      "title": "Node E-Commerce Use Case",
+      "featured": false,
+      "type": "Full Stack",
+      "summary": "API-oriented e-commerce use case covering shopping flows, backend logic, and service design basics.",
+      "tags": [
+        "Node.js",
+        "E-Commerce",
+        "APIs"
+      ],
+      "stack": [
+        "Node.js",
+        "JavaScript"
+      ],
+      "highlights": [
+        "Implemented core e-commerce backend flows",
+        "Used API-first design for shopping interactions",
+        "Built a foundation for larger full-stack demos"
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Node-E-Com-Use-Case-",
+        "demo": null,
+        "caseStudy": "content/case-studies/node-ecom.md",
+        "notebook": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Node-E-Com-Use-Case-",
+        "language": "JavaScript",
+        "stars": 0,
+        "forks": 1,
+        "openIssues": 0,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2023-08-04T07:04:35Z"
+      }
+    }
+  ],
+  "meta": {
+    "projectCount": 11,
+    "featuredCount": 5
+  }
+}

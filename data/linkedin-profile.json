@@ -1,0 +1,52 @@
+{
+  "headline": "Data Scientist | Software Engineer | Data Engineer",
+  "about": [
+    "I am a data scientist with a developer's mindset, focused on building systems that connect analytics, machine learning, and product delivery.",
+    "My experience spans cloud-native integrations, backend services, large-scale analytics, and applied machine learning projects."
+  ],
+  "experience": [
+    {
+      "company": "Hexagon",
+      "role": "Software Engineer",
+      "location": "India",
+      "start": "2021-12",
+      "end": "2023-08",
+      "highlights": [
+        "Built integration-focused software features and delivery workflows.",
+        "Worked on cloud-native services, APIs, and production support.",
+        "Contributed to reliable engineering practices around shipping and maintenance."
+      ]
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "Software Engineer",
+      "location": "India",
+      "start": "2021-01",
+      "end": "2021-12",
+      "highlights": [
+        "Supported enterprise integration and data-oriented engineering work.",
+        "Worked across implementation, debugging, and release delivery.",
+        "Collaborated with teams on service reliability and change requests."
+      ]
+    },
+    {
+      "company": "University of Houston-Clear Lake",
+      "role": "Teaching Assistant",
+      "location": "Houston, TX",
+      "start": "2024-01",
+      "end": null,
+      "highlights": [
+        "Supported courses and labs in data, networking, and IT topics.",
+        "Helped students with debugging, concepts, and practical assignments."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Houston-Clear Lake",
+      "degree": "Master of Science in Data Science",
+      "start": "2023-08",
+      "end": "2025-05"
+    }
+  ]
+}
