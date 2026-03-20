@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data Scientist and Software Engineer building applied ML, analytics, and cloud-native systems.",
+    "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
     "location": "Houston, TX",
     "email": "reddygovardhan6826@gmail.com",
     "githubUsername": "REDEVL4",
@@ -10,14 +10,15 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "I build production-grade data products, ML prototypes, and backend systems that move from research to reliable delivery.",
     "heroSummary": [
-      "Master's in Data Science with prior software and data engineering experience across integrations, APIs, and analytics.",
-      "This portfolio is designed as a case-study-driven site: projects, architecture context, and evidence of execution."
+      "Master's in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
+      "This portfolio is built around case studies: research rigor, system design tradeoffs, and the measurable outcomes behind the work."
     ],
     "focusAreas": [
       "Applied machine learning",
       "Data engineering",
       "Backend systems",
-      "Cloud integrations"
+      "Cloud integrations",
+      "Observability and reliability engineering"
     ],
     "skills": [
       "Python",
@@ -25,9 +26,15 @@
       "PyTorch",
       "Spark",
       "Azure",
+      "Azure Data Factory",
+      "Durable Functions",
       "Node.js",
       ".NET",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Cosmos DB",
+      "Dell Boomi",
+      "Splunk",
+      "AppDynamics"
     ]
   },
   "github": {
@@ -66,13 +73,13 @@
       "title": "Disease Networks for Disease Clustering",
       "featured": true,
       "type": "Research",
-      "summary": "Unsupervised graph convolution workflow for clustering disease relationships from disease-gene networks and ontology signals.",
+      "summary": "End-to-end graph learning pipeline that combines disease-gene networks with Gene Ontology features to improve unsupervised biomedical disease clustering.",
       "tags": ["GCN", "Unsupervised", "Bioinformatics", "Deep Learning"],
       "stack": ["Python", "PyTorch", "GCN", "Gene Ontology"],
       "highlights": [
-        "Built disease-gene network representations",
-        "Learned unsupervised embeddings for disease clustering",
-        "Combined graph structure with Gene Ontology features"
+        "Built disease x gene and disease x GO feature matrices to combine graph topology with biological process semantics.",
+        "Trained a 3-layer GCN encoder and clustered learned latent embeddings with KMeans for stronger disease-group separation.",
+        "Improved inter-vs-intra cluster distance separation from 0.90 to 1.45, 0.85 to 1.25, and 1.10 to 1.85 across 40, 50, and 60-disease subsets."
       ],
       "links": {
         "caseStudy": "content/case-studies/disease-gcn.md"
@@ -85,13 +92,13 @@
       "title": "Zero Hunger Big Data Analytics Pipeline",
       "featured": true,
       "type": "Data Engineering",
-      "summary": "Distributed analytics pipeline using Hadoop ecosystem tools to transform large food and hunger datasets into queryable outputs.",
+      "summary": "Big-data pipeline aligned to UN SDG 2 that processes 86,657 records across hunger, agriculture, and socio-economic indicators into scalable analytics and forecasting workflows.",
       "tags": ["Spark", "Hive", "Hadoop", "Big Data"],
       "stack": ["HDFS", "Spark", "Hive", "MapReduce"],
       "highlights": [
-        "Distributed ingestion and processing pipeline",
-        "Reusable analytics tables and downstream queries",
-        "Policy-oriented analysis for hunger-related data"
+        "Designed ingestion, transformation, and querying workflows across HDFS, Hadoop Streaming MapReduce, Spark, and Hive.",
+        "Normalized public data sources including FAO, World Bank, and UNICEF-style datasets into analysis-ready tables for hunger hotspot detection.",
+        "Built forecasting and visualization workflows, with project materials reporting about 95% prediction accuracy for hunger-trend evaluation."
       ],
       "links": {
         "caseStudy": "content/case-studies/zero-hunger.md"
@@ -104,13 +111,13 @@
       "title": "Houston Crime Type Classification (2010-2024)",
       "featured": true,
       "type": "Machine Learning",
-      "summary": "Large-scale temporal classification project using millions of records, feature engineering, and holdout evaluation for crime prediction.",
+      "summary": "Large-scale crime analytics pipeline on roughly 3.6M Houston crime records to predict NIBRS offense categories under a realistic temporal holdout design.",
       "tags": ["ML", "Classification", "Python", "Big Data"],
       "stack": ["Python", "Pandas", "Scikit-learn", "Spark", "Hive"],
       "highlights": [
-        "Processed roughly 3.6M records with a true temporal holdout",
-        "Built end-to-end feature engineering and modeling workflow",
-        "Reported macro metrics and practical evaluation tradeoffs"
+        "Standardized and merged three differently formatted source datasets into one modeling-ready schema spanning 2010 to 2024.",
+        "Engineered Beat, Premise, Month, Weekday, and Hour Group features and cleaned multi-label crime records into separate observations.",
+        "Selected MLPClassifier as the best model, reaching 29.37% accuracy and 0.5895 macro AUC on the 2024 holdout set."
       ],
       "links": {
         "caseStudy": "content/case-studies/houston-crime.md",
@@ -124,13 +131,13 @@
       "title": "Multimodal Book Genre Classification and Clustering",
       "featured": true,
       "type": "Machine Learning",
-      "summary": "Hybrid multimodal pipeline combining image and text signals for genre prediction and clustering on large book datasets.",
+      "summary": "Multimodal content-intelligence pipeline that combines book titles and cover images to classify and segment books across large catalog datasets.",
       "tags": ["Computer Vision", "NLP", "Multimodal", "Clustering"],
-      "stack": ["Python", "PyTorch", "VGG16", "LSTM"],
+      "stack": ["Python", "Word2Vec", "LSTM", "CNN", "PCA", "KMeans"],
       "highlights": [
-        "Combined cover images and title text in one pipeline",
-        "Supported both supervised prediction and clustering",
-        "Designed for large-scale experimentation"
+        "Built a dual-modality workflow using Word2Vec and LSTM for titles plus CNN-based visual features for covers across Book32 and BookCover30.",
+        "Performed large-scale preprocessing and missing-data analysis before classification and clustering.",
+        "Validated genre separation with KMeans and PCA, surfacing interpretable clusters such as Self-Help, Religion and Spirituality, and Education."
       ],
       "links": {
         "caseStudy": "content/case-studies/book-genre.md"
@@ -142,13 +149,13 @@
       "slug": "adversarial-dnn",
       "title": "Adversarial Attacks on Deep Neural Networks",
       "type": "Research",
-      "summary": "Robustness experiments analyzing adversarial attacks, defenses, and model behavior under FGSM and PGD conditions.",
-      "tags": ["Adversarial ML", "Deep Learning", "Security"],
-      "stack": ["Python", "PyTorch", "FGSM", "PGD"],
+      "summary": "Medical imaging robustness benchmark evaluating adversarial attacks and defenses across four CNN architectures on the MURA X-ray dataset.",
+      "tags": ["Adversarial ML", "Deep Learning", "Security", "Medical Imaging"],
+      "stack": ["PyTorch", "ResNet-50", "DenseNet-121", "EfficientNet-B0", "GoogLeNet", "FGSM", "PGD", "Carlini-Wagner"],
       "highlights": [
-        "Studied attack effectiveness and defense behavior",
-        "Measured robustness changes across settings",
-        "Notebook-driven experimentation workflow"
+        "Benchmarked four CNN architectures on 40,561 MURA X-ray images across multiple perturbation levels using FGSM, PGD, and Carlini-Wagner attacks.",
+        "Built a preprocessing workflow with resizing, normalization, CLAHE enhancement, bone windowing, and smart cropping for clinically consistent inputs.",
+        "Implemented FGSM adversarial training with 50% clean and 50% adversarial batches over 50 epochs, improving FGSM robustness and yielding moderate PGD gains."
       ],
       "links": {
         "caseStudy": "content/case-studies/adversarial-dnn.md"
@@ -160,13 +167,13 @@
       "slug": "boomi-cicd",
       "title": "Boomi CI/CD Experiments",
       "type": "Software Engineering",
-      "summary": "Experiments around integration delivery workflows, automation, and CI/CD patterns for Boomi-based systems.",
-      "tags": ["CI/CD", "Integrations"],
-      "stack": ["Boomi", "Shell"],
+      "summary": "Enterprise integration and reliability work around Boomi-based distributed workflows, runtime observability, and support automation.",
+      "tags": ["Boomi", "Integrations", "Reliability", "Observability"],
+      "stack": ["Dell Boomi", "Splunk", "AppDynamics", "APIs"],
       "highlights": [
-        "Explored deployment automation for integration assets",
-        "Tested pipeline approaches for repeatable delivery",
-        "Focused on integration support tooling"
+        "Supported 10M+ daily transactions across distributed runtimes while sustaining 99.9% SLA uptime for business-critical workflows.",
+        "Implemented validation and control checks across 6 ingestion pipelines to reduce downstream failures and improve data consistency.",
+        "Automated health checks, restart workflows, and runbooks to eliminate recurring failures and reduce onboarding time for new engineers."
       ],
       "links": {
         "caseStudy": "content/case-studies/boomi.md"

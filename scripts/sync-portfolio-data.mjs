@@ -93,10 +93,17 @@ async function main() {
   const username = seed.site.githubUsername;
   const featuredRepos = seed.github?.featuredRepos || [];
 
-  const [githubProfile, repos] = await Promise.all([
-    fetchGithubJson(`https://api.github.com/users/${username}`),
-    fetchGithubJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`)
-  ]);
+  let githubProfile = { followers: null, public_repos: null };
+  let repos = [];
+
+  try {
+    [githubProfile, repos] = await Promise.all([
+      fetchGithubJson(`https://api.github.com/users/${username}`),
+      fetchGithubJson(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`)
+    ]);
+  } catch (error) {
+    console.warn(`GitHub sync skipped: ${error.message}`);
+  }
 
   const repoMap = new Map(
     repos

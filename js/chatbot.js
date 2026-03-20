@@ -69,7 +69,7 @@ async function initChatbot() {
       <div class="chatbot-header">
         <div>
           <div class="fw-semibold">Portfolio Assistant</div>
-          <div class="small text-white-50">ChatGPT-backed when the API server is configured</div>
+          <div class="small text-white-50">Configured with OpenAPI</div>
         </div>
         <button class="btn btn-sm btn-outline-light" id="cbClose">Close</button>
       </div>

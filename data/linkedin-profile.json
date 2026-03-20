@@ -1,43 +1,49 @@
 {
-  "headline": "Data Scientist | Software Engineer | Data Engineer",
+  "headline": "Data Scientist | Azure .NET Backend Engineer | Data Engineer",
   "about": [
-    "I am a data scientist with a developer's mindset, focused on building systems that connect analytics, machine learning, and product delivery.",
-    "My experience spans cloud-native integrations, backend services, large-scale analytics, and applied machine learning projects."
+    "I build data-intensive systems that connect applied machine learning, analytics, and production software delivery. My background combines enterprise backend engineering with graduate-level data science work across healthcare AI, graph learning, crime analytics, hunger forecasting, and multimodal modeling.",
+    "Before my M.S. in Data Science at the University of Houston-Clear Lake, I worked across Azure, .NET, distributed integrations, observability, and operational analytics in high-availability enterprise environments. I care about production reliability as much as model quality."
   ],
   "experience": [
     {
-      "company": "Hexagon",
-      "role": "Software Engineer",
+      "company": "Tata Consultancy Services",
+      "role": "Azure .NET Developer / Data-Intensive Backend Engineer",
       "location": "India",
-      "start": "2021-12",
-      "end": "2023-08",
+      "start": "2021-07",
+      "end": "2022-12",
       "highlights": [
-        "Built integration-focused software features and delivery workflows.",
-        "Worked on cloud-native services, APIs, and production support.",
-        "Contributed to reliable engineering practices around shipping and maintenance."
+        "Engineered cloud-native backend services in C#/.NET Core, ASP.NET, and Azure for enterprise workflows spanning 10+ global airline partners.",
+        "Built ingestion and orchestration pipelines with Azure Data Factory and Durable Functions, reducing manual processing effort by 30% across production workflows.",
+        "Designed SQL analytical layers for self-service bag drop systems, achieving 99.9% data integrity and reducing manual audit effort by 35%.",
+        "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads through indexing and query tuning, reducing average query latency by 45%.",
+        "Deployed Application Insights, KQL dashboards, and Docker-based Azure DevOps CI/CD improvements, reducing incident triage time by 35% and improving release consistency."
       ]
     },
     {
-      "company": "Tata Consultancy Services",
-      "role": "Software Engineer",
+      "company": "Hexagon Manufacturing Intelligence",
+      "role": "Integration Developer / Reliability Engineer",
       "location": "India",
-      "start": "2021-01",
-      "end": "2021-12",
+      "start": "2023-01",
+      "end": "2023-12",
       "highlights": [
-        "Supported enterprise integration and data-oriented engineering work.",
-        "Worked across implementation, debugging, and release delivery.",
-        "Collaborated with teams on service reliability and change requests."
+        "Architected high-availability Dell Boomi integrations across Salesforce, NetSuite, on-prem systems, and 3 fulfillment partners.",
+        "Supported 10M+ daily transactions across distributed runtimes while sustaining 99.9% SLA uptime for business-critical workflows.",
+        "Engineered event-driven APIs, listeners, and asynchronous workflows to enable real-time synchronization across internal and partner systems.",
+        "Implemented validation and control checks across 6 ingestion pipelines, improving data consistency and reducing downstream failures.",
+        "Deployed Splunk and AppDynamics observability across 12 distributed services, reducing incident triage time by 40% and cutting MTTR by 2+ hours."
       ]
     },
     {
       "company": "University of Houston-Clear Lake",
-      "role": "Teaching Assistant",
+      "role": "Graduate Teaching Assistant",
       "location": "Houston, TX",
       "start": "2024-01",
       "end": null,
       "highlights": [
-        "Supported courses and labs in data, networking, and IT topics.",
-        "Helped students with debugging, concepts, and practical assignments."
+        "Mentored 60+ students in Databases, Big Data (Hadoop/Spark), and Python, improving assignment accuracy and conceptual understanding across SQL, data pipelines, and analytics workflows.",
+        "Assessed 1000+ student assignments and provided actionable feedback to strengthen understanding and academic growth.",
+        "Designed and delivered hands-on lab walkthroughs on joins, normalization, query optimization, and data processing, improving student problem-solving speed.",
+        "Supported structured office hours for real-time SQL and Python debugging, reducing blockers and improving assignment turnaround time."
       ]
     }
   ],

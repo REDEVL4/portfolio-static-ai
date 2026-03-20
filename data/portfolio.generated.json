@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-19T23:23:36.530Z",
+  "generatedAt": "2026-03-20T14:38:10.191Z",
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data Scientist and Software Engineer building applied ML, analytics, and cloud-native systems.",
+    "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
     "location": "Houston, TX",
     "email": "reddygovardhan6826@gmail.com",
     "githubUsername": "REDEVL4",
@@ -11,14 +11,15 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "I build production-grade data products, ML prototypes, and backend systems that move from research to reliable delivery.",
     "heroSummary": [
-      "Master's in Data Science with prior software and data engineering experience across integrations, APIs, and analytics.",
-      "This portfolio is designed as a case-study-driven site: projects, architecture context, and evidence of execution."
+      "Master's in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
+      "This portfolio is built around case studies: research rigor, system design tradeoffs, and the measurable outcomes behind the work."
     ],
     "focusAreas": [
       "Applied machine learning",
       "Data engineering",
       "Backend systems",
-      "Cloud integrations"
+      "Cloud integrations",
+      "Observability and reliability engineering"
     ],
     "skills": [
       "Python",
@@ -26,53 +27,65 @@
       "PyTorch",
       "Spark",
       "Azure",
+      "Azure Data Factory",
+      "Durable Functions",
       "Node.js",
       ".NET",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Cosmos DB",
+      "Dell Boomi",
+      "Splunk",
+      "AppDynamics"
     ],
-    "githubFollowers": 1,
-    "githubPublicRepos": 11
+    "githubFollowers": null,
+    "githubPublicRepos": null
   },
   "profile": {
-    "headline": "Data Scientist | Software Engineer | Data Engineer",
+    "headline": "Data Scientist | Azure .NET Backend Engineer | Data Engineer",
     "about": [
-      "I am a data scientist with a developer's mindset, focused on building systems that connect analytics, machine learning, and product delivery.",
-      "My experience spans cloud-native integrations, backend services, large-scale analytics, and applied machine learning projects."
+      "I build data-intensive systems that connect applied machine learning, analytics, and production software delivery. My background combines enterprise backend engineering with graduate-level data science work across healthcare AI, graph learning, crime analytics, hunger forecasting, and multimodal modeling.",
+      "Before my M.S. in Data Science at the University of Houston-Clear Lake, I worked across Azure, .NET, distributed integrations, observability, and operational analytics in high-availability enterprise environments. I care about production reliability as much as model quality."
     ],
     "experience": [
       {
-        "company": "Hexagon",
-        "role": "Software Engineer",
+        "company": "Tata Consultancy Services",
+        "role": "Azure .NET Developer / Data-Intensive Backend Engineer",
         "location": "India",
-        "start": "2021-12",
-        "end": "2023-08",
+        "start": "2021-07",
+        "end": "2022-12",
         "highlights": [
-          "Built integration-focused software features and delivery workflows.",
-          "Worked on cloud-native services, APIs, and production support.",
-          "Contributed to reliable engineering practices around shipping and maintenance."
+          "Engineered cloud-native backend services in C#/.NET Core, ASP.NET, and Azure for enterprise workflows spanning 10+ global airline partners.",
+          "Built ingestion and orchestration pipelines with Azure Data Factory and Durable Functions, reducing manual processing effort by 30% across production workflows.",
+          "Designed SQL analytical layers for self-service bag drop systems, achieving 99.9% data integrity and reducing manual audit effort by 35%.",
+          "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads through indexing and query tuning, reducing average query latency by 45%.",
+          "Deployed Application Insights, KQL dashboards, and Docker-based Azure DevOps CI/CD improvements, reducing incident triage time by 35% and improving release consistency."
         ]
       },
       {
-        "company": "Tata Consultancy Services",
-        "role": "Software Engineer",
+        "company": "Hexagon Manufacturing Intelligence",
+        "role": "Integration Developer / Reliability Engineer",
         "location": "India",
-        "start": "2021-01",
-        "end": "2021-12",
+        "start": "2023-01",
+        "end": "2023-12",
         "highlights": [
-          "Supported enterprise integration and data-oriented engineering work.",
-          "Worked across implementation, debugging, and release delivery.",
-          "Collaborated with teams on service reliability and change requests."
+          "Architected high-availability Dell Boomi integrations across Salesforce, NetSuite, on-prem systems, and 3 fulfillment partners.",
+          "Supported 10M+ daily transactions across distributed runtimes while sustaining 99.9% SLA uptime for business-critical workflows.",
+          "Engineered event-driven APIs, listeners, and asynchronous workflows to enable real-time synchronization across internal and partner systems.",
+          "Implemented validation and control checks across 6 ingestion pipelines, improving data consistency and reducing downstream failures.",
+          "Deployed Splunk and AppDynamics observability across 12 distributed services, reducing incident triage time by 40% and cutting MTTR by 2+ hours."
         ]
       },
       {
         "company": "University of Houston-Clear Lake",
-        "role": "Teaching Assistant",
+        "role": "Graduate Teaching Assistant",
         "location": "Houston, TX",
         "start": "2024-01",
         "end": null,
         "highlights": [
-          "Supported courses and labs in data, networking, and IT topics.",
-          "Helped students with debugging, concepts, and practical assignments."
+          "Mentored 60+ students in Databases, Big Data (Hadoop/Spark), and Python, improving assignment accuracy and conceptual understanding across SQL, data pipelines, and analytics workflows.",
+          "Assessed 1000+ student assignments and provided actionable feedback to strengthen understanding and academic growth.",
+          "Designed and delivered hands-on lab walkthroughs on joins, normalization, query optimization, and data processing, improving student problem-solving speed.",
+          "Supported structured office hours for real-time SQL and Python debugging, reducing blockers and improving assignment turnaround time."
         ]
       }
     ],
@@ -123,14 +136,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "CivicQuest",
-        "language": "EJS",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": " AI-powered community engagement platform that helps users discover local volunteering events, register seamlessly, learn sustainability through a gamified experience, and interact with an Azure-based chatbot — built with Node.js, Express, SQLite, and Azure services.",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2026-02-12T14:02:58Z"
+        "updatedAt": null
       }
     },
     {
@@ -139,7 +152,7 @@
       "title": "Disease Networks for Disease Clustering",
       "featured": true,
       "type": "Research",
-      "summary": "Unsupervised graph convolution workflow for clustering disease relationships from disease-gene networks and ontology signals.",
+      "summary": "End-to-end graph learning pipeline that combines disease-gene networks with Gene Ontology features to improve unsupervised biomedical disease clustering.",
       "tags": [
         "GCN",
         "Unsupervised",
@@ -153,9 +166,9 @@
         "Gene Ontology"
       ],
       "highlights": [
-        "Built disease-gene network representations",
-        "Learned unsupervised embeddings for disease clustering",
-        "Combined graph structure with Gene Ontology features"
+        "Built disease x gene and disease x GO feature matrices to combine graph topology with biological process semantics.",
+        "Trained a 3-layer GCN encoder and clustered learned latent embeddings with KMeans for stronger disease-group separation.",
+        "Improved inter-vs-intra cluster distance separation from 0.90 to 1.45, 0.85 to 1.25, and 1.10 to 1.85 across 40, 50, and 60-disease subsets."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
@@ -171,13 +184,13 @@
         "owner": "REDEVL4",
         "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
         "language": null,
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
         "description": null,
         "homepage": null,
-        "updatedAt": "2026-02-12T07:39:23Z"
+        "updatedAt": null
       }
     },
     {
@@ -186,7 +199,7 @@
       "title": "Houston Crime Type Classification (2010-2024)",
       "featured": true,
       "type": "Machine Learning",
-      "summary": "Large-scale temporal classification project using millions of records, feature engineering, and holdout evaluation for crime prediction.",
+      "summary": "Large-scale crime analytics pipeline on roughly 3.6M Houston crime records to predict NIBRS offense categories under a realistic temporal holdout design.",
       "tags": [
         "ML",
         "Classification",
@@ -201,9 +214,9 @@
         "Hive"
       ],
       "highlights": [
-        "Processed roughly 3.6M records with a true temporal holdout",
-        "Built end-to-end feature engineering and modeling workflow",
-        "Reported macro metrics and practical evaluation tradeoffs"
+        "Standardized and merged three differently formatted source datasets into one modeling-ready schema spanning 2010 to 2024.",
+        "Engineered Beat, Premise, Month, Weekday, and Hour Group features and cleaned multi-label crime records into separate observations.",
+        "Selected MLPClassifier as the best model, reaching 29.37% accuracy and 0.5895 macro AUC on the 2024 holdout set."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-",
@@ -218,14 +231,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Houston-Crime-Type-Classification-2010-2024-",
-        "language": "Jupyter Notebook",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": "An end-to-end machine learning pipeline built to predict crime categories (NIBRS Description) using 14 years of Houston Police Department data (~3.6 million records), with 2024 used as a true future holdout year.",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2026-03-09T23:19:12Z"
+        "updatedAt": null
       }
     },
     {
@@ -234,7 +247,7 @@
       "title": "Multimodal Book Genre Classification and Clustering",
       "featured": true,
       "type": "Machine Learning",
-      "summary": "Hybrid multimodal pipeline combining image and text signals for genre prediction and clustering on large book datasets.",
+      "summary": "Multimodal content-intelligence pipeline that combines book titles and cover images to classify and segment books across large catalog datasets.",
       "tags": [
         "Computer Vision",
         "NLP",
@@ -243,14 +256,16 @@
       ],
       "stack": [
         "Python",
-        "PyTorch",
-        "VGG16",
-        "LSTM"
+        "Word2Vec",
+        "LSTM",
+        "CNN",
+        "PCA",
+        "KMeans"
       ],
       "highlights": [
-        "Combined cover images and title text in one pipeline",
-        "Supported both supervised prediction and clustering",
-        "Designed for large-scale experimentation"
+        "Built a dual-modality workflow using Word2Vec and LSTM for titles plus CNN-based visual features for covers across Book32 and BookCover30.",
+        "Performed large-scale preprocessing and missing-data analysis before classification and clustering.",
+        "Validated genre separation with KMeans and PCA, surfacing interpretable clusters such as Self-Help, Religion and Spirituality, and Education."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering",
@@ -265,14 +280,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Multimodal-Book-Genre-Classification-Clustering",
-        "language": "Jupyter Notebook",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": "A scalable multimodal machine learning pipeline for book genre prediction, clustering, and segmentation using both book cover images and textual metadata (titles).  This project combines Computer Vision + NLP to automatically organize and segment large-scale book catalogs for recommendation systems and digital libraries.",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2026-02-12T05:36:41Z"
+        "updatedAt": null
       }
     },
     {
@@ -281,7 +296,7 @@
       "title": "Zero Hunger Big Data Analytics Pipeline",
       "featured": true,
       "type": "Data Engineering",
-      "summary": "Distributed analytics pipeline using Hadoop ecosystem tools to transform large food and hunger datasets into queryable outputs.",
+      "summary": "Big-data pipeline aligned to UN SDG 2 that processes 86,657 records across hunger, agriculture, and socio-economic indicators into scalable analytics and forecasting workflows.",
       "tags": [
         "Spark",
         "Hive",
@@ -295,9 +310,9 @@
         "MapReduce"
       ],
       "highlights": [
-        "Distributed ingestion and processing pipeline",
-        "Reusable analytics tables and downstream queries",
-        "Policy-oriented analysis for hunger-related data"
+        "Designed ingestion, transformation, and querying workflows across HDFS, Hadoop Streaming MapReduce, Spark, and Hive.",
+        "Normalized public data sources including FAO, World Bank, and UNICEF-style datasets into analysis-ready tables for hunger hotspot detection.",
+        "Built forecasting and visualization workflows, with project materials reporting about 95% prediction accuracy for hunger-trend evaluation."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
@@ -312,14 +327,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
-        "language": "Jupyter Notebook",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 1,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
         "description": null,
         "homepage": null,
-        "updatedAt": "2026-03-07T23:29:14Z"
+        "updatedAt": null
       }
     },
     {
@@ -328,22 +343,27 @@
       "title": "Adversarial Attacks on Deep Neural Networks",
       "featured": false,
       "type": "Research",
-      "summary": "Robustness experiments analyzing adversarial attacks, defenses, and model behavior under FGSM and PGD conditions.",
+      "summary": "Medical imaging robustness benchmark evaluating adversarial attacks and defenses across four CNN architectures on the MURA X-ray dataset.",
       "tags": [
         "Adversarial ML",
         "Deep Learning",
-        "Security"
+        "Security",
+        "Medical Imaging"
       ],
       "stack": [
-        "Python",
         "PyTorch",
+        "ResNet-50",
+        "DenseNet-121",
+        "EfficientNet-B0",
+        "GoogLeNet",
         "FGSM",
-        "PGD"
+        "PGD",
+        "Carlini-Wagner"
       ],
       "highlights": [
-        "Studied attack effectiveness and defense behavior",
-        "Measured robustness changes across settings",
-        "Notebook-driven experimentation workflow"
+        "Benchmarked four CNN architectures on 40,561 MURA X-ray images across multiple perturbation levels using FGSM, PGD, and Carlini-Wagner attacks.",
+        "Built a preprocessing workflow with resizing, normalization, CLAHE enhancement, bone windowing, and smart cropping for clinically consistent inputs.",
+        "Implemented FGSM adversarial training with 50% clean and 50% adversarial batches over 50 epochs, improving FGSM robustness and yielding moderate PGD gains."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks",
@@ -358,14 +378,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
-        "language": "Jupyter Notebook",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": "This project investigates both adversarial attacks and defensive strategies for Deep Neural Networks (DNNs). While adversarial examples exploit vulnerabilities in models by introducing imperceptible perturbations, defensive methods aim to improve robustness and ensure reliable predictions.",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2025-10-01T19:33:49Z"
+        "updatedAt": null
       }
     },
     {
@@ -417,19 +437,23 @@
       "title": "Boomi CI/CD Experiments",
       "featured": false,
       "type": "Software Engineering",
-      "summary": "Experiments around integration delivery workflows, automation, and CI/CD patterns for Boomi-based systems.",
+      "summary": "Enterprise integration and reliability work around Boomi-based distributed workflows, runtime observability, and support automation.",
       "tags": [
-        "CI/CD",
-        "Integrations"
+        "Boomi",
+        "Integrations",
+        "Reliability",
+        "Observability"
       ],
       "stack": [
-        "Boomi",
-        "Shell"
+        "Dell Boomi",
+        "Splunk",
+        "AppDynamics",
+        "APIs"
       ],
       "highlights": [
-        "Explored deployment automation for integration assets",
-        "Tested pipeline approaches for repeatable delivery",
-        "Focused on integration support tooling"
+        "Supported 10M+ daily transactions across distributed runtimes while sustaining 99.9% SLA uptime for business-critical workflows.",
+        "Implemented validation and control checks across 6 ingestion pipelines to reduce downstream failures and improve data consistency.",
+        "Automated health checks, restart workflows, and runbooks to eliminate recurring failures and reduce onboarding time for new engineers."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Boomi",
@@ -444,14 +468,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Boomi",
-        "language": "Shell",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": "For testing out the Boomi CI/CD",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2023-12-08T11:58:42Z"
+        "updatedAt": null
       }
     },
     {
@@ -487,14 +511,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "deploy.github.io",
-        "language": "HTML",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
         "description": null,
         "homepage": null,
-        "updatedAt": "2021-09-09T10:06:36Z"
+        "updatedAt": null
       }
     },
     {
@@ -536,14 +560,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "MicroservicesUsingNetCore",
-        "language": "C#",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
-        "description": "Developing Loosely Coupled Application via netcore using services mongodb,redis as a Database or Cache,Postgre Sql, Sql using EntityFrameworkCore Implementing Clean Architecture with RabbitMQ,GRPC, and Ocelot Gateway",
+        "description": null,
         "homepage": null,
-        "updatedAt": "2022-06-28T17:14:27Z"
+        "updatedAt": null
       }
     },
     {
@@ -580,14 +604,14 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Node-E-Com-Use-Case-",
-        "language": "JavaScript",
-        "stars": 0,
-        "forks": 1,
-        "openIssues": 0,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
         "topics": [],
         "description": null,
         "homepage": null,
-        "updatedAt": "2023-08-04T07:04:35Z"
+        "updatedAt": null
       }
     }
   ],
