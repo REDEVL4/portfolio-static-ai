@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: portfolio-static-ai
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: GITHUB_TOKEN
+        sync: false

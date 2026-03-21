@@ -10,7 +10,7 @@ const dataDir = path.join(rootDir, "data");
 const generatedDataPath = path.join(dataDir, "portfolio.generated.json");
 const linkedinPath = path.join(dataDir, "linkedin-profile.json");
 const jobFarmingPath = path.join(dataDir, "job-farming-chat.md");
-const port = Number(process.env.PORT || 8000);
+const port = Number(process.env.PORT || 3000);
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
