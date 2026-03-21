@@ -98,6 +98,7 @@ async function renderHome() {
   const linkedinLink = document.getElementById("linkedinLink");
   const emailLink = document.getElementById("emailLink");
   const resumeLink = document.getElementById("resumeLink");
+  const contactMeta = document.getElementById("contactMeta");
 
   if (githubLink) {
     githubLink.href = site.githubUrl || "#";
@@ -113,6 +114,12 @@ async function renderHome() {
 
   if (resumeLink) {
     resumeLink.href = site.resumeUrl || "#";
+  }
+
+  if (contactMeta) {
+    contactMeta.textContent = [site.location, site.email, "Open to Work"]
+      .filter(Boolean)
+      .join(" | ");
   }
 }
 

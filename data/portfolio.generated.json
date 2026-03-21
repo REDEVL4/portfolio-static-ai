@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-21T04:05:13.151Z",
+  "generatedAt": "2026-03-21T17:11:26.009Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
@@ -11,8 +11,8 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "I build production-grade data products, ML prototypes, and backend systems that move from research to reliable delivery.",
     "heroSummary": [
-      "Master's in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
-      "This portfolio is built around case studies: research rigor, system design tradeoffs, and the measurable outcomes behind the work."
+      "M.S. in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
+      "This portfolio is built around case studies that show how I move from messy source systems and raw data to dependable analytics, ML experimentation, and production-minded delivery."
     ],
     "heroMetrics": [
       {
@@ -34,6 +34,34 @@
       "Backend systems",
       "Cloud integrations",
       "Observability and reliability engineering"
+    ],
+    "aboutSections": [
+      {
+        "title": "How I Position Myself",
+        "copy": "I sit at the intersection of data, backend systems, analytics, and applied machine learning. That gives me the ability to understand how data is produced, validated, modeled, and turned into decision-ready outputs."
+      },
+      {
+        "title": "Why This Portfolio Is Different",
+        "copy": "The work here is not limited to toy notebooks or isolated dashboards. It shows enterprise-scale backend and integration work, research-style ML experimentation, data quality thinking, and communication of results through case studies."
+      },
+      {
+        "title": "Best Role Fit",
+        "copy": "I am strongest in data scientist, analytics engineer, data engineer, and applied ML roles where pipeline quality, system context, and measurable outcomes matter as much as the model itself."
+      }
+    ],
+    "currentStatus": [
+      {
+        "title": "Open To Work",
+        "copy": "Actively pursuing Data Scientist, Applied ML, Analytics Engineer, and Data Engineer opportunities."
+      },
+      {
+        "title": "What I Want To Build",
+        "copy": "Production-grade data products that combine clean ingestion, trustworthy analytics, and machine learning that can stand up to real usage."
+      },
+      {
+        "title": "Working Style",
+        "copy": "I am most effective in environments where I can bridge engineering and analytics, work through ambiguity, and turn complex data problems into clear delivery."
+      }
     ],
     "skills": [
       "Python",
@@ -57,8 +85,9 @@
   "profile": {
     "headline": "Data Scientist | Applied ML and Deep Learning | M.S. Data Science (UHCL) | Ex-TCS | Ex-Hexagon | Python | SQL | Azure | PyTorch | scikit-learn | Open to Work",
     "about": [
-      "I am a data scientist with a developer's mindset. With 2.5+ years of experience building cloud-native systems, I bridge the gap between complex datasets and production-ready applications that support dependable, decision-ready workflows.",
-      "Recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. Before my master's at UHCL, I shipped production-grade integrations across Azure, .NET, Node.js, Docker, KQL, Splunk, and enterprise data systems."
+      "I am a data scientist with a developer's mindset and 2.5+ years of prior experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs.",
+      "Before my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, and measurable business or research outcomes.",
+      "My recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale Houston crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. I am currently exploring Data Scientist, Applied ML, Analytics Engineer, and Data Engineer roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
     ],
     "experience": [
       {
@@ -168,6 +197,7 @@
         "demo": null,
         "caseStudy": "content/case-studies/civicquest.md",
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -176,6 +206,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "CivicQuest",
+        "defaultBranch": "main",
         "language": "EJS",
         "stars": 0,
         "forks": 0,
@@ -215,6 +246,7 @@
         "demo": null,
         "caseStudy": "content/case-studies/disease-gcn.md",
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -223,6 +255,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
+        "defaultBranch": "main",
         "language": null,
         "stars": 0,
         "forks": 0,
@@ -262,7 +295,8 @@
         "github": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-",
         "demo": null,
         "caseStudy": "content/case-studies/houston-crime.md",
-        "notebook": "content/notebooks/houston-crime.html",
+        "notebook": "https://nbviewer.org/github/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
         "paper": null
       },
       "images": [
@@ -271,6 +305,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Houston-Crime-Type-Classification-2010-2024-",
+        "defaultBranch": "main",
         "language": "Jupyter Notebook",
         "stars": 0,
         "forks": 0,
@@ -311,7 +346,8 @@
         "github": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering",
         "demo": null,
         "caseStudy": "content/case-studies/book-genre.md",
-        "notebook": null,
+        "notebook": "https://nbviewer.org/github/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenreClassification.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenreClassification.ipynb",
         "paper": null
       },
       "images": [
@@ -320,6 +356,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Multimodal-Book-Genre-Classification-Clustering",
+        "defaultBranch": "main",
         "language": "Jupyter Notebook",
         "stars": 0,
         "forks": 0,
@@ -358,7 +395,8 @@
         "github": "https://github.com/REDEVL4/Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
         "demo": null,
         "caseStudy": "content/case-studies/zero-hunger.md",
-        "notebook": null,
+        "notebook": "https://nbviewer.org/github/REDEVL4/Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-/blob/main/Zero_Hunger_Complete_Pipeline.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-/blob/main/Zero_Hunger_Complete_Pipeline.ipynb",
         "paper": null
       },
       "images": [
@@ -367,6 +405,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
+        "defaultBranch": "main",
         "language": "Jupyter Notebook",
         "stars": 0,
         "forks": 0,
@@ -409,7 +448,8 @@
         "github": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks",
         "demo": null,
         "caseStudy": "content/case-studies/adversarial-dnn.md",
-        "notebook": null,
+        "notebook": "https://nbviewer.org/github/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
         "paper": null
       },
       "images": [
@@ -418,6 +458,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
+        "defaultBranch": "main",
         "language": "Jupyter Notebook",
         "stars": 0,
         "forks": 0,
@@ -453,6 +494,7 @@
         "demo": null,
         "caseStudy": null,
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -461,6 +503,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "AspNetCore.Docs",
+        "defaultBranch": null,
         "language": null,
         "stars": null,
         "forks": null,
@@ -500,6 +543,7 @@
         "demo": null,
         "caseStudy": "content/case-studies/boomi.md",
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -508,6 +552,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Boomi",
+        "defaultBranch": "master",
         "language": "Shell",
         "stars": 0,
         "forks": 0,
@@ -543,6 +588,7 @@
         "demo": null,
         "caseStudy": null,
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -551,6 +597,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "deploy.github.io",
+        "defaultBranch": "main",
         "language": "HTML",
         "stars": 0,
         "forks": 0,
@@ -592,6 +639,7 @@
         "demo": null,
         "caseStudy": "content/case-studies/netcore-microservices.md",
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -600,6 +648,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "MicroservicesUsingNetCore",
+        "defaultBranch": "master",
         "language": "C#",
         "stars": 0,
         "forks": 0,
@@ -636,6 +685,7 @@
         "demo": null,
         "caseStudy": "content/case-studies/node-ecom.md",
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -644,6 +694,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "Node-E-Com-Use-Case-",
+        "defaultBranch": "master",
         "language": "JavaScript",
         "stars": 0,
         "forks": 1,
@@ -671,6 +722,7 @@
         "demo": null,
         "caseStudy": null,
         "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -679,6 +731,7 @@
       "github": {
         "owner": "REDEVL4",
         "repo": "portfolio-static-ai",
+        "defaultBranch": "main",
         "language": "JavaScript",
         "stars": 0,
         "forks": 0,
@@ -686,7 +739,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-03-20T17:51:39Z"
+        "updatedAt": "2026-03-21T04:22:23Z"
       }
     }
   ],

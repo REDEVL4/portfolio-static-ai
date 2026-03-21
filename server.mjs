@@ -137,7 +137,7 @@ async function callOpenAIJson({ systemPrompt, userPrompt }) {
 
   if (!response.ok) {
     const detail = await response.text();
-    // console.error("OpenAI API error detail:", detail);
+    console.error("OpenAI API error detail:", detail);
     throw new Error(`OpenAI request failed (${response.status}): ${detail}`);
   }
 
@@ -154,14 +154,9 @@ function fallbackInsights(project) {
   return {
     source: "fallback",
     summary: project.summary || "Project summary unavailable.",
-    differentiators: project.highlights || [],
-    recruiterPitch: `${project.title} is a ${project.type || "project"} focused on ${project.tags?.join(", ") || "applied engineering"}.`,
-    interviewTalkingPoints: [
-      "Explain the problem, constraints, and expected users.",
-      "Walk through the architecture and technical tradeoffs.",
-      "Describe the results, impact, and next production step."
-    ],
-    suggestedResumeBullets: (project.highlights || []).map((item) => `${project.title}: ${item}`),
+    whyItMatters: `${project.title} shows how I approach ${project.type?.toLowerCase() || "engineering"} work with measurable structure, technical depth, and clear outcomes.`,
+    technicalHighlights: project.highlights || [],
+    keyOutcomes: (project.highlights || []).map((item) => `${project.title}: ${item}`),
     note: process.env.OPENAI_API_KEY
       ? "AI insight generation failed, so a deterministic fallback summary is shown."
       : "OPENAI_API_KEY is not set, so a deterministic fallback summary is shown."
@@ -176,8 +171,8 @@ async function buildProjectInsights(project, context) {
 
   const systemPrompt = [
     "You generate concise but high-signal portfolio project briefs.",
-    "Return valid JSON with keys: summary, differentiators, recruiterPitch, interviewTalkingPoints, suggestedResumeBullets.",
-    "Each array should contain 3 to 5 short strings.",
+    "Return valid JSON with keys: summary, whyItMatters, technicalHighlights, keyOutcomes.",
+    "technicalHighlights and keyOutcomes should contain 3 to 5 short strings.",
     "Do not invent metrics that are not supported by context."
   ].join(" ");
 

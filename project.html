@@ -58,13 +58,13 @@
           <div class="mt-4 ai-panel">
             <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
               <div>
-                <h2 class="h6 fw-semibold mb-1">AI Project Brief</h2>
-                <div class="small text-secondary">Generated from project data, GitHub, LinkedIn profile data, and optional Job Farming notes.</div>
+                <h2 class="h6 fw-semibold mb-1">AI Project Snapshot</h2>
+                <div class="small text-secondary">A visitor-facing summary generated from project data, GitHub, LinkedIn profile data, and optional Job Farming notes.</div>
               </div>
-              <button class="btn btn-sm btn-outline-light" id="refreshAiInsights" type="button">Refresh AI Brief</button>
+              <button class="btn btn-sm btn-outline-light" id="refreshAiInsights" type="button">Refresh Snapshot</button>
             </div>
             <div id="aiInsights" class="mt-3">
-              <div class="small text-secondary">Loading AI brief...</div>
+              <div class="small text-secondary">Loading project snapshot...</div>
             </div>
           </div>
 
@@ -75,10 +75,10 @@
 
           <div class="mt-4" id="notebookWrap" style="display:none;">
             <h2 class="h6 fw-semibold">Notebook Output</h2>
-            <div class="ratio ratio-16x9 border rounded-3 overflow-hidden">
+            <div class="notebook-shell">
               <iframe id="notebookFrame" title="Notebook output" loading="lazy"></iframe>
             </div>
-            <div class="small text-secondary mt-2">If the iframe is blocked by your browser, open the notebook directly.</div>
+            <div class="small text-secondary mt-2" id="notebookNote">If the embedded view is blocked by your browser, open the notebook directly.</div>
           </div>
         </div>
       </div>

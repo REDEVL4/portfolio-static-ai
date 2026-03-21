@@ -1,8 +1,9 @@
 {
   "headline": "Data Scientist | Applied ML and Deep Learning | M.S. Data Science (UHCL) | Ex-TCS | Ex-Hexagon | Python | SQL | Azure | PyTorch | scikit-learn | Open to Work",
   "about": [
-    "I am a data scientist with a developer's mindset. With 2.5+ years of experience building cloud-native systems, I bridge the gap between complex datasets and production-ready applications that support dependable, decision-ready workflows.",
-    "Recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. Before my master's at UHCL, I shipped production-grade integrations across Azure, .NET, Node.js, Docker, KQL, Splunk, and enterprise data systems."
+    "I am a data scientist with a developer's mindset and 2.5+ years of prior experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs.",
+    "Before my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, and measurable business or research outcomes.",
+    "My recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale Houston crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. I am currently exploring Data Scientist, Applied ML, Analytics Engineer, and Data Engineer roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
   ],
   "experience": [
     {

@@ -50,11 +50,62 @@ async function fetchGithubJson(url) {
   return response.json();
 }
 
-function mergeProject(override, repo, username, featuredRepos) {
+function scoreNotebookPath(notebookPath) {
+  const normalized = notebookPath.toLowerCase();
+  let score = 0;
+
+  if (!normalized.includes("/")) {
+    score += 4;
+  }
+  if (normalized.includes("complete")) {
+    score += 3;
+  }
+  if (normalized.includes("final")) {
+    score += 2;
+  }
+  if (normalized.includes("classification") || normalized.includes("pipeline")) {
+    score += 1;
+  }
+
+  score -= normalized.length / 500;
+  return score;
+}
+
+async function findNotebookAsset(username, repo) {
+  if (!repo?.name || !repo?.default_branch) {
+    return null;
+  }
+
+  try {
+    const tree = await fetchGithubJson(
+      `https://api.github.com/repos/${username}/${repo.name}/git/trees/${repo.default_branch}?recursive=1`
+    );
+
+    const notebook = (tree.tree || [])
+      .filter((item) => item.type === "blob")
+      .filter((item) => item.path?.toLowerCase().endsWith(".ipynb") && !item.path.includes(".ipynb_checkpoints"))
+      .sort((left, right) => scoreNotebookPath(right.path) - scoreNotebookPath(left.path))[0];
+
+    if (!notebook) {
+      return null;
+    }
+
+    return {
+      path: notebook.path,
+      viewerUrl: `https://nbviewer.org/github/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`,
+      sourceUrl: `https://github.com/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`
+    };
+  } catch {
+    return null;
+  }
+}
+
+function mergeProject(override, repo, username, featuredRepos, notebookAsset) {
   const repoUrl = repo?.html_url || `https://github.com/${username}/${override.repo}`;
   const github = {
     owner: username,
     repo: repo?.name || override.repo,
+    defaultBranch: repo?.default_branch || null,
     language: repo?.language || null,
     stars: repo?.stargazers_count ?? null,
     forks: repo?.forks_count ?? null,
@@ -79,7 +130,8 @@ function mergeProject(override, repo, username, featuredRepos) {
       github: repoUrl,
       demo: override.links?.demo || github.homepage || null,
       caseStudy: override.links?.caseStudy || null,
-      notebook: override.links?.notebook || null,
+      notebook: notebookAsset?.viewerUrl || override.links?.notebook || null,
+      notebookSource: notebookAsset?.sourceUrl || override.links?.notebookSource || null,
       paper: override.links?.paper || null
     },
     images: override.images || ["assets/img/placeholder-1.svg"],
@@ -118,8 +170,9 @@ async function main() {
     if (override?.hidden) {
       continue;
     }
+    const notebookAsset = await findNotebookAsset(username, repo);
     discoveredProjects.push(
-      mergeProject(override || { repo: repo.name, title: repo.name }, repo, username, featuredRepos)
+      mergeProject(override || { repo: repo.name, title: repo.name }, repo, username, featuredRepos, notebookAsset)
     );
   }
 
@@ -127,7 +180,7 @@ async function main() {
     if (repoMap.has(override.repo) || override.hidden) {
       continue;
     }
-    discoveredProjects.push(mergeProject(override, null, username, featuredRepos));
+    discoveredProjects.push(mergeProject(override, null, username, featuredRepos, null));
   }
 
   discoveredProjects.sort((left, right) => {

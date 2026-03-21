@@ -28,13 +28,10 @@ function renderGallery(images = [], title = "") {
 }
 
 function renderAiInsights(insights) {
-  const differentiators = (insights.differentiators || [])
+  const technicalHighlights = (insights.technicalHighlights || [])
     .map((item) => `<li>${escapeHtml(item)}</li>`)
     .join("");
-  const talkingPoints = (insights.interviewTalkingPoints || [])
-    .map((item) => `<li>${escapeHtml(item)}</li>`)
-    .join("");
-  const bullets = (insights.suggestedResumeBullets || [])
+  const outcomes = (insights.keyOutcomes || [])
     .map((item) => `<li>${escapeHtml(item)}</li>`)
     .join("");
 
@@ -42,26 +39,20 @@ function renderAiInsights(insights) {
     <div class="ai-meta">Source: ${escapeHtml(insights.source || "unknown")}</div>
     <p class="detail-summary mt-2 mb-3">${escapeHtml(insights.summary || "")}</p>
     <div class="content-card mb-3">
-      <div class="content-card-title">Recruiter Pitch</div>
-      <p class="mb-0 mt-2 text-secondary">${escapeHtml(insights.recruiterPitch || "")}</p>
+      <div class="content-card-title">Why It Matters</div>
+      <p class="mb-0 mt-2 text-secondary">${escapeHtml(insights.whyItMatters || "")}</p>
     </div>
     <div class="row g-3">
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="content-card">
-          <div class="content-card-title">Differentiators</div>
-          <ul class="detail-list mt-2">${differentiators}</ul>
+          <div class="content-card-title">Technical Highlights</div>
+          <ul class="detail-list mt-2">${technicalHighlights}</ul>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="content-card">
-          <div class="content-card-title">Interview Talking Points</div>
-          <ul class="detail-list mt-2">${talkingPoints}</ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="content-card">
-          <div class="content-card-title">Resume Bullets</div>
-          <ul class="detail-list mt-2">${bullets}</ul>
+          <div class="content-card-title">Key Outcomes</div>
+          <ul class="detail-list mt-2">${outcomes}</ul>
         </div>
       </div>
     </div>
@@ -75,7 +66,7 @@ async function loadAiInsights(slug) {
     return;
   }
 
-  target.innerHTML = `<div class="small text-secondary">Loading AI brief...</div>`;
+  target.innerHTML = `<div class="small text-secondary">Loading project snapshot...</div>`;
 
   try {
     const response = await fetch("/api/project-insights", {
@@ -85,14 +76,14 @@ async function loadAiInsights(slug) {
     });
 
     if (!response.ok) {
-      throw new Error("AI project brief failed");
+      throw new Error("AI project snapshot failed");
     }
 
     const data = await response.json();
     target.innerHTML = renderAiInsights(data.insights || {});
   } catch (error) {
     console.error(error);
-    target.innerHTML = `<div class="small text-secondary">AI project brief is unavailable. Start the Node server and set OPENAI_API_KEY for ChatGPT-backed enrichment.</div>`;
+    target.innerHTML = `<div class="small text-secondary">AI project snapshot is unavailable. Start the Node server and set OPENAI_API_KEY for ChatGPT-backed enrichment.</div>`;
   }
 }
 
@@ -132,7 +123,8 @@ async function init() {
   if (project.links?.github) links.push(button("GitHub", project.links.github, true));
   if (project.links?.demo) links.push(button("Demo", project.links.demo));
   if (project.links?.paper) links.push(button("Paper", project.links.paper));
-  if (project.links?.notebook) links.push(button("Notebook", project.links.notebook));
+  if (project.links?.notebook) links.push(button("Notebook Viewer", project.links.notebook));
+  if (project.links?.notebookSource) links.push(button("Notebook Source", project.links.notebookSource));
   document.getElementById("pLinks").innerHTML = links.join("");
 
   const related = data.projects
@@ -161,6 +153,10 @@ async function init() {
   if (project.links?.notebook) {
     document.getElementById("notebookWrap").style.display = "block";
     document.getElementById("notebookFrame").src = project.links.notebook;
+    const notebookNote = document.getElementById("notebookNote");
+    if (notebookNote && project.links?.notebookSource) {
+      notebookNote.innerHTML = `Embedded via nbviewer. <a class="text-decoration-none" href="${escapeHtml(project.links.notebookSource)}" target="_blank" rel="noopener">Open the source notebook on GitHub</a> if you want the original file.`;
+    }
   }
 
   document.getElementById("refreshAiInsights")?.addEventListener("click", () => {

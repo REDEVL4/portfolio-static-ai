@@ -112,6 +112,22 @@ a {
   background: rgba(255, 255, 255, 0.035);
 }
 
+.notebook-shell {
+  height: min(78vh, 980px);
+  min-height: 620px;
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.notebook-shell iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #ffffff;
+}
+
 .featured-image,
 .project-thumb {
   width: 100%;
@@ -451,5 +467,9 @@ a {
   .contact-panel {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .notebook-shell {
+    min-height: 520px;
   }
 }
