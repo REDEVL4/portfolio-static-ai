@@ -1,130 +1,209 @@
-# Static Portfolio With Generated Data
+# Govardhan Reddy Narala Portfolio
 
-This repo is a static portfolio site with a generated data layer and optional AI endpoints:
-- Frontend pages render from `data/portfolio.generated.json`
-- GitHub repositories can be synced automatically into that file
-- LinkedIn profile data is ingested from `data/linkedin-profile.json`
-- Project detail pages support Markdown case studies and notebook embeds
-- The chatbot and project detail page can call ChatGPT through a local Node server
+This repository contains my portfolio website. I built it to present my work the way I actually want it to be reviewed: through project context, system thinking, measurable outcomes, and direct links to the code and notebooks behind the work.
 
-## 1) Run locally
+The site is mostly static, but it is driven by a generated data layer so I do not have to rewrite project content by hand every time I update GitHub or my profile details. It also includes a lightweight Node server for AI-powered project summaries and the portfolio chatbot.
 
-Preferred local server:
+## What is in this project
+
+- A multi-page portfolio site built with HTML, CSS, JavaScript, and Bootstrap
+- A generated portfolio data file at `data/portfolio.generated.json`
+- A sync script that pulls project metadata from GitHub and merges it with curated overrides
+- LinkedIn/profile data managed locally through `data/linkedin-profile.json`
+- Project detail pages with case studies, architecture images, and embedded notebooks when available
+- A Node server that powers the chatbot and AI project snapshot endpoints
+
+## Project structure
+
+```text
+.
+|-- index.html
+|-- projects.html
+|-- project.html
+|-- about.html
+|-- experience.html
+|-- css/
+|-- js/
+|-- content/
+|   |-- case-studies/
+|   `-- notebooks/
+|-- data/
+|   |-- portfolio.seed.json
+|   |-- portfolio.generated.json
+|   |-- linkedin-profile.json
+|   `-- job-farming-chat.md
+|-- scripts/
+|   `-- sync-portfolio-data.mjs
+`-- server.mjs
+```
+
+## How the site works
+
+I keep the portfolio content in two layers:
+
+1. `data/portfolio.seed.json`
+   This is the curated source where I control summaries, highlights, featured projects, case study links, and presentation details.
+
+2. `data/portfolio.generated.json`
+   This file is produced by the sync script. It combines the curated seed data with GitHub repository metadata and my local profile data.
+
+That setup lets me keep the site polished without making it brittle.
+
+## Running locally
+
+Install nothing extra beyond Node unless you want notebook conversion or other local tooling.
+
+Start the site with:
+
+```bash
+npm start
+```
+
+or:
+
 ```bash
 node server.mjs
 ```
 
-Open:
-```bash
-http://localhost:3000
+Then open:
+
+```text
+http://localhost:8000
 ```
 
-The static-only options still work for simple page rendering, but AI endpoints require the Node server.
+I use the Node server because the site has two API-backed features:
 
-Use any local server only if you do not need AI features. `fetch()` needs HTTP, not `file://`.
+- `POST /api/chat`
+- `POST /api/project-insights`
 
-### Option A: Python
+If I only need to inspect static rendering, any local server works, but the AI features require `server.mjs`.
+
+## Syncing GitHub and profile data
+
+To regenerate the portfolio data:
+
 ```bash
-cd portfolio_static
-python -m http.server 8000
+npm run sync
 ```
 
-### Option B: VS Code Live Server
-Open the repo and run Live Server against the project root.
+or:
 
-## 2) Sync portfolio data
-
-Base config lives in:
-- `data/portfolio.seed.json`
-
-Optional LinkedIn source lives in:
-- `data/linkedin-profile.json`
-
-Generated output lives in:
-- `data/portfolio.generated.json`
-
-Run the sync:
 ```bash
 node scripts/sync-portfolio-data.mjs
 ```
 
-Optional:
-- Set `GITHUB_TOKEN` to avoid low anonymous rate limits.
-- New public GitHub repos for `REDEVL4` will be discovered automatically.
-- Use `projectOverrides` in `data/portfolio.seed.json` for curated fields such as `featured`, `summary`, `caseStudy`, `notebook`, and custom highlights.
+The sync script does a few things:
 
-## 3) Add case studies
-Put Markdown here:
-- `content/case-studies/<slug>.md`
+- reads `data/portfolio.seed.json`
+- reads `data/linkedin-profile.json`
+- pulls GitHub repository metadata for my account
+- auto-discovers notebooks in supported repos
+- writes the final output to `data/portfolio.generated.json`
 
-Link it in `data/portfolio.seed.json` under the matching project override:
-```json
-"caseStudy": "content/case-studies/<slug>.md"
-```
+If GitHub rate limits become a problem, I set:
 
-## 4) Add notebook outputs
-Convert a notebook to HTML:
 ```bash
-jupyter nbconvert --to html your_notebook.ipynb
+GITHUB_TOKEN=your_token_here
 ```
 
-Move the output to:
-- `content/notebooks/<slug>.html`
+## AI integration
 
-Link it in `data/portfolio.seed.json`:
-```json
-"notebook": "content/notebooks/<slug>.html"
-```
+The portfolio can use OpenAI for:
 
-## 5) Deploy
+- the chatbot
+- project-specific AI summaries on the detail page
 
-### GitHub Pages
-- Push the repo
-- Configure Pages to publish from the root
+To enable that locally:
 
-### Netlify or Cloudflare Pages
-- Build command: none
-- Publish directory: `/`
-
-## 6) LinkedIn note
-
-This repo does not scrape LinkedIn in the browser. That is not a production-grade approach because LinkedIn has no supported anonymous public profile API for this use case.
-
-The production-safe pattern here is:
-1. Export or maintain your LinkedIn profile data in `data/linkedin-profile.json`.
-2. Run the sync script.
-3. Deploy the generated static site.
-
-If you later obtain approved LinkedIn API access, extend `scripts/sync-portfolio-data.mjs` to replace the local LinkedIn source.
-
-## 7) ChatGPT integration
-
-Set:
 ```bash
 OPENAI_API_KEY=your_key_here
 ```
 
 Optional:
+
 ```bash
 OPENAI_MODEL=gpt-4o-mini
-GITHUB_TOKEN=your_github_token_here
+GITHUB_TOKEN=your_token_here
 ```
 
-The Node server provides:
-- `POST /api/chat` for the chatbot
-- `POST /api/project-insights` for AI-generated project briefs on the detail page
+If `OPENAI_API_KEY` is not set, the site falls back to deterministic local responses so the pages still work.
 
-If `OPENAI_API_KEY` is not set, the site falls back to deterministic non-AI summaries.
+## Case studies and notebooks
 
-## 8) Job Farming source
+Each project page can pull from multiple sources:
 
-I cannot access your private ChatGPT conversation history directly. To incorporate the "Job Farming" chat into the site, paste or export that chat into:
-- `data/job-farming-chat.md`
+- GitHub repository metadata
+- local Markdown case studies in `content/case-studies/`
+- embedded notebooks discovered from GitHub repos
+- architecture images under `assets/img/`
 
-The AI endpoints will automatically use that file as additional context once it exists.
+For case studies, I add a markdown file and point to it from the project override.
 
-## Next steps
-1. Replace placeholder images with real screenshots or GIFs.
-2. Tighten `data/linkedin-profile.json` to match your final resume and LinkedIn.
-3. Paste the Job Farming chat into `data/job-farming-chat.md`.
-4. Run `node scripts/sync-portfolio-data.mjs` whenever GitHub or LinkedIn source data changes.
+For notebooks, the sync script tries to find `.ipynb` files in the GitHub repo automatically and exposes them through an embeddable notebook viewer link.
+
+## LinkedIn note
+
+I am not scraping LinkedIn from the browser. That is not a stable or production-safe approach.
+
+Instead, I maintain my profile details in:
+
+```text
+data/linkedin-profile.json
+```
+
+That keeps the site reliable and makes updates predictable.
+
+## Job Farming notes
+
+This project also supports an optional notes file:
+
+```text
+data/job-farming-chat.md
+```
+
+If that file exists, the AI endpoints use it as additional context when generating answers and project summaries.
+
+## Why I built it this way
+
+I wanted the portfolio to reflect how I actually work. Most portfolio sites look good but become painful to maintain. I wanted something that stays structured, can reuse GitHub and profile data, and still lets me write custom case-study content where depth matters.
+
+The result is a site that is simple to host, easy to refresh, and flexible enough to present research projects, data work, backend engineering work, and notebook-heavy projects in one place.
+
+## Deploying on Render from GitHub
+
+This project deploys cleanly on Render as a Node web service.
+
+### Option 1: Render Blueprint (recommended)
+
+This repo includes `render.yaml`, so Render can auto-configure build/start settings.
+
+1. Push this repository to GitHub.
+2. In Render, click New > Blueprint.
+3. Connect your GitHub account and select this repository.
+4. Render will detect `render.yaml` and create the service.
+5. In Render dashboard, add secret environment variables:
+   - `OPENAI_API_KEY`
+   - `GITHUB_TOKEN` (optional)
+6. Deploy.
+
+### Option 2: Manual Web Service setup
+
+If you do not want to use Blueprint:
+
+1. In Render, click New > Web Service.
+2. Connect this GitHub repository.
+3. Use these settings:
+   - Runtime: Node
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+4. Add environment variables:
+   - `OPENAI_API_KEY` (required for AI responses)
+   - `OPENAI_MODEL` (optional, default is `gpt-4o-mini`)
+   - `GITHUB_TOKEN` (optional, helps with GitHub API limits)
+5. Deploy.
+
+### Render notes
+
+- Render injects `PORT` automatically. `server.mjs` already reads it, so no port changes are needed.
+- If `OPENAI_API_KEY` is missing, the chatbot/project insight endpoints fall back to deterministic local responses.
+- Run `npm run sync` and commit updated `data/portfolio.generated.json` before each deploy when your project/profile data changes.
