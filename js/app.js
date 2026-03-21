@@ -80,11 +80,14 @@ async function renderHome() {
   }
 
   if (metrics) {
-    metrics.innerHTML = [
-      statCard("Projects", String(data.meta?.projectCount || 0)),
-      statCard("Featured", String(data.meta?.featuredCount || 0)),
-      statCard("Location", site.location || "Available remotely")
-    ].join("");
+    const metricItems = site.heroMetrics?.length
+      ? site.heroMetrics
+      : [
+          { label: "Projects", value: String(data.meta?.projectCount || 0) },
+          { label: "Featured", value: String(data.meta?.featuredCount || 0) },
+          { label: "Location", value: site.location || "Available remotely" }
+        ];
+    metrics.innerHTML = metricItems.map((item) => statCard(item.label, item.value)).join("");
   }
 
   if (slides) {

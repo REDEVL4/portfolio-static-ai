@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T17:37:41.754Z",
+  "generatedAt": "2026-03-21T04:05:13.151Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
@@ -13,6 +13,20 @@
     "heroSummary": [
       "Master's in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
       "This portfolio is built around case studies: research rigor, system design tradeoffs, and the measurable outcomes behind the work."
+    ],
+    "heroMetrics": [
+      {
+        "label": "Experience",
+        "value": "2.6+ years"
+      },
+      {
+        "label": "Production scale",
+        "value": "10M+ tx/day"
+      },
+      {
+        "label": "Large-scale ML",
+        "value": "3.6M+ records"
+      }
     ],
     "focusAreas": [
       "Applied machine learning",
@@ -204,7 +218,7 @@
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-3.svg"
+        "assets/img/disease-gcn-architecture.png"
       ],
       "github": {
         "owner": "REDEVL4",
@@ -252,7 +266,7 @@
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-1.svg"
+        "assets/img/houston-crime-architecture.png"
       ],
       "github": {
         "owner": "REDEVL4",
@@ -301,7 +315,7 @@
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-2.svg"
+        "assets/img/book-genre-architecture.png"
       ],
       "github": {
         "owner": "REDEVL4",
@@ -348,7 +362,7 @@
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-2.svg"
+        "assets/img/zero-hunger-architecture.png"
       ],
       "github": {
         "owner": "REDEVL4",
@@ -399,7 +413,7 @@
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-3.svg"
+        "assets/img/adversarial-dnn-architecture.png"
       ],
       "github": {
         "owner": "REDEVL4",
@@ -672,7 +686,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-03-20T15:48:48Z"
+        "updatedAt": "2026-03-20T17:51:39Z"
       }
     }
   ],

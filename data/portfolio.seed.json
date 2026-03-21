@@ -13,6 +13,11 @@
       "Master's in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
       "This portfolio is built around case studies: research rigor, system design tradeoffs, and the measurable outcomes behind the work."
     ],
+    "heroMetrics": [
+      { "label": "Experience", "value": "2.6+ years" },
+      { "label": "Production scale", "value": "10M+ tx/day" },
+      { "label": "Large-scale ML", "value": "3.6M+ records" }
+    ],
     "focusAreas": [
       "Applied machine learning",
       "Data engineering",
@@ -84,7 +89,7 @@
       "links": {
         "caseStudy": "content/case-studies/disease-gcn.md"
       },
-      "images": ["assets/img/placeholder-3.svg"]
+      "images": ["assets/img/disease-gcn-architecture.png"]
     },
     {
       "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
@@ -103,7 +108,7 @@
       "links": {
         "caseStudy": "content/case-studies/zero-hunger.md"
       },
-      "images": ["assets/img/placeholder-2.svg"]
+      "images": ["assets/img/zero-hunger-architecture.png"]
     },
     {
       "repo": "Houston-Crime-Type-Classification-2010-2024-",
@@ -123,7 +128,7 @@
         "caseStudy": "content/case-studies/houston-crime.md",
         "notebook": "content/notebooks/houston-crime.html"
       },
-      "images": ["assets/img/placeholder-1.svg"]
+      "images": ["assets/img/houston-crime-architecture.png"]
     },
     {
       "repo": "Multimodal-Book-Genre-Classification-Clustering",
@@ -142,7 +147,7 @@
       "links": {
         "caseStudy": "content/case-studies/book-genre.md"
       },
-      "images": ["assets/img/placeholder-2.svg"]
+      "images": ["assets/img/book-genre-architecture.png"]
     },
     {
       "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
@@ -160,7 +165,7 @@
       "links": {
         "caseStudy": "content/case-studies/adversarial-dnn.md"
       },
-      "images": ["assets/img/placeholder-3.svg"]
+      "images": ["assets/img/adversarial-dnn-architecture.png"]
     },
     {
       "repo": "Boomi",
