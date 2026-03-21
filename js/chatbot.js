@@ -64,12 +64,42 @@ async function initChatbot() {
   const data = await loadPortfolioData();
 
   root.innerHTML = `
-    <button class="btn btn-light chatbot-btn shadow-lg" id="cbOpen">Ask the portfolio</button>
+    <button class="chatbot-btn" id="cbOpen" aria-label="Open portfolio assistant">
+      <span class="chatbot-trigger">
+        <span class="robot-core">
+          <span class="robot-ring robot-ring--outer"></span>
+          <span class="robot-ring robot-ring--inner"></span>
+          <span class="robot-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="robotGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#9be7c4"></stop>
+                  <stop offset="100%" stop-color="#7bb7ff"></stop>
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="28" fill="rgba(8,17,31,0.86)" stroke="url(#robotGlow)" stroke-width="2"></circle>
+              <path d="M24 22h16a6 6 0 0 1 6 6v10a8 8 0 0 1-8 8H26a8 8 0 0 1-8-8V28a6 6 0 0 1 6-6Z" fill="url(#robotGlow)" opacity="0.95"></path>
+              <path d="M32 14v8" stroke="#9be7c4" stroke-width="3" stroke-linecap="round"></path>
+              <circle cx="32" cy="11" r="3" fill="#9be7c4"></circle>
+              <circle cx="27" cy="33" r="3.2" fill="#08111f"></circle>
+              <circle cx="37" cy="33" r="3.2" fill="#08111f"></circle>
+              <path d="M26 40c2.2 2 9.8 2 12 0" stroke="#08111f" stroke-width="2.6" stroke-linecap="round"></path>
+              <path d="M19 29h-3" stroke="#7bb7ff" stroke-width="2.6" stroke-linecap="round"></path>
+              <path d="M48 29h-3" stroke="#7bb7ff" stroke-width="2.6" stroke-linecap="round"></path>
+            </svg>
+          </span>
+        </span>
+        <span class="chatbot-btn-label">
+          <span class="chatbot-btn-title">Portfolio Assistant</span>
+          <span class="chatbot-btn-subtitle">Ask about projects or experience</span>
+        </span>
+      </span>
+    </button>
     <div class="chatbot-panel" id="cbPanel" aria-hidden="true">
       <div class="chatbot-header">
         <div>
           <div class="fw-semibold">Portfolio Assistant</div>
-          <div class="small text-white-50">Configured with OpenAPI</div>
+          <div class="small text-white-50">Configured with OpenAI</div>
         </div>
         <button class="btn btn-sm btn-outline-light" id="cbClose">Close</button>
       </div>
