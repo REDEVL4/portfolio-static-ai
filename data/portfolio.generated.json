@@ -1,18 +1,19 @@
 {
-  "generatedAt": "2026-03-21T17:11:26.009Z",
+  "generatedAt": "2026-03-24T19:04:07.108Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
     "location": "Greater Houston, TX",
+    "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
     "githubUsername": "REDEVL4",
     "githubUrl": "https://github.com/REDEVL4",
     "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
     "resumeUrl": "assets/resume.pdf",
-    "heroIntro": "I build production-grade data products, ML prototypes, and backend systems that move from research to reliable delivery.",
+    "heroIntro": "I turn complex data into reliable analytics, machine learning, and production-ready systems.",
     "heroSummary": [
-      "M.S. in Data Science with prior enterprise backend and integration engineering experience across Azure, .NET, SQL, observability, and data-intensive services.",
-      "This portfolio is built around case studies that show how I move from messy source systems and raw data to dependable analytics, ML experimentation, and production-minded delivery."
+      "Data Scientist with 2.6+ years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
+      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and case studies that show how I move from messy data to dependable delivery."
     ],
     "heroMetrics": [
       {
@@ -24,9 +25,19 @@
         "value": "10M+ tx/day"
       },
       {
-        "label": "Large-scale ML",
-        "value": "3.6M+ records"
+        "label": "Query improvement",
+        "value": "45% lower latency"
+      },
+      {
+        "label": "Incident response",
+        "value": "40% faster triage"
       }
+    ],
+    "heroProofPoints": [
+      "Built systems supporting 10M+ daily transactions with 99.9% reliability.",
+      "Reduced SQL query latency by 45% across data-intensive services.",
+      "Shipped ML and analytics projects on 3.6M+ records and 40K+ medical images.",
+      "Combined backend engineering depth with analytics, ML, and observability."
     ],
     "focusAreas": [
       "Applied machine learning",
@@ -34,6 +45,20 @@
       "Backend systems",
       "Cloud integrations",
       "Observability and reliability engineering"
+    ],
+    "homeValueCards": [
+      {
+        "title": "Data To Delivery",
+        "copy": "I work well across the full path from ingestion, validation, and feature engineering to modeling, dashboards, and operational output."
+      },
+      {
+        "title": "Production Context",
+        "copy": "My engineering background means I do not treat analytics in isolation. I think about reliability, system constraints, latency, and maintainability from the start."
+      },
+      {
+        "title": "Research With Practical Value",
+        "copy": "My graduate projects are not toy experiments. They are framed around robustness, scale, validation, and explainable impact."
+      }
     ],
     "aboutSections": [
       {
@@ -721,8 +746,8 @@
         "github": "https://github.com/REDEVL4/portfolio-static-ai",
         "demo": null,
         "caseStudy": null,
-        "notebook": null,
-        "notebookSource": null,
+        "notebook": "https://nbviewer.org/github/REDEVL4/portfolio-static-ai/blob/main/AA_v4_adversarial_eval.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/AA_v4_adversarial_eval.ipynb",
         "paper": null
       },
       "images": [
@@ -739,7 +764,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-03-21T04:22:23Z"
+        "updatedAt": "2026-03-21T20:28:57Z"
       }
     }
   ],

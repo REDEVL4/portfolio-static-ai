@@ -32,10 +32,31 @@ function projectSlide(project, active) {
 
 function statCard(label, value) {
   return `
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-xl-3">
       <div class="metric-card">
         <div class="metric-label">${escapeHtml(label)}</div>
         <div class="metric-value">${escapeHtml(value)}</div>
+      </div>
+    </div>
+  `;
+}
+
+function proofCard(text) {
+  return `
+    <div class="proof-card">
+      <span class="proof-dot"></span>
+      <span>${escapeHtml(text)}</span>
+    </div>
+  `;
+}
+
+function valueCard(item) {
+  return `
+    <div class="col-lg-4">
+      <div class="info-panel h-100 value-panel">
+        <div class="section-kicker">Core Strength</div>
+        <h2 class="h4">${escapeHtml(item.title)}</h2>
+        <p class="mb-0">${escapeHtml(item.copy)}</p>
       </div>
     </div>
   `;
@@ -56,9 +77,16 @@ async function renderHome() {
   const metrics = document.getElementById("heroMetrics");
   const slides = document.getElementById("featuredSlides");
   const focus = document.getElementById("focusAreas");
+  const proof = document.getElementById("heroProof");
+  const valueCards = document.getElementById("homeValueCards");
+  const heroLocation = document.getElementById("heroLocation");
+  const heroPhone = document.getElementById("heroPhone");
+  const heroEmail = document.getElementById("heroEmail");
+  const heroResumeLink = document.getElementById("heroResumeLink");
+  const resumePanelLink = document.getElementById("resumePanelLink");
 
   if (headline) {
-    headline.textContent = profile.headline || site.headline || "";
+    headline.textContent = site.headline || profile.headline || "";
   }
 
   if (intro) {
@@ -66,7 +94,7 @@ async function renderHome() {
   }
 
   if (summary) {
-    summary.innerHTML = (profile.about || site.heroSummary || [])
+    summary.innerHTML = (site.heroSummary || profile.about || [])
       .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
       .join("");
   }
@@ -75,8 +103,16 @@ async function renderHome() {
     skills.innerHTML = (site.skills || []).map(badge).join("");
   }
 
+  if (proof) {
+    proof.innerHTML = (site.heroProofPoints || []).map(proofCard).join("");
+  }
+
   if (focus) {
     focus.innerHTML = (site.focusAreas || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+  }
+
+  if (valueCards) {
+    valueCards.innerHTML = (site.homeValueCards || []).map(valueCard).join("");
   }
 
   if (metrics) {
@@ -116,8 +152,30 @@ async function renderHome() {
     resumeLink.href = site.resumeUrl || "#";
   }
 
+  if (heroResumeLink) {
+    heroResumeLink.href = site.resumeUrl || "#";
+  }
+
+  if (resumePanelLink) {
+    resumePanelLink.href = site.resumeUrl || "#";
+  }
+
+  if (heroLocation) {
+    heroLocation.textContent = site.location || "";
+  }
+
+  if (heroPhone) {
+    heroPhone.textContent = site.phone || "Available on request";
+    heroPhone.href = site.phone ? `tel:${site.phone.replaceAll(" ", "")}` : "#";
+  }
+
+  if (heroEmail) {
+    heroEmail.textContent = site.email || "";
+    heroEmail.href = site.email ? `mailto:${site.email}` : "#";
+  }
+
   if (contactMeta) {
-    contactMeta.textContent = [site.location, site.email, "Open to Work"]
+    contactMeta.textContent = [site.location, site.phone, site.email, "Open to Work"]
       .filter(Boolean)
       .join(" | ");
   }

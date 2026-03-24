@@ -40,26 +40,52 @@
               <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
             </div>
             <div class="d-flex flex-wrap gap-2 mt-4" id="heroSkills"></div>
+            <div class="hero-proof-grid mt-4" id="heroProof"></div>
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="featured-panel">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <div>
-                <div class="section-kicker">Featured work</div>
-                <h2 class="h4 mb-0">Case studies with repo sync</h2>
+          <div class="d-grid gap-4">
+            <div class="hero-aside-card">
+              <div class="section-kicker">At a glance</div>
+              <h2 class="h4 mb-2">Data scientist with engineering depth</h2>
+              <p class="mb-3 text-secondary">Built for teams that need someone who can clean, model, optimize, and explain complex data systems end to end.</p>
+              <div class="mini-fact-grid">
+                <div class="mini-fact-card">
+                  <div class="mini-fact-label">Location</div>
+                  <div class="mini-fact-value" id="heroLocation">Greater Houston, TX</div>
+                </div>
+                <div class="mini-fact-card">
+                  <div class="mini-fact-label">Phone</div>
+                  <a class="mini-fact-link" id="heroPhone" href="#">Available on resume</a>
+                </div>
+                <div class="mini-fact-card">
+                  <div class="mini-fact-label">Email</div>
+                  <a class="mini-fact-link" id="heroEmail" href="#">reddygovardhan6826@gmail.com</a>
+                </div>
+                <div class="mini-fact-card">
+                  <div class="mini-fact-label">Resume</div>
+                  <a class="mini-fact-link" id="heroResumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+                </div>
               </div>
             </div>
-            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" id="featuredSlides"></div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            <div class="featured-panel">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <div class="section-kicker">Featured work</div>
+                  <h2 class="h4 mb-0">Case studies with repo sync</h2>
+                </div>
+              </div>
+              <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="featuredSlides"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -89,6 +115,24 @@
             <p class="text-secondary">This portfolio is organized around the work I want hiring teams to see: SQL and data quality depth, cloud and integration engineering, and ML projects that show real experimentation rather than toy examples.</p>
             <ul class="focus-list" id="focusAreas"></ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="row g-4" id="homeValueCards"></div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="resume-panel">
+        <div>
+          <div class="section-kicker">Resume</div>
+          <h2 class="h3 mb-2">Need the concise version?</h2>
+          <p class="mb-0 text-secondary">Download the latest resume for a compact view of my experience, project highlights, technical stack, and measurable outcomes.</p>
+        </div>
+        <div class="d-flex gap-2 flex-wrap">
+          <a class="btn btn-light" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+          <a class="btn btn-outline-light" href="experience.html">View Experience</a>
         </div>
       </div>
     </section>
