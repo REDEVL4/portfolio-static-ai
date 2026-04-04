@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-24T19:04:07.108Z",
+  "generatedAt": "2026-04-04T18:17:56.587Z",
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
+    "headline": "Data scientist and software engineer building applied ML, NLP, and scalable data systems on large datasets.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -12,13 +12,13 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "I turn complex data into reliable analytics, machine learning, and production-ready systems.",
     "heroSummary": [
-      "Data Scientist with 2.6+ years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
-      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and case studies that show how I move from messy data to dependable delivery."
+      "Data Scientist with about 3 years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
+      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and systems work that moves from messy inputs to dependable delivery."
     ],
     "heroMetrics": [
       {
         "label": "Experience",
-        "value": "2.6+ years"
+        "value": "~3 years"
       },
       {
         "label": "Production scale",
@@ -77,7 +77,7 @@
     "currentStatus": [
       {
         "title": "Open To Work",
-        "copy": "Actively pursuing Data Scientist, Applied ML, Analytics Engineer, and Data Engineer opportunities."
+        "copy": "Actively pursuing Data Scientist, Applied ML, ML Engineer, Software Engineer, and Data Engineer opportunities."
       },
       {
         "title": "What I Want To Build",
@@ -92,7 +92,11 @@
       "Python",
       "SQL",
       "PyTorch",
+      "NLP",
       "Spark",
+      "Next.js",
+      "GraphQL",
+      "OpenAI",
       "Azure",
       "Azure Data Factory",
       "Durable Functions",
@@ -105,19 +109,19 @@
       "AppDynamics"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 12
+    "githubPublicRepos": 15
   },
   "profile": {
-    "headline": "Data Scientist | Applied ML and Deep Learning | M.S. Data Science (UHCL) | Ex-TCS | Ex-Hexagon | Python | SQL | Azure | PyTorch | scikit-learn | Open to Work",
+    "headline": "Data Scientist | Applied ML, NLP & Deep Learning | Scalable ML & data systems on large datasets | Python | SQL | PyTorch | Spark",
     "about": [
-      "I am a data scientist with a developer's mindset and 2.5+ years of prior experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs.",
-      "Before my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, and measurable business or research outcomes.",
-      "My recent work includes medical AI robustness research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, large-scale Houston crime classification on 3.6M+ records, multimodal book-genre modeling, and big-data hunger analytics. I am currently exploring Data Scientist, Applied ML, Analytics Engineer, and Data Engineer roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
+      "I am a data scientist with a developer's mindset and about 3 years of experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs for real operating environments.",
+      "Before and during my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, system design, and measurable outcomes.",
+      "My recent work includes adversarial medical-imaging research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, Houston crime classification on 3.6M+ records, multimodal book-genre modeling, big-data hunger analytics, a real-time commerce platform, and an LLM-powered LinkedIn outreach agent. I am currently exploring Data Scientist, Applied ML, ML Engineer, and Data Engineering roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
     ],
     "experience": [
       {
         "company": "University of Houston-Clear Lake",
-        "role": "Graduate Teaching Assistant - Databases, Big Data and Python",
+        "role": "Graduate Teaching Assistant",
         "location": "Texas, United States",
         "start": "2025-08",
         "end": "2025-12",
@@ -129,7 +133,7 @@
       },
       {
         "company": "Hexagon Manufacturing Intelligence",
-        "role": "Integration Developer",
+        "role": "Software Engineer",
         "location": "India",
         "start": "2023-01",
         "end": "2023-12",
@@ -143,7 +147,7 @@
       },
       {
         "company": "Tata Consultancy Services",
-        "role": "Azure Developer",
+        "role": "Software Engineer",
         "location": "India",
         "start": "2021-07",
         "end": "2022-12",
@@ -177,16 +181,15 @@
       }
     ],
     "topSkills": [
-      "Convolutional Neural Networks (CNN)",
-      "Natural Language Processing (NLP)",
-      "Unsupervised Learning / Clustering",
-      "K-Means",
-      "PCA",
-      "Silhouette Score"
+      "Data Engineering / ETL / ELT",
+      "PyTorch",
+      "SQL"
     ],
     "certifications": [
+      "Programming for Everybody (Getting Started with Python)",
+      "IBM Data Analyst Professional Certificate",
       "Autodesk Certified Professional: AutoCAD for Design and Drafting Exam Prep",
-      "Programming for Everybody (Getting Started with Python)"
+      "Introduction to Data Engineering"
     ],
     "honors": [
       "On The Spot Award"
@@ -194,52 +197,221 @@
   },
   "projects": [
     {
-      "slug": "civicquest",
-      "repo": "CivicQuest",
-      "title": "CivicQuest",
+      "slug": "realtime-commerce-platform",
+      "repo": "realtime-commerce-platform",
+      "title": "Realtime Commerce Platform",
       "featured": true,
       "type": "Full Stack",
-      "summary": "AI-supported community engagement platform for volunteering discovery, sustainability learning, and guided interaction.",
+      "summary": "Docker-first marketplace platform that combines customer and admin apps, service separation, event-driven workflows, search, recommendations, and fulfillment into a realistic end-to-end commerce system.",
       "tags": [
-        "Azure",
-        "Full Stack",
-        "Community",
-        "Chatbot"
+        "Next.js",
+        "Microservices",
+        "GraphQL",
+        "Redis",
+        "Event-Driven"
       ],
       "stack": [
         "Node.js",
-        "EJS",
-        "Azure Bot",
-        "Azure"
+        "Next.js",
+        ".NET",
+        "FastAPI",
+        "GraphQL",
+        "Redis",
+        "Docker"
       ],
       "highlights": [
-        "AI-powered community engagement platform",
-        "Volunteer discovery and registration journeys",
-        "Gamified sustainability learning plus Azure bot integration"
+        "Expanded an earlier Node.js commerce project into a multi-service platform with gateway, GraphQL BFF, recommendation service, fulfillment service, worker, and operational admin surface.",
+        "Built separate customer and admin web applications with live cart updates, search and filtering, order tracking, warehouse-linked inventory flows, and profile management.",
+        "Modeled a more realistic commerce architecture using MySQL, Redis, RabbitMQ, Redpanda, and Meilisearch to support asynchronous fulfillment, caching, event flows, and product discovery."
       ],
       "links": {
-        "github": "https://github.com/REDEVL4/CivicQuest",
+        "github": "https://github.com/REDEVL4/realtime-commerce-platform",
         "demo": null,
-        "caseStudy": "content/case-studies/civicquest.md",
+        "caseStudy": "content/case-studies/realtime-commerce-platform.md",
         "notebook": null,
         "notebookSource": null,
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-1.svg"
+        "assets/img/realtime-commerce-platform-diagram.svg"
       ],
       "github": {
         "owner": "REDEVL4",
-        "repo": "CivicQuest",
+        "repo": "realtime-commerce-platform",
         "defaultBranch": "main",
-        "language": "EJS",
+        "language": "JavaScript",
         "stars": 0,
         "forks": 0,
         "openIssues": 0,
         "topics": [],
-        "description": " AI-powered community engagement platform that helps users discover local volunteering events, register seamlessly, learn sustainability through a gamified experience, and interact with an Azure-based chatbot — built with Node.js, Express, SQLite, and Azure services.",
+        "description": "Docker-first real-time commerce platform with Node.js, Next.js, Redis, event streaming, GraphQL, .NET fulfillment, and recommendations.",
         "homepage": null,
-        "updatedAt": "2026-02-12T14:02:58Z"
+        "updatedAt": "2026-04-03T23:07:40Z"
+      }
+    },
+    {
+      "slug": "linkedin-outreach-agent",
+      "repo": "linkedin-outreach-agent",
+      "title": "LinkedIn Outreach Agent",
+      "featured": true,
+      "type": "AI Tooling",
+      "summary": "Chrome extension that drafts natural LinkedIn replies, recruiter responses, and connection outreach using page context, browser automation, and local or cloud LLMs.",
+      "tags": [
+        "LLM",
+        "Chrome Extension",
+        "Browser Automation",
+        "OpenAI",
+        "Ollama"
+      ],
+      "stack": [
+        "JavaScript",
+        "Chrome Extension",
+        "OpenAI",
+        "Ollama",
+        "Browser Automation"
+      ],
+      "highlights": [
+        "Built a LinkedIn-native assistant that reads visible page context and drafts recruiter replies, follow-ups, comments, and connection requests in a grounded voice.",
+        "Supported multiple model backends including OpenAI, Ollama, and OpenAI-compatible local servers so the extension can run in either cloud or privacy-first local mode.",
+        "Added a review-first workflow and browser-agent capabilities so repetitive LinkedIn actions can be accelerated without losing control over the final message."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/linkedin-outreach-agent",
+        "demo": null,
+        "caseStudy": "content/case-studies/linkedin-outreach-agent.md",
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/linkedin-outreach-agent-overview.png"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "linkedin-outreach-agent",
+        "defaultBranch": "main",
+        "language": "JavaScript",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [
+          "ai-agent",
+          "browser-automation",
+          "chrome-extension",
+          "linkedin",
+          "llm",
+          "networking",
+          "ollama",
+          "openai",
+          "productivity",
+          "recruiting"
+        ],
+        "description": "Natural LinkedIn replies, recruiter responses, and connection outreach with browser automation and local or cloud LLMs",
+        "homepage": null,
+        "updatedAt": "2026-04-03T17:41:53Z"
+      }
+    },
+    {
+      "slug": "adversarial-dnn",
+      "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
+      "title": "Adversarial Attacks on Deep Neural Networks",
+      "featured": true,
+      "type": "Research",
+      "summary": "Medical imaging robustness benchmark evaluating adversarial attacks and defenses across four CNN architectures on the MURA X-ray dataset.",
+      "tags": [
+        "Adversarial ML",
+        "Deep Learning",
+        "Security",
+        "Medical Imaging"
+      ],
+      "stack": [
+        "PyTorch",
+        "ResNet-50",
+        "DenseNet-121",
+        "EfficientNet-B0",
+        "GoogLeNet",
+        "FGSM",
+        "PGD",
+        "Carlini-Wagner"
+      ],
+      "highlights": [
+        "Benchmarked four CNN architectures on 40,561 MURA X-ray images across multiple perturbation levels using FGSM, PGD, and Carlini-Wagner attacks.",
+        "Built a preprocessing workflow with resizing, normalization, CLAHE enhancement, bone windowing, and smart cropping for clinically consistent inputs.",
+        "Implemented FGSM adversarial training with 50% clean and 50% adversarial batches over 50 epochs, improving FGSM robustness and yielding moderate PGD gains."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks",
+        "demo": null,
+        "caseStudy": "content/case-studies/adversarial-dnn.md",
+        "notebook": "https://nbviewer.org/github/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
+        "paper": null
+      },
+      "images": [
+        "assets/img/adversarial-dnn-architecture.png"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
+        "defaultBranch": "main",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "This project investigates both adversarial attacks and defensive strategies for Deep Neural Networks (DNNs). While adversarial examples exploit vulnerabilities in models by introducing imperceptible perturbations, defensive methods aim to improve robustness and ensure reliable predictions.",
+        "homepage": null,
+        "updatedAt": "2025-10-01T19:33:49Z"
+      }
+    },
+    {
+      "slug": "houston-crime",
+      "repo": "Houston-Crime-Type-Classification-2010-2024-",
+      "title": "Houston Crime Type Classification (2010-2024)",
+      "featured": true,
+      "type": "Machine Learning",
+      "summary": "Large-scale crime analytics pipeline on roughly 3.6M Houston crime records to predict NIBRS offense categories under a realistic temporal holdout design.",
+      "tags": [
+        "ML",
+        "Classification",
+        "Python",
+        "Big Data"
+      ],
+      "stack": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Spark",
+        "Hive"
+      ],
+      "highlights": [
+        "Standardized and merged three differently formatted source datasets into one modeling-ready schema spanning 2010 to 2024.",
+        "Engineered Beat, Premise, Month, Weekday, and Hour Group features and cleaned multi-label crime records into separate observations.",
+        "Selected MLPClassifier as the best model, reaching 29.37% accuracy and 0.5895 macro AUC on the 2024 holdout set."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-",
+        "demo": null,
+        "caseStudy": "content/case-studies/houston-crime.md",
+        "notebook": "https://nbviewer.org/github/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
+        "paper": null
+      },
+      "images": [
+        "assets/img/houston-crime-architecture.png"
+      ],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Houston-Crime-Type-Classification-2010-2024-",
+        "defaultBranch": "main",
+        "language": "Jupyter Notebook",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "An end-to-end machine learning pipeline built to predict crime categories (NIBRS Description) using 14 years of Houston Police Department data (~3.6 million records), with 2024 used as a true future holdout year.",
+        "homepage": null,
+        "updatedAt": "2026-03-09T23:19:12Z"
       }
     },
     {
@@ -292,53 +464,52 @@
       }
     },
     {
-      "slug": "houston-crime",
-      "repo": "Houston-Crime-Type-Classification-2010-2024-",
-      "title": "Houston Crime Type Classification (2010-2024)",
+      "slug": "civicquest",
+      "repo": "CivicQuest",
+      "title": "CivicQuest",
       "featured": true,
-      "type": "Machine Learning",
-      "summary": "Large-scale crime analytics pipeline on roughly 3.6M Houston crime records to predict NIBRS offense categories under a realistic temporal holdout design.",
+      "type": "Full Stack",
+      "summary": "AI-supported community engagement platform for volunteering discovery, sustainability learning, and guided interaction.",
       "tags": [
-        "ML",
-        "Classification",
-        "Python",
-        "Big Data"
+        "Azure",
+        "Full Stack",
+        "Community",
+        "Chatbot"
       ],
       "stack": [
-        "Python",
-        "Pandas",
-        "Scikit-learn",
-        "Spark",
-        "Hive"
+        "Node.js",
+        "EJS",
+        "Azure Bot",
+        "Azure"
       ],
       "highlights": [
-        "Standardized and merged three differently formatted source datasets into one modeling-ready schema spanning 2010 to 2024.",
-        "Engineered Beat, Premise, Month, Weekday, and Hour Group features and cleaned multi-label crime records into separate observations.",
-        "Selected MLPClassifier as the best model, reaching 29.37% accuracy and 0.5895 macro AUC on the 2024 holdout set."
+        "AI-powered community engagement platform",
+        "Volunteer discovery and registration journeys",
+        "Gamified sustainability learning plus Azure bot integration"
       ],
       "links": {
-        "github": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-",
+        "github": "https://github.com/REDEVL4/CivicQuest",
         "demo": null,
-        "caseStudy": "content/case-studies/houston-crime.md",
-        "notebook": "https://nbviewer.org/github/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
-        "notebookSource": "https://github.com/REDEVL4/Houston-Crime-Type-Classification-2010-2024-/blob/main/Houston_Crime_Classification.ipynb",
+        "caseStudy": "content/case-studies/civicquest.md",
+        "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
-        "assets/img/houston-crime-architecture.png"
+        "assets/img/placeholder-1.svg"
       ],
       "github": {
         "owner": "REDEVL4",
-        "repo": "Houston-Crime-Type-Classification-2010-2024-",
+        "repo": "CivicQuest",
         "defaultBranch": "main",
-        "language": "Jupyter Notebook",
+        "language": "EJS",
         "stars": 0,
         "forks": 0,
         "openIssues": 0,
         "topics": [],
-        "description": "An end-to-end machine learning pipeline built to predict crime categories (NIBRS Description) using 14 years of Houston Police Department data (~3.6 million records), with 2024 used as a true future holdout year.",
+        "description": " AI-powered community engagement platform that helps users discover local volunteering events, register seamlessly, learn sustainability through a gamified experience, and interact with an Azure-based chatbot — built with Node.js, Express, SQLite, and Azure services.",
         "homepage": null,
-        "updatedAt": "2026-03-09T23:19:12Z"
+        "updatedAt": "2026-02-12T14:02:58Z"
       }
     },
     {
@@ -439,59 +610,6 @@
         "description": null,
         "homepage": null,
         "updatedAt": "2026-03-07T23:29:14Z"
-      }
-    },
-    {
-      "slug": "adversarial-dnn",
-      "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
-      "title": "Adversarial Attacks on Deep Neural Networks",
-      "featured": false,
-      "type": "Research",
-      "summary": "Medical imaging robustness benchmark evaluating adversarial attacks and defenses across four CNN architectures on the MURA X-ray dataset.",
-      "tags": [
-        "Adversarial ML",
-        "Deep Learning",
-        "Security",
-        "Medical Imaging"
-      ],
-      "stack": [
-        "PyTorch",
-        "ResNet-50",
-        "DenseNet-121",
-        "EfficientNet-B0",
-        "GoogLeNet",
-        "FGSM",
-        "PGD",
-        "Carlini-Wagner"
-      ],
-      "highlights": [
-        "Benchmarked four CNN architectures on 40,561 MURA X-ray images across multiple perturbation levels using FGSM, PGD, and Carlini-Wagner attacks.",
-        "Built a preprocessing workflow with resizing, normalization, CLAHE enhancement, bone windowing, and smart cropping for clinically consistent inputs.",
-        "Implemented FGSM adversarial training with 50% clean and 50% adversarial batches over 50 epochs, improving FGSM robustness and yielding moderate PGD gains."
-      ],
-      "links": {
-        "github": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks",
-        "demo": null,
-        "caseStudy": "content/case-studies/adversarial-dnn.md",
-        "notebook": "https://nbviewer.org/github/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
-        "notebookSource": "https://github.com/REDEVL4/Adversarial-Attacks-on-Deep-Neural-Networks/blob/main/AA_v3.ipynb",
-        "paper": null
-      },
-      "images": [
-        "assets/img/adversarial-dnn-architecture.png"
-      ],
-      "github": {
-        "owner": "REDEVL4",
-        "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
-        "defaultBranch": "main",
-        "language": "Jupyter Notebook",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
-        "topics": [],
-        "description": "This project investigates both adversarial attacks and defensive strategies for Deep Neural Networks (DNNs). While adversarial examples exploit vulnerabilities in models by introducing imperceptible perturbations, defensive methods aim to improve robustness and ensure reliable predictions.",
-        "homepage": null,
-        "updatedAt": "2025-10-01T19:33:49Z"
       }
     },
     {
@@ -746,8 +864,8 @@
         "github": "https://github.com/REDEVL4/portfolio-static-ai",
         "demo": null,
         "caseStudy": null,
-        "notebook": "https://nbviewer.org/github/REDEVL4/portfolio-static-ai/blob/main/AA_v4_adversarial_eval.ipynb",
-        "notebookSource": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/AA_v4_adversarial_eval.ipynb",
+        "notebook": null,
+        "notebookSource": null,
         "paper": null
       },
       "images": [
@@ -764,12 +882,12 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-03-21T20:28:57Z"
+        "updatedAt": "2026-03-26T01:29:54Z"
       }
     }
   ],
   "meta": {
-    "projectCount": 12,
-    "featuredCount": 5
+    "projectCount": 14,
+    "featuredCount": 8
   }
 }

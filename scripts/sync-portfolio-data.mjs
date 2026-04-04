@@ -144,6 +144,7 @@ async function main() {
   const linkedin = await readJson(linkedinPath, {});
   const username = seed.site.githubUsername;
   const featuredRepos = seed.github?.featuredRepos || [];
+  const featuredRepoOrder = new Map(featuredRepos.map((repoName, index) => [repoName, index]));
 
   let githubProfile = { followers: null, public_repos: null };
   let repos = [];
@@ -186,6 +187,13 @@ async function main() {
   discoveredProjects.sort((left, right) => {
     if (left.featured !== right.featured) {
       return left.featured ? -1 : 1;
+    }
+    if (left.featured && right.featured) {
+      const leftOrder = featuredRepoOrder.get(left.repo) ?? Number.MAX_SAFE_INTEGER;
+      const rightOrder = featuredRepoOrder.get(right.repo) ?? Number.MAX_SAFE_INTEGER;
+      if (leftOrder !== rightOrder) {
+        return leftOrder - rightOrder;
+      }
     }
     return left.title.localeCompare(right.title);
   });

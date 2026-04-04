@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data Scientist and Azure .NET backend engineer building applied ML, analytics, and cloud-native systems.",
+    "headline": "Data scientist and software engineer building applied ML, NLP, and scalable data systems on large datasets.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -11,11 +11,11 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "I turn complex data into reliable analytics, machine learning, and production-ready systems.",
     "heroSummary": [
-      "Data Scientist with 2.6+ years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
-      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and case studies that show how I move from messy data to dependable delivery."
+      "Data Scientist with about 3 years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
+      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and systems work that moves from messy inputs to dependable delivery."
     ],
     "heroMetrics": [
-      { "label": "Experience", "value": "2.6+ years" },
+      { "label": "Experience", "value": "~3 years" },
       { "label": "Production scale", "value": "10M+ tx/day" },
       { "label": "Query improvement", "value": "45% lower latency" },
       { "label": "Incident response", "value": "40% faster triage" }
@@ -64,7 +64,7 @@
     "currentStatus": [
       {
         "title": "Open To Work",
-        "copy": "Actively pursuing Data Scientist, Applied ML, Analytics Engineer, and Data Engineer opportunities."
+        "copy": "Actively pursuing Data Scientist, Applied ML, ML Engineer, Software Engineer, and Data Engineer opportunities."
       },
       {
         "title": "What I Want To Build",
@@ -79,7 +79,11 @@
       "Python",
       "SQL",
       "PyTorch",
+      "NLP",
       "Spark",
+      "Next.js",
+      "GraphQL",
+      "OpenAI",
       "Azure",
       "Azure Data Factory",
       "Durable Functions",
@@ -95,14 +99,53 @@
   "github": {
     "includeForks": false,
     "featuredRepos": [
-      "CivicQuest",
-      "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
-      "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
+      "realtime-commerce-platform",
+      "linkedin-outreach-agent",
+      "Adversarial-Attacks-on-Deep-Neural-Networks",
       "Houston-Crime-Type-Classification-2010-2024-",
-      "Multimodal-Book-Genre-Classification-Clustering"
+      "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
+      "CivicQuest"
     ]
   },
   "projectOverrides": [
+    {
+      "repo": "realtime-commerce-platform",
+      "slug": "realtime-commerce-platform",
+      "title": "Realtime Commerce Platform",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "Docker-first marketplace platform that combines customer and admin apps, service separation, event-driven workflows, search, recommendations, and fulfillment into a realistic end-to-end commerce system.",
+      "tags": ["Next.js", "Microservices", "GraphQL", "Redis", "Event-Driven"],
+      "stack": ["Node.js", "Next.js", ".NET", "FastAPI", "GraphQL", "Redis", "Docker"],
+      "highlights": [
+        "Expanded an earlier Node.js commerce project into a multi-service platform with gateway, GraphQL BFF, recommendation service, fulfillment service, worker, and operational admin surface.",
+        "Built separate customer and admin web applications with live cart updates, search and filtering, order tracking, warehouse-linked inventory flows, and profile management.",
+        "Modeled a more realistic commerce architecture using MySQL, Redis, RabbitMQ, Redpanda, and Meilisearch to support asynchronous fulfillment, caching, event flows, and product discovery."
+      ],
+      "links": {
+        "caseStudy": "content/case-studies/realtime-commerce-platform.md"
+      },
+      "images": ["assets/img/realtime-commerce-platform-diagram.svg"]
+    },
+    {
+      "repo": "linkedin-outreach-agent",
+      "slug": "linkedin-outreach-agent",
+      "title": "LinkedIn Outreach Agent",
+      "featured": true,
+      "type": "AI Tooling",
+      "summary": "Chrome extension that drafts natural LinkedIn replies, recruiter responses, and connection outreach using page context, browser automation, and local or cloud LLMs.",
+      "tags": ["LLM", "Chrome Extension", "Browser Automation", "OpenAI", "Ollama"],
+      "stack": ["JavaScript", "Chrome Extension", "OpenAI", "Ollama", "Browser Automation"],
+      "highlights": [
+        "Built a LinkedIn-native assistant that reads visible page context and drafts recruiter replies, follow-ups, comments, and connection requests in a grounded voice.",
+        "Supported multiple model backends including OpenAI, Ollama, and OpenAI-compatible local servers so the extension can run in either cloud or privacy-first local mode.",
+        "Added a review-first workflow and browser-agent capabilities so repetitive LinkedIn actions can be accelerated without losing control over the final message."
+      ],
+      "links": {
+        "caseStudy": "content/case-studies/linkedin-outreach-agent.md"
+      },
+      "images": ["assets/img/linkedin-outreach-agent-overview.png"]
+    },
     {
       "repo": "CivicQuest",
       "slug": "civicquest",
