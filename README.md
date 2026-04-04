@@ -106,6 +106,41 @@ If GitHub rate limits become a problem, I set:
 GITHUB_TOKEN=your_token_here
 ```
 
+## Automation
+
+GitHub changes can now be refreshed automatically through:
+
+```text
+.github/workflows/refresh-portfolio.yml
+```
+
+That workflow:
+
+- runs every 6 hours
+- can also be triggered manually from GitHub Actions
+- regenerates `data/portfolio.generated.json`
+- commits and pushes the updated generated data if anything changed
+
+This means GitHub-side portfolio updates are automated as long as the project metadata can be derived from repository state and the curated overrides already in `data/portfolio.seed.json`.
+
+### Important LinkedIn limitation
+
+I looked into using the official LinkedIn API for the same kind of automatic sync. In practice, that is much more limited than GitHub:
+
+- LinkedIn self-serve API access is constrained and is not intended to be the fundamental basis of an application
+- app creation requires a LinkedIn Page association
+- the self-serve profile surface is limited
+- richer profile fields such as current experience and education are tied to higher access tiers
+- full profile sections like About, skills, certifications, and custom narrative content are not a dependable general-purpose sync source for a public portfolio
+
+Because of that, I treat LinkedIn as a curated source rather than a live always-on data feed. The stable pattern for this portfolio is:
+
+1. Use GitHub automation for repository-driven updates.
+2. Use LinkedIn export/source updates for profile narrative changes.
+3. Regenerate the portfolio data after those profile-source updates.
+
+If I later get approved LinkedIn API access for a supported member-data scenario, I can extend the sync flow. Until then, using local LinkedIn source files is the more reliable and policy-safe path.
+
 ## AI integration
 
 The portfolio can use OpenAI for:
