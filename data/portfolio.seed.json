@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Software engineer building full-stack, backend, and data-ML systems that hold up under real production load.",
+    "headline": "Software Engineer with 3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -9,10 +9,10 @@
     "githubUrl": "https://github.com/REDEVL4",
     "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
     "resumeUrl": "assets/resume.pdf",
-    "heroIntro": "I build full-stack platforms, backend services, and data-driven systems that are designed for real-world scale.",
+    "heroIntro": "Software Engineer with 3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
     "heroSummary": [
-      "Software Engineer with 3 years of experience building customer-facing applications, cloud-native services, distributed integrations, and data-ML systems across enterprise and large-scale environments.",
-      "This portfolio is organized around proof: 50M+ monthly records, 99.9% SLA systems, 400% traffic spikes, sub-45-minute incident response, and project work that connects full-stack engineering with backend, data, and automation."
+      "Specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
+      "This portfolio is organized around proof: 50M+ monthly records, 99.9% SLA systems, 400% traffic spikes, sub-45-minute incident response, and project work spanning backend services, full-stack platforms, and automation."
     ],
     "heroMetrics": [
       { "label": "Experience", "value": "3 years" },
@@ -51,11 +51,11 @@
     "aboutSections": [
       {
         "title": "How I Position Myself",
-        "copy": "I sit at the intersection of data, backend systems, analytics, and applied machine learning. That gives me the ability to understand how data is produced, validated, modeled, and turned into decision-ready outputs."
+        "copy": "I position myself as a software engineer with strong backend, data, and ML-systems depth. That means I can build APIs, data pipelines, distributed workflows, and the supporting reliability layer around them."
       },
       {
         "title": "Why This Portfolio Is Different",
-        "copy": "The work here is not limited to toy notebooks or isolated dashboards. It shows enterprise-scale backend and integration work, research-style ML experimentation, data quality thinking, and communication of results through case studies."
+        "copy": "The work here is not limited to toy apps or isolated notebooks. It shows enterprise backend systems, full-stack platform work, event-driven integrations, observability, and research-backed ML projects presented with real engineering context."
       },
       {
         "title": "Best Role Fit",
