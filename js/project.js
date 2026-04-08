@@ -83,7 +83,7 @@ async function loadAiInsights(slug) {
     target.innerHTML = renderAiInsights(data.insights || {});
   } catch (error) {
     console.error(error);
-    target.innerHTML = `<div class="small text-secondary">AI project snapshot is unavailable. Start the Node server and set OPENAI_API_KEY for ChatGPT-backed enrichment.</div>`;
+    target.innerHTML = `<div class="small text-secondary">The live project snapshot is unavailable right now. Start the Node server and set OPENAI_API_KEY if you want the ChatGPT-backed version.</div>`;
   }
 }
 

@@ -30,7 +30,7 @@
     <div class="row g-4 mt-2">
       <div class="col-lg-8">
         <div class="detail-panel">
-          <div class="section-kicker">Project detail</div>
+          <div class="section-kicker">Project walkthrough</div>
           <h1 class="detail-title mb-2" id="pTitle">Loading...</h1>
           <p class="detail-summary" id="pSummary"></p>
           <div class="d-flex flex-wrap gap-2 mb-4" id="pBadges"></div>
@@ -58,8 +58,8 @@
           <div class="mt-4 ai-panel">
             <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
               <div>
-                <h2 class="h6 fw-semibold mb-1">AI Project Snapshot</h2>
-                <div class="small text-secondary">A visitor-facing summary generated from project data, GitHub, LinkedIn profile data, and optional Job Farming notes.</div>
+                <h2 class="h6 fw-semibold mb-1">Project Snapshot</h2>
+                <div class="small text-secondary">This section pulls from project data, GitHub context, profile notes, and the project write-up to summarize how I usually explain the work.</div>
               </div>
               <button class="btn btn-sm btn-outline-light" id="refreshAiInsights" type="button">Refresh Snapshot</button>
             </div>
@@ -88,7 +88,7 @@
           <div class="detail-panel">
             <h3 class="h6 fw-semibold mb-3">Gallery</h3>
             <div id="gallery" class="d-grid gap-2"></div>
-            <div class="small text-secondary mt-3">Replace placeholders with screenshots or short demos.</div>
+            <div class="small text-secondary mt-3">I use diagrams, screenshots, and notebook output here when they help explain the build.</div>
           </div>
           <div class="detail-panel">
             <h3 class="h6 fw-semibold mb-3">Related Projects</h3>
@@ -104,6 +104,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script type="module" src="js/project.js"></script>
+  <script type="module" src="js/site-effects.js"></script>
   <script type="module" src="js/chatbot.js"></script>
 </body>
 </html>

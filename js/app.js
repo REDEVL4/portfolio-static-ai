@@ -86,7 +86,12 @@ async function renderHome() {
   const resumePanelLink = document.getElementById("resumePanelLink");
 
   if (headline) {
-    headline.textContent = site.headline || profile.headline || "";
+    const headlineText = site.headline || profile.headline || "";
+    const introText = site.heroIntro || "";
+    headline.textContent = headlineText;
+    headline.hidden =
+      !headlineText ||
+      headlineText.trim().toLowerCase() === introText.trim().toLowerCase();
   }
 
   if (intro) {
@@ -175,7 +180,7 @@ async function renderHome() {
   }
 
   if (contactMeta) {
-    contactMeta.textContent = [site.location, site.phone, site.email, "Open to Work"]
+    contactMeta.textContent = [site.location, site.phone, site.email, "Open to software engineering and backend roles"]
       .filter(Boolean)
       .join(" | ");
   }

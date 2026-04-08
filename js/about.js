@@ -1,5 +1,14 @@
 import { escapeHtml, formatDateLabel, loadPortfolioData } from "./data-service.js";
 
+const focusAreaCopy = {
+  "Full-stack engineering": "I enjoy building the full path from user-facing workflows to backend services, data flow, and the operational pieces that keep everything reliable.",
+  "Backend systems": "Most of my hands-on experience is here: APIs, service boundaries, integrations, throughput, data contracts, and the decisions that make backend systems easier to operate.",
+  "Data engineering": "I like the work of turning messy source data into dependable pipelines, cleaner schemas, and outputs that are actually useful for teams downstream.",
+  "Distributed systems and integrations": "A lot of my professional work has involved event-driven flows, enterprise integrations, and keeping data moving correctly across systems that do not always behave nicely.",
+  "Cloud platforms and observability": "I care about what happens after deployment too, so I pay attention to monitoring, incident response, dashboards, and the signals teams need when something goes wrong.",
+  "Applied machine learning": "My ML work is strongest when it is tied back to engineering reality: data preparation, evaluation, tradeoffs, and how a model would fit into a real system."
+};
+
 async function init() {
   const data = await loadPortfolioData();
   const about = document.getElementById("aboutCopy");
@@ -43,7 +52,10 @@ async function init() {
         (item) => `
           <div class="content-card">
             <div class="content-card-title">${escapeHtml(item)}</div>
-            <p class="mb-0 mt-2 text-secondary">This is a recurring throughline across my portfolio, from enterprise systems work to graduate ML and analytics projects.</p>
+            <p class="mb-0 mt-2 text-secondary">${escapeHtml(
+              focusAreaCopy[item] ||
+                "This is a recurring theme across the work on this site, from production engineering to graduate project work."
+            )}</p>
           </div>
         `
       )
@@ -92,7 +104,7 @@ async function init() {
         <a class="text-secondary text-decoration-none" href="mailto:${escapeHtml(site.email || "")}">${escapeHtml(site.email || "")}</a>
       </div>
       <div class="education-card">
-        <div class="fw-semibold">Professional Focus</div>
+        <div class="fw-semibold">What I Focus On</div>
         <div class="text-secondary">${escapeHtml(headline)}</div>
       </div>
       <div class="education-card">

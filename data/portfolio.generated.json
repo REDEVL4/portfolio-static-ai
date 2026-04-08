@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-08T20:48:09.217Z",
+  "generatedAt": "2026-04-08T20:57:29.054Z",
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Software Engineer with 3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
+    "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -12,8 +12,8 @@
     "resumeUrl": "assets/resume.pdf",
     "heroIntro": "Software Engineer with 3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
     "heroSummary": [
-      "Specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
-      "This portfolio is organized around proof: 50M+ monthly records, 99.9% SLA systems, 400% traffic spikes, sub-45-minute incident response, and project work spanning backend services, full-stack platforms, and automation."
+      "Most of my recent work has been in backend services, distributed integrations, full-stack applications, and data workflows that had to perform under real production constraints.",
+      "This portfolio is where I walk through the systems I have built, the tradeoffs behind them, and the results they produced: 50M+ monthly records, 99.9% SLA targets, 400% traffic spikes, and faster incident response."
     ],
     "heroMetrics": [
       {
@@ -50,7 +50,7 @@
     "homeValueCards": [
       {
         "title": "Product To Platform",
-        "copy": "I can work from frontend and user-facing flows down to service boundaries, data contracts, infrastructure, and operational behavior."
+        "copy": "I am comfortable working from user-facing flows down to service boundaries, data contracts, infrastructure, and the operational behavior behind them."
       },
       {
         "title": "Reliability Under Load",
@@ -58,35 +58,35 @@
       },
       {
         "title": "Engineering Plus ML",
-        "copy": "I do not treat ML as a disconnected research artifact. I connect modeling, data pipelines, backend systems, and automation into end-to-end delivery."
+        "copy": "I do not treat ML as a disconnected research artifact. I like connecting modeling, data pipelines, backend systems, and automation into end-to-end delivery."
       }
     ],
     "aboutSections": [
       {
-        "title": "How I Position Myself",
-        "copy": "I position myself as a software engineer with strong backend, data, and ML-systems depth. That means I can build APIs, data pipelines, distributed workflows, and the supporting reliability layer around them."
+        "title": "How I Describe What I Do",
+        "copy": "I see myself as a software engineer with strong backend, data, and ML-systems depth. I like building APIs, data pipelines, distributed workflows, and the reliability layer that makes those systems usable in production."
       },
       {
-        "title": "Why This Portfolio Is Different",
-        "copy": "The work here is not limited to toy apps or isolated notebooks. It shows enterprise backend systems, full-stack platform work, event-driven integrations, observability, and research-backed ML projects presented with real engineering context."
+        "title": "Why I Built This Portfolio This Way",
+        "copy": "I did not want this portfolio to feel like a gallery of disconnected demos. I wanted it to show the actual shape of my work: enterprise backend systems, full-stack platform work, event-driven integrations, observability, and research-backed ML projects with real engineering context."
       },
       {
-        "title": "Best Role Fit",
-        "copy": "I am strongest in software engineer, full-stack, backend, data engineering, and ML-systems roles where system quality, measurable outcomes, and end-to-end ownership matter."
+        "title": "Where I Fit Best",
+        "copy": "I am at my best in software engineering, full-stack, backend, data engineering, and ML-systems roles where system quality, measurable outcomes, and end-to-end ownership actually matter."
       }
     ],
     "currentStatus": [
       {
         "title": "Open To Work",
-        "copy": "Actively pursuing Software Engineer, Full Stack, Backend, Data Engineering, and ML-driven systems opportunities."
+        "copy": "I am actively exploring software engineering, full-stack, backend, data engineering, and ML-systems opportunities."
       },
       {
         "title": "What I Want To Build",
-        "copy": "Production-grade platforms, backend services, and data-ML systems that combine reliability, scalability, and practical user value."
+        "copy": "I want to keep building production-grade platforms, backend services, and data-ML systems that balance reliability, scalability, and practical user value."
       },
       {
         "title": "Working Style",
-        "copy": "I am most effective in environments where I can bridge engineering and analytics, work through ambiguity, and turn complex data problems into clear delivery."
+        "copy": "I do my best work in environments where I can bridge engineering and analytics, work through ambiguity, and turn complex system or data problems into clear delivery."
       }
     ],
     "skills": [
@@ -887,7 +887,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-08T20:08:19Z"
+        "updatedAt": "2026-04-08T20:48:38Z"
       }
     }
   ],

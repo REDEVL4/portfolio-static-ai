@@ -106,7 +106,7 @@ function renderEmptyState() {
     <div class="col-12">
       <div class="empty-state">
         <h2>No matching projects</h2>
-        <p>Adjust the tag or search terms. Every card is generated from the portfolio data layer.</p>
+        <p>Try a different tag or search term. I organized this page so it is easy to move between project types and stacks.</p>
       </div>
     </div>
   `;
@@ -124,7 +124,7 @@ async function init() {
 
   const summary = document.getElementById("projectSummary");
   if (summary) {
-    summary.textContent = `${allProjects.length} projects synced from GitHub metadata with curated portfolio overrides.`;
+    summary.textContent = `I am using this page to organize ${allProjects.length} projects across backend systems, full-stack platforms, data pipelines, and ML work so it is easy to jump into the technical details behind each one.`;
   }
 
   const searchInput = el("searchInput");
