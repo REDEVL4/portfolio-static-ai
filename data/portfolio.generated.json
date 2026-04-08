@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-08T19:40:56.479Z",
+  "generatedAt": "2026-04-08T20:05:14.326Z",
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data scientist and software engineer building applied ML, NLP, and scalable data systems on large datasets.",
+    "headline": "Software engineer building full-stack, backend, and data-ML systems that hold up under real production load.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -10,54 +10,55 @@
     "githubUrl": "https://github.com/REDEVL4",
     "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
     "resumeUrl": "assets/resume.pdf",
-    "heroIntro": "I turn complex data into reliable analytics, machine learning, and production-ready systems.",
+    "heroIntro": "I build full-stack platforms, backend services, and data-driven systems that are designed for real-world scale.",
     "heroSummary": [
-      "Data Scientist with about 3 years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
-      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and systems work that moves from messy inputs to dependable delivery."
+      "Software Engineer with 3 years of experience building customer-facing applications, cloud-native services, distributed integrations, and data-ML systems across enterprise and large-scale environments.",
+      "This portfolio is organized around proof: 50M+ monthly records, 99.9% SLA systems, 400% traffic spikes, sub-45-minute incident response, and project work that connects full-stack engineering with backend, data, and automation."
     ],
     "heroMetrics": [
       {
         "label": "Experience",
-        "value": "~3 years"
+        "value": "3 years"
       },
       {
         "label": "Production scale",
-        "value": "10M+ tx/day"
+        "value": "50M+ monthly records"
       },
       {
         "label": "Query improvement",
         "value": "45% lower latency"
       },
       {
-        "label": "Incident response",
-        "value": "40% faster triage"
+        "label": "Traffic resilience",
+        "value": "400% peak spikes"
       }
     ],
     "heroProofPoints": [
-      "Built systems supporting 10M+ daily transactions with 99.9% reliability.",
-      "Reduced SQL query latency by 45% across data-intensive services.",
-      "Shipped ML and analytics projects on 3.6M+ records and 40K+ medical images.",
-      "Combined backend engineering depth with analytics, ML, and observability."
+      "Built systems processing 50M+ monthly records and 10M+ monthly transactions at 99.9% SLA.",
+      "Reduced SQL query latency by 45% across data-intensive services and lowered MTTR to under 45 minutes.",
+      "Shipped full-stack and distributed systems using .NET, Node.js, Next.js, Kafka-style event flows, GraphQL, Redis, and Docker.",
+      "Combined backend engineering depth with analytics, ML research, observability, and automation."
     ],
     "focusAreas": [
-      "Applied machine learning",
-      "Data engineering",
+      "Full-stack engineering",
       "Backend systems",
-      "Cloud integrations",
-      "Observability and reliability engineering"
+      "Data engineering",
+      "Distributed systems and integrations",
+      "Cloud platforms and observability",
+      "Applied machine learning"
     ],
     "homeValueCards": [
       {
-        "title": "Data To Delivery",
-        "copy": "I work well across the full path from ingestion, validation, and feature engineering to modeling, dashboards, and operational output."
+        "title": "Product To Platform",
+        "copy": "I can work from frontend and user-facing flows down to service boundaries, data contracts, infrastructure, and operational behavior."
       },
       {
-        "title": "Production Context",
-        "copy": "My engineering background means I do not treat analytics in isolation. I think about reliability, system constraints, latency, and maintainability from the start."
+        "title": "Reliability Under Load",
+        "copy": "My background is grounded in production systems, so I design for uptime, observability, throughput, operational clarity, and failure handling from the start."
       },
       {
-        "title": "Research With Practical Value",
-        "copy": "My graduate projects are not toy experiments. They are framed around robustness, scale, validation, and explainable impact."
+        "title": "Engineering Plus ML",
+        "copy": "I do not treat ML as a disconnected research artifact. I connect modeling, data pipelines, backend systems, and automation into end-to-end delivery."
       }
     ],
     "aboutSections": [
@@ -71,17 +72,17 @@
       },
       {
         "title": "Best Role Fit",
-        "copy": "I am strongest in data scientist, analytics engineer, data engineer, and applied ML roles where pipeline quality, system context, and measurable outcomes matter as much as the model itself."
+        "copy": "I am strongest in software engineer, full-stack, backend, data engineering, and ML-systems roles where system quality, measurable outcomes, and end-to-end ownership matter."
       }
     ],
     "currentStatus": [
       {
         "title": "Open To Work",
-        "copy": "Actively pursuing Data Scientist, Applied ML, ML Engineer, Software Engineer, and Data Engineer opportunities."
+        "copy": "Actively pursuing Software Engineer, Full Stack, Backend, Data Engineering, and ML-driven systems opportunities."
       },
       {
         "title": "What I Want To Build",
-        "copy": "Production-grade data products that combine clean ingestion, trustworthy analytics, and machine learning that can stand up to real usage."
+        "copy": "Production-grade platforms, backend services, and data-ML systems that combine reliability, scalability, and practical user value."
       },
       {
         "title": "Working Style",
@@ -91,32 +92,36 @@
     "skills": [
       "Python",
       "SQL",
+      "C#",
+      "JavaScript",
+      "TypeScript",
+      "ASP.NET Core",
       "PyTorch",
-      "NLP",
-      "Spark",
       "Next.js",
+      "React.js",
+      "Spark",
       "GraphQL",
-      "OpenAI",
+      "Kafka",
+      "Redis",
       "Azure",
       "Azure Data Factory",
-      "Durable Functions",
+      "Azure Event Hubs",
       "Node.js",
       ".NET",
       "PostgreSQL",
-      "Cosmos DB",
-      "Dell Boomi",
+      "Snowflake",
       "Splunk",
-      "AppDynamics"
+      "Docker"
     ],
     "githubFollowers": 1,
     "githubPublicRepos": 15
   },
   "profile": {
-    "headline": "Data Scientist | Applied ML, NLP & Deep Learning | Scalable ML & data systems on large datasets | Python | SQL | PyTorch | Spark",
+    "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
     "about": [
-      "I am a data scientist with a developer's mindset and about 3 years of experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs for real operating environments.",
-      "Before and during my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, system design, and measurable outcomes.",
-      "My recent work includes adversarial medical-imaging research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, Houston crime classification on 3.6M+ records, multimodal book-genre modeling, big-data hunger analytics, a real-time commerce platform, and an LLM-powered LinkedIn outreach agent. I am currently exploring Data Scientist, Applied ML, ML Engineer, and Data Engineering roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
+      "I am a software engineer with 3 years of experience building cloud-native systems, distributed integrations, data pipelines, and scalable applications. My strongest work sits where messy operational data, backend services, and production reliability meet, so I focus on building systems that are not just technically correct but actually usable in mission-critical workflows.",
+      "Across TCS and Hexagon, I worked with Azure, .NET, SQL, Node.js, Docker, Splunk, Snowflake, Kafka-style event flows, and integration platforms to ship systems handling 50M+ monthly records, 10M+ monthly transactions, 99.9% SLA targets, 400% traffic spikes, and sub-45-minute incident response.",
+      "My recent work also includes adversarial medical-imaging research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, a microservices-based real-time commerce platform using Node.js, GraphQL, Redis, FastAPI, and .NET, and an LLM-powered LinkedIn outreach agent using OpenAI and Ollama. I am currently exploring Software Engineer, Full Stack, Backend, Data Engineering, and ML-driven systems roles where I can build end-to-end platforms from backend services and data pipelines to automation and intelligent features."
     ],
     "experience": [
       {
@@ -126,9 +131,9 @@
         "start": "2025-08",
         "end": "2025-12",
         "highlights": [
-          "Mentored over 60 students in Databases, Big Data, and Python through labs and office hours.",
-          "Used a concept-first teaching approach to strengthen understanding rather than memorization.",
-          "Developed a structured feedback loop that improved student confidence and performance in programming assignments."
+          "Mentored 60+ students per semester in Python, SQL, databases, and big-data workflows through hands-on labs and office hours.",
+          "Simplified complex topics like query optimization, data pipelines, and debugging into practical problem-solving approaches that improved student performance and code quality.",
+          "Reviewed and graded 1000+ assignments, providing structured feedback that improved understanding and reduced recurring logical errors."
         ]
       },
       {
@@ -138,11 +143,11 @@
         "start": "2023-01",
         "end": "2023-12",
         "highlights": [
-          "Architected high-availability integration landscapes using Dell Boomi to synchronize mission-critical data across Salesforce CRM, NetSuite ERP, and on-prem databases for global inventory and payroll domains.",
-          "Engineered real-time event-driven APIs and MDM flows with listeners and API gateways, applying reliability patterns to sustain 99.9% uptime for high-traffic business workflows.",
-          "Implemented AppDynamics and Splunk observability plus a custom traceability layer for migrations, reducing production incident triage time by 40%.",
-          "Led end-to-end integration delivery, translating ambiguous business requirements into reliable technical assets through architectural reviews and gap analysis.",
-          "Collaborated across distributed teams to validate end-to-end integrations and preserve data consistency and security during enterprise rollouts."
+          "Architected 20+ enterprise integration workflows across Dell Boomi and MuleSoft, connecting Salesforce, NetSuite, Dynamics 365, Oracle EBS, and ServiceNow across CRM, ERP, ITSM, and e-commerce domains for 3 business units.",
+          "Engineered real-time event-driven pipelines using Kafka, JMS, AMQP, AS2, and EDI, processing 10M+ monthly transactions across payments, order management, shipment tracking, and fulfillment while maintaining 99.9% SLA uptime.",
+          "Built a unified log aggregation dashboard in C# and Python consolidating telemetry from Boomi, MuleSoft, and Infor ION, reducing cross-platform investigation time by 55% and lowering MTTR from 2 hours to under 45 minutes.",
+          "Automated Atom health monitoring using REST APIs, Bash, and Python with HTML alerting for crashed Atoms and stalled flows, cutting incident detection from hours to under 5 minutes and eliminating recurring outage patterns.",
+          "Implemented schema validation, transformation rules, and data consistency controls across ingestion pipelines feeding Snowflake and SQL Server, reducing downstream data failures by 47%."
         ]
       },
       {
@@ -152,11 +157,11 @@
         "start": "2021-07",
         "end": "2022-12",
         "highlights": [
-          "Engineered multi-partner ingestion workflows with Azure Data Factory and Durable Functions for 10+ global airline partners.",
-          "Developed high-performance gRPC and REST microservices in .NET Core and Dapper using clean architecture patterns for scalability and maintainability.",
-          "Architected SQL analytical layers for self-service bag drop systems, achieving 99.9% data accuracy and reducing manual audit overhead by 35%.",
-          "Built real-time telemetry pipelines for Tableau dashboards and deployed Application Insights plus KQL observability to maintain 24/7 operational reliability.",
-          "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads and streamlined Docker plus Azure DevOps CI/CD to improve release quality for mission-critical services."
+          "Engineered a serverless passenger-processing pipeline using C#/.NET Core and Azure Durable Functions for 10+ global airline clients, reducing transaction resolution time by 38% at 99.9% SLA across 3 airports.",
+          "Built autoscaling event-driven architecture using Azure Event Hubs and Azure Data Factory processing 50M+ monthly records and absorbing 400% peak traffic spikes with zero manual intervention.",
+          "Developed real-time KQL and Power BI dashboards processing 2M+ daily passenger events, helping ops teams cut staffing overhead by 22% and reducing post-release incident rates by 45%.",
+          "Reduced query latency by 45% through indexing, schema refinement, and execution plan optimization across SQL Server, PostgreSQL, and Cosmos DB.",
+          "Built REST microservices using .NET Core and Dapper with clean architecture patterns, improving throughput and maintainability for distributed transaction workflows."
         ]
       }
     ],
@@ -181,9 +186,9 @@
       }
     ],
     "topSkills": [
-      "Data Engineering / ETL / ELT",
-      "PyTorch",
-      "SQL"
+      "Data Pipelines",
+      "Snowflake",
+      "Splunk"
     ],
     "certifications": [
       "Programming for Everybody (Getting Started with Python)",
@@ -202,7 +207,7 @@
       "title": "Realtime Commerce Platform",
       "featured": true,
       "type": "Full Stack",
-      "summary": "Docker-first marketplace platform that combines customer and admin apps, service separation, event-driven workflows, search, recommendations, and fulfillment into a realistic end-to-end commerce system.",
+      "summary": "Real-time event-driven commerce platform built as an 11-service ecosystem with GraphQL BFF, Redis, recommendations, and full cart-to-fulfillment lifecycle orchestration.",
       "tags": [
         "Next.js",
         "Microservices",
@@ -220,9 +225,9 @@
         "Docker"
       ],
       "highlights": [
-        "Expanded an earlier Node.js commerce project into a multi-service platform with gateway, GraphQL BFF, recommendation service, fulfillment service, worker, and operational admin surface.",
-        "Built separate customer and admin web applications with live cart updates, search and filtering, order tracking, warehouse-linked inventory flows, and profile management.",
-        "Modeled a more realistic commerce architecture using MySQL, Redis, RabbitMQ, Redpanda, and Meilisearch to support asynchronous fulfillment, caching, event flows, and product discovery."
+        "Architected an 11-service microservices ecosystem using Node.js, Next.js, .NET, FastAPI, GraphQL, and Redis around a real-time commerce domain.",
+        "Managed the full cart-to-fulfillment lifecycle with event-driven order processing, real-time inventory flows, customer storefront experience, and admin-side operational views.",
+        "Combined gateway, recommendations, search, caching, and asynchronous messaging patterns into a more production-like marketplace platform."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/realtime-commerce-platform",
@@ -255,7 +260,7 @@
       "title": "LinkedIn Outreach Agent",
       "featured": true,
       "type": "AI Tooling",
-      "summary": "Chrome extension that drafts natural LinkedIn replies, recruiter responses, and connection outreach using page context, browser automation, and local or cloud LLMs.",
+      "summary": "LLM-powered Chrome extension that reads live LinkedIn context and drafts profile-grounded outreach with browser automation and human review before send.",
       "tags": [
         "LLM",
         "Chrome Extension",
@@ -271,9 +276,9 @@
         "Browser Automation"
       ],
       "highlights": [
-        "Built a LinkedIn-native assistant that reads visible page context and drafts recruiter replies, follow-ups, comments, and connection requests in a grounded voice.",
-        "Supported multiple model backends including OpenAI, Ollama, and OpenAI-compatible local servers so the extension can run in either cloud or privacy-first local mode.",
-        "Added a review-first workflow and browser-agent capabilities so repetitive LinkedIn actions can be accelerated without losing control over the final message."
+        "Built a Chrome extension that reads visible LinkedIn context and drafts recruiter replies, follow-ups, and connection outreach grounded in profile context.",
+        "Supported OpenAI, Ollama, and OpenAI-compatible local LLM servers so the tool can run in either cloud or privacy-first local mode.",
+        "Added browser automation for repetitive flows while keeping a review-first design so every message remains human-approved."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/linkedin-outreach-agent",
@@ -882,7 +887,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-08T14:02:54Z"
+        "updatedAt": "2026-04-08T19:41:11Z"
       }
     }
   ],

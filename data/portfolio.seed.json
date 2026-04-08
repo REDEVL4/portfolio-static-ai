@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Govardhan Reddy Narala",
-    "headline": "Data scientist and software engineer building applied ML, NLP, and scalable data systems on large datasets.",
+    "headline": "Software engineer building full-stack, backend, and data-ML systems that hold up under real production load.",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -9,42 +9,43 @@
     "githubUrl": "https://github.com/REDEVL4",
     "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
     "resumeUrl": "assets/resume.pdf",
-    "heroIntro": "I turn complex data into reliable analytics, machine learning, and production-ready systems.",
+    "heroIntro": "I build full-stack platforms, backend services, and data-driven systems that are designed for real-world scale.",
     "heroSummary": [
-      "Data Scientist with about 3 years of experience building analytics-ready datasets, machine learning workflows, and data-intensive backend systems across enterprise and large-scale environments.",
-      "This portfolio is organized around proof: measurable production impact, large-scale applied ML projects, and systems work that moves from messy inputs to dependable delivery."
+      "Software Engineer with 3 years of experience building customer-facing applications, cloud-native services, distributed integrations, and data-ML systems across enterprise and large-scale environments.",
+      "This portfolio is organized around proof: 50M+ monthly records, 99.9% SLA systems, 400% traffic spikes, sub-45-minute incident response, and project work that connects full-stack engineering with backend, data, and automation."
     ],
     "heroMetrics": [
-      { "label": "Experience", "value": "~3 years" },
-      { "label": "Production scale", "value": "10M+ tx/day" },
+      { "label": "Experience", "value": "3 years" },
+      { "label": "Production scale", "value": "50M+ monthly records" },
       { "label": "Query improvement", "value": "45% lower latency" },
-      { "label": "Incident response", "value": "40% faster triage" }
+      { "label": "Traffic resilience", "value": "400% peak spikes" }
     ],
     "heroProofPoints": [
-      "Built systems supporting 10M+ daily transactions with 99.9% reliability.",
-      "Reduced SQL query latency by 45% across data-intensive services.",
-      "Shipped ML and analytics projects on 3.6M+ records and 40K+ medical images.",
-      "Combined backend engineering depth with analytics, ML, and observability."
+      "Built systems processing 50M+ monthly records and 10M+ monthly transactions at 99.9% SLA.",
+      "Reduced SQL query latency by 45% across data-intensive services and lowered MTTR to under 45 minutes.",
+      "Shipped full-stack and distributed systems using .NET, Node.js, Next.js, Kafka-style event flows, GraphQL, Redis, and Docker.",
+      "Combined backend engineering depth with analytics, ML research, observability, and automation."
     ],
     "focusAreas": [
-      "Applied machine learning",
-      "Data engineering",
+      "Full-stack engineering",
       "Backend systems",
-      "Cloud integrations",
-      "Observability and reliability engineering"
+      "Data engineering",
+      "Distributed systems and integrations",
+      "Cloud platforms and observability",
+      "Applied machine learning"
     ],
     "homeValueCards": [
       {
-        "title": "Data To Delivery",
-        "copy": "I work well across the full path from ingestion, validation, and feature engineering to modeling, dashboards, and operational output."
+        "title": "Product To Platform",
+        "copy": "I can work from frontend and user-facing flows down to service boundaries, data contracts, infrastructure, and operational behavior."
       },
       {
-        "title": "Production Context",
-        "copy": "My engineering background means I do not treat analytics in isolation. I think about reliability, system constraints, latency, and maintainability from the start."
+        "title": "Reliability Under Load",
+        "copy": "My background is grounded in production systems, so I design for uptime, observability, throughput, operational clarity, and failure handling from the start."
       },
       {
-        "title": "Research With Practical Value",
-        "copy": "My graduate projects are not toy experiments. They are framed around robustness, scale, validation, and explainable impact."
+        "title": "Engineering Plus ML",
+        "copy": "I do not treat ML as a disconnected research artifact. I connect modeling, data pipelines, backend systems, and automation into end-to-end delivery."
       }
     ],
     "aboutSections": [
@@ -58,17 +59,17 @@
       },
       {
         "title": "Best Role Fit",
-        "copy": "I am strongest in data scientist, analytics engineer, data engineer, and applied ML roles where pipeline quality, system context, and measurable outcomes matter as much as the model itself."
+        "copy": "I am strongest in software engineer, full-stack, backend, data engineering, and ML-systems roles where system quality, measurable outcomes, and end-to-end ownership matter."
       }
     ],
     "currentStatus": [
       {
         "title": "Open To Work",
-        "copy": "Actively pursuing Data Scientist, Applied ML, ML Engineer, Software Engineer, and Data Engineer opportunities."
+        "copy": "Actively pursuing Software Engineer, Full Stack, Backend, Data Engineering, and ML-driven systems opportunities."
       },
       {
         "title": "What I Want To Build",
-        "copy": "Production-grade data products that combine clean ingestion, trustworthy analytics, and machine learning that can stand up to real usage."
+        "copy": "Production-grade platforms, backend services, and data-ML systems that combine reliability, scalability, and practical user value."
       },
       {
         "title": "Working Style",
@@ -78,22 +79,26 @@
     "skills": [
       "Python",
       "SQL",
+      "C#",
+      "JavaScript",
+      "TypeScript",
+      "ASP.NET Core",
       "PyTorch",
-      "NLP",
-      "Spark",
       "Next.js",
+      "React.js",
+      "Spark",
       "GraphQL",
-      "OpenAI",
+      "Kafka",
+      "Redis",
       "Azure",
       "Azure Data Factory",
-      "Durable Functions",
+      "Azure Event Hubs",
       "Node.js",
       ".NET",
       "PostgreSQL",
-      "Cosmos DB",
-      "Dell Boomi",
+      "Snowflake",
       "Splunk",
-      "AppDynamics"
+      "Docker"
     ]
   },
   "github": {
@@ -114,13 +119,13 @@
       "title": "Realtime Commerce Platform",
       "featured": true,
       "type": "Full Stack",
-      "summary": "Docker-first marketplace platform that combines customer and admin apps, service separation, event-driven workflows, search, recommendations, and fulfillment into a realistic end-to-end commerce system.",
+      "summary": "Real-time event-driven commerce platform built as an 11-service ecosystem with GraphQL BFF, Redis, recommendations, and full cart-to-fulfillment lifecycle orchestration.",
       "tags": ["Next.js", "Microservices", "GraphQL", "Redis", "Event-Driven"],
       "stack": ["Node.js", "Next.js", ".NET", "FastAPI", "GraphQL", "Redis", "Docker"],
       "highlights": [
-        "Expanded an earlier Node.js commerce project into a multi-service platform with gateway, GraphQL BFF, recommendation service, fulfillment service, worker, and operational admin surface.",
-        "Built separate customer and admin web applications with live cart updates, search and filtering, order tracking, warehouse-linked inventory flows, and profile management.",
-        "Modeled a more realistic commerce architecture using MySQL, Redis, RabbitMQ, Redpanda, and Meilisearch to support asynchronous fulfillment, caching, event flows, and product discovery."
+        "Architected an 11-service microservices ecosystem using Node.js, Next.js, .NET, FastAPI, GraphQL, and Redis around a real-time commerce domain.",
+        "Managed the full cart-to-fulfillment lifecycle with event-driven order processing, real-time inventory flows, customer storefront experience, and admin-side operational views.",
+        "Combined gateway, recommendations, search, caching, and asynchronous messaging patterns into a more production-like marketplace platform."
       ],
       "links": {
         "caseStudy": "content/case-studies/realtime-commerce-platform.md"
@@ -133,13 +138,13 @@
       "title": "LinkedIn Outreach Agent",
       "featured": true,
       "type": "AI Tooling",
-      "summary": "Chrome extension that drafts natural LinkedIn replies, recruiter responses, and connection outreach using page context, browser automation, and local or cloud LLMs.",
+      "summary": "LLM-powered Chrome extension that reads live LinkedIn context and drafts profile-grounded outreach with browser automation and human review before send.",
       "tags": ["LLM", "Chrome Extension", "Browser Automation", "OpenAI", "Ollama"],
       "stack": ["JavaScript", "Chrome Extension", "OpenAI", "Ollama", "Browser Automation"],
       "highlights": [
-        "Built a LinkedIn-native assistant that reads visible page context and drafts recruiter replies, follow-ups, comments, and connection requests in a grounded voice.",
-        "Supported multiple model backends including OpenAI, Ollama, and OpenAI-compatible local servers so the extension can run in either cloud or privacy-first local mode.",
-        "Added a review-first workflow and browser-agent capabilities so repetitive LinkedIn actions can be accelerated without losing control over the final message."
+        "Built a Chrome extension that reads visible LinkedIn context and drafts recruiter replies, follow-ups, and connection outreach grounded in profile context.",
+        "Supported OpenAI, Ollama, and OpenAI-compatible local LLM servers so the tool can run in either cloud or privacy-first local mode.",
+        "Added browser automation for repetitive flows while keeping a review-first design so every message remains human-approved."
       ],
       "links": {
         "caseStudy": "content/case-studies/linkedin-outreach-agent.md"

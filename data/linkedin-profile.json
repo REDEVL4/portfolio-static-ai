@@ -1,9 +1,9 @@
 {
-  "headline": "Data Scientist | Applied ML, NLP & Deep Learning | Scalable ML & data systems on large datasets | Python | SQL | PyTorch | Spark",
+  "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
   "about": [
-    "I am a data scientist with a developer's mindset and about 3 years of experience building cloud-native and data-intensive systems. My strongest work sits where messy datasets, production workflows, and machine learning meet, so I focus on turning raw information into dependable, decision-ready outputs for real operating environments.",
-    "Before and during my master's at the University of Houston-Clear Lake, I worked across Azure, .NET, SQL, Node.js, Docker, KQL, Splunk, and enterprise integration systems at TCS and Hexagon. That background shaped how I approach analytics and ML today: with equal attention to data quality, delivery reliability, system design, and measurable outcomes.",
-    "My recent work includes adversarial medical-imaging research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, Houston crime classification on 3.6M+ records, multimodal book-genre modeling, big-data hunger analytics, a real-time commerce platform, and an LLM-powered LinkedIn outreach agent. I am currently exploring Data Scientist, Applied ML, ML Engineer, and Data Engineering roles where I can own the path from ingestion and validation through modeling and production-minded delivery."
+    "I am a software engineer with 3 years of experience building cloud-native systems, distributed integrations, data pipelines, and scalable applications. My strongest work sits where messy operational data, backend services, and production reliability meet, so I focus on building systems that are not just technically correct but actually usable in mission-critical workflows.",
+    "Across TCS and Hexagon, I worked with Azure, .NET, SQL, Node.js, Docker, Splunk, Snowflake, Kafka-style event flows, and integration platforms to ship systems handling 50M+ monthly records, 10M+ monthly transactions, 99.9% SLA targets, 400% traffic spikes, and sub-45-minute incident response.",
+    "My recent work also includes adversarial medical-imaging research accepted for publication and oral presentation at ICICT 2026, graph learning for disease clustering, a microservices-based real-time commerce platform using Node.js, GraphQL, Redis, FastAPI, and .NET, and an LLM-powered LinkedIn outreach agent using OpenAI and Ollama. I am currently exploring Software Engineer, Full Stack, Backend, Data Engineering, and ML-driven systems roles where I can build end-to-end platforms from backend services and data pipelines to automation and intelligent features."
   ],
   "experience": [
     {
@@ -13,9 +13,9 @@
       "start": "2025-08",
       "end": "2025-12",
       "highlights": [
-        "Mentored over 60 students in Databases, Big Data, and Python through labs and office hours.",
-        "Used a concept-first teaching approach to strengthen understanding rather than memorization.",
-        "Developed a structured feedback loop that improved student confidence and performance in programming assignments."
+        "Mentored 60+ students per semester in Python, SQL, databases, and big-data workflows through hands-on labs and office hours.",
+        "Simplified complex topics like query optimization, data pipelines, and debugging into practical problem-solving approaches that improved student performance and code quality.",
+        "Reviewed and graded 1000+ assignments, providing structured feedback that improved understanding and reduced recurring logical errors."
       ]
     },
     {
@@ -25,11 +25,11 @@
       "start": "2023-01",
       "end": "2023-12",
       "highlights": [
-        "Architected high-availability integration landscapes using Dell Boomi to synchronize mission-critical data across Salesforce CRM, NetSuite ERP, and on-prem databases for global inventory and payroll domains.",
-        "Engineered real-time event-driven APIs and MDM flows with listeners and API gateways, applying reliability patterns to sustain 99.9% uptime for high-traffic business workflows.",
-        "Implemented AppDynamics and Splunk observability plus a custom traceability layer for migrations, reducing production incident triage time by 40%.",
-        "Led end-to-end integration delivery, translating ambiguous business requirements into reliable technical assets through architectural reviews and gap analysis.",
-        "Collaborated across distributed teams to validate end-to-end integrations and preserve data consistency and security during enterprise rollouts."
+        "Architected 20+ enterprise integration workflows across Dell Boomi and MuleSoft, connecting Salesforce, NetSuite, Dynamics 365, Oracle EBS, and ServiceNow across CRM, ERP, ITSM, and e-commerce domains for 3 business units.",
+        "Engineered real-time event-driven pipelines using Kafka, JMS, AMQP, AS2, and EDI, processing 10M+ monthly transactions across payments, order management, shipment tracking, and fulfillment while maintaining 99.9% SLA uptime.",
+        "Built a unified log aggregation dashboard in C# and Python consolidating telemetry from Boomi, MuleSoft, and Infor ION, reducing cross-platform investigation time by 55% and lowering MTTR from 2 hours to under 45 minutes.",
+        "Automated Atom health monitoring using REST APIs, Bash, and Python with HTML alerting for crashed Atoms and stalled flows, cutting incident detection from hours to under 5 minutes and eliminating recurring outage patterns.",
+        "Implemented schema validation, transformation rules, and data consistency controls across ingestion pipelines feeding Snowflake and SQL Server, reducing downstream data failures by 47%."
       ]
     },
     {
@@ -39,11 +39,11 @@
       "start": "2021-07",
       "end": "2022-12",
       "highlights": [
-        "Engineered multi-partner ingestion workflows with Azure Data Factory and Durable Functions for 10+ global airline partners.",
-        "Developed high-performance gRPC and REST microservices in .NET Core and Dapper using clean architecture patterns for scalability and maintainability.",
-        "Architected SQL analytical layers for self-service bag drop systems, achieving 99.9% data accuracy and reducing manual audit overhead by 35%.",
-        "Built real-time telemetry pipelines for Tableau dashboards and deployed Application Insights plus KQL observability to maintain 24/7 operational reliability.",
-        "Optimized SQL Server, PostgreSQL, and Cosmos DB workloads and streamlined Docker plus Azure DevOps CI/CD to improve release quality for mission-critical services."
+        "Engineered a serverless passenger-processing pipeline using C#/.NET Core and Azure Durable Functions for 10+ global airline clients, reducing transaction resolution time by 38% at 99.9% SLA across 3 airports.",
+        "Built autoscaling event-driven architecture using Azure Event Hubs and Azure Data Factory processing 50M+ monthly records and absorbing 400% peak traffic spikes with zero manual intervention.",
+        "Developed real-time KQL and Power BI dashboards processing 2M+ daily passenger events, helping ops teams cut staffing overhead by 22% and reducing post-release incident rates by 45%.",
+        "Reduced query latency by 45% through indexing, schema refinement, and execution plan optimization across SQL Server, PostgreSQL, and Cosmos DB.",
+        "Built REST microservices using .NET Core and Dapper with clean architecture patterns, improving throughput and maintainability for distributed transaction workflows."
       ]
     }
   ],
@@ -68,9 +68,9 @@
     }
   ],
   "topSkills": [
-    "Data Engineering / ETL / ELT",
-    "PyTorch",
-    "SQL"
+    "Data Pipelines",
+    "Snowflake",
+    "Splunk"
   ],
   "certifications": [
     "Programming for Everybody (Getting Started with Python)",
