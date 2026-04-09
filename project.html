@@ -24,12 +24,14 @@
     </div>
   </nav>
 
-  <main class="container py-4">
-    <a class="text-decoration-none small link-lightish" href="projects.html">Back to Projects</a>
+  <main class="container page-shell py-4">
+    <div class="page-intro page-intro--project">
+      <a class="text-decoration-none small link-lightish" href="projects.html">Back to Projects</a>
+    </div>
 
     <div class="row g-4 mt-2">
       <div class="col-lg-8">
-        <div class="detail-panel">
+        <div class="detail-panel" data-tilt>
           <div class="section-kicker">Project walkthrough</div>
           <h1 class="detail-title mb-2" id="pTitle">Loading...</h1>
           <p class="detail-summary" id="pSummary"></p>
@@ -55,7 +57,7 @@
           <h2 class="h6 fw-semibold mt-4">Highlights</h2>
           <ul class="detail-list" id="pHighlights"></ul>
 
-          <div class="mt-4 ai-panel">
+          <div class="mt-4 ai-panel" data-tilt>
             <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
               <div>
                 <h2 class="h6 fw-semibold mb-1">Project Snapshot</h2>
@@ -85,12 +87,12 @@
 
       <div class="col-lg-4">
         <div class="sidebar-stack">
-          <div class="detail-panel">
+          <div class="detail-panel" data-tilt>
             <h3 class="h6 fw-semibold mb-3">Gallery</h3>
             <div id="gallery" class="d-grid gap-2"></div>
             <div class="small text-secondary mt-3">I use diagrams, screenshots, and notebook output here when they help explain the build.</div>
           </div>
-          <div class="detail-panel">
+          <div class="detail-panel" data-tilt>
             <h3 class="h6 fw-semibold mb-3">Related Projects</h3>
             <div id="relatedProjects" class="d-grid gap-3"></div>
           </div>

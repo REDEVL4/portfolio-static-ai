@@ -26,82 +26,98 @@
   </nav>
 
   <header class="hero-shell">
-    <div class="container py-5">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-7">
-          <div class="hero-copy">
-            <div class="section-kicker">Software engineering portfolio</div>
-            <h1 class="hero-title" id="heroIntro">I build production-grade data products, ML prototypes, and backend systems.</h1>
-            <div class="hero-headline" id="heroHeadline"></div>
-            <div class="hero-summary" id="heroSummary"></div>
-            <div class="d-flex gap-2 flex-wrap mt-4">
-              <a class="btn btn-light btn-lg" href="projects.html">Explore Projects</a>
-              <a class="btn btn-outline-light btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-              <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
-            </div>
-            <div class="d-flex flex-wrap gap-2 mt-4" id="heroSkills"></div>
-            <div class="hero-proof-grid mt-4" id="heroProof"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <div class="section-kicker">Software engineering portfolio</div>
+          <h1 class="hero-title" id="heroIntro">I build production-grade data products, ML prototypes, and backend systems.</h1>
+          <div class="hero-headline" id="heroHeadline"></div>
+          <div class="hero-summary" id="heroSummary"></div>
+          <div class="hero-actions d-flex gap-2 flex-wrap mt-4">
+            <a class="btn btn-light btn-lg" href="projects.html">Explore Projects</a>
+            <a class="btn btn-outline-light btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+          </div>
+          <div class="hero-skill-band mt-4">
+            <div class="hero-band-label">Stack</div>
+            <div class="d-flex flex-wrap gap-2" id="heroSkills"></div>
           </div>
         </div>
-        <div class="col-lg-5">
-          <div class="d-grid gap-4">
-            <div class="hero-aside-card">
-              <div class="section-kicker">At a glance</div>
-              <h2 class="h4 mb-2">How I usually add value</h2>
-              <p class="mb-3 text-secondary">I do my best work when I can own the backend, shape the data flow, and turn a messy operational problem into a reliable system people can actually use.</p>
-              <div class="mini-fact-grid">
-                <div class="mini-fact-card">
-                  <div class="mini-fact-label">Location</div>
-                  <div class="mini-fact-value" id="heroLocation">Greater Houston, TX</div>
-                </div>
-                <div class="mini-fact-card">
-                  <div class="mini-fact-label">Phone</div>
-                  <a class="mini-fact-link" id="heroPhone" href="#">Available on resume</a>
-                </div>
-                <div class="mini-fact-card">
-                  <div class="mini-fact-label">Email</div>
-                  <a class="mini-fact-link" id="heroEmail" href="#">reddygovardhan6826@gmail.com</a>
-                </div>
-                <div class="mini-fact-card">
-                  <div class="mini-fact-label">Resume</div>
-                  <a class="mini-fact-link" id="heroResumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
-                </div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="hero-stage-panel hero-stage-panel--identity" data-tilt>
+          <div class="hero-stage-topline">
+            <span class="hero-status-dot"></span>
+            <span>Open to software engineering, backend, and platform roles</span>
+          </div>
+          <div class="hero-aside-card">
+            <div class="section-kicker">At a glance</div>
+            <h2 class="h4 mb-2">How I usually add value</h2>
+            <p class="mb-3 text-secondary">I do my best work when I can own the backend, shape the data flow, and turn a messy operational problem into a reliable system people can actually use.</p>
+            <div class="mini-fact-grid">
+              <div class="mini-fact-card">
+                <div class="mini-fact-label">Location</div>
+                <div class="mini-fact-value" id="heroLocation">Greater Houston, TX</div>
+              </div>
+              <div class="mini-fact-card">
+                <div class="mini-fact-label">Phone</div>
+                <a class="mini-fact-link" id="heroPhone" href="#">Available on resume</a>
+              </div>
+              <div class="mini-fact-card">
+                <div class="mini-fact-label">Email</div>
+                <a class="mini-fact-link" id="heroEmail" href="#">reddygovardhan6826@gmail.com</a>
+              </div>
+              <div class="mini-fact-card">
+                <div class="mini-fact-label">Resume</div>
+                <a class="mini-fact-link" id="heroResumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
               </div>
             </div>
-            <div class="featured-panel">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div>
-                  <div class="section-kicker">Featured work</div>
-                  <h2 class="h4 mb-0">Projects I can walk through in detail</h2>
-                </div>
-              </div>
-              <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="featuredSlides"></div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+          </div>
+        </div>
+
+        <div class="hero-stage-panel hero-stage-panel--proof" data-tilt>
+          <div class="d-flex justify-content-between align-items-end gap-3 mb-3">
+            <div>
+              <div class="section-kicker">Selected proof</div>
+              <h2 class="h5 mb-0">A few numbers that matter in the kind of work I do</h2>
             </div>
+          </div>
+          <div class="hero-proof-grid" id="heroProof"></div>
+        </div>
+
+        <div class="hero-stage-panel hero-stage-panel--featured featured-panel" data-tilt>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <div class="section-kicker">Featured work</div>
+              <h2 class="h4 mb-0">Projects I can walk through in detail</h2>
+            </div>
+          </div>
+          <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="featuredSlides"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="container pb-5">
+  <main class="home-main">
+    <section class="container proof-ribbon-section">
       <div class="row g-3" id="heroMetrics"></div>
     </section>
 
-    <section class="container pb-5">
+    <section class="container editorial-section">
       <div class="row g-4">
         <div class="col-lg-5">
-          <div class="info-panel h-100">
+          <div class="info-panel h-100" data-tilt>
             <div class="section-kicker">What I Bring</div>
             <h2 class="h4">I care about systems that hold up outside the demo</h2>
             <p>Most of my experience comes from backend services, distributed integrations, data pipelines, and production support work where uptime, scale, and clarity matter just as much as the code itself.</p>
@@ -109,7 +125,7 @@
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="info-panel h-100">
+          <div class="info-panel h-100" data-tilt>
             <div class="section-kicker">Best Fit</div>
             <h2 class="h4">What I want this site to make clear</h2>
             <p class="text-secondary">I want it to be easy to see the kind of work I do well: APIs, distributed systems, integrations, cloud reliability, data pipelines, and ML projects that connect back to real engineering delivery instead of staying as isolated experiments.</p>
@@ -119,36 +135,39 @@
       </div>
     </section>
 
-    <section class="container pb-5">
+    <section class="container strengths-section">
       <div class="row g-4" id="homeValueCards"></div>
     </section>
 
-    <section class="container pb-5">
-      <div class="resume-panel">
-        <div>
-          <div class="section-kicker">Resume</div>
-          <h2 class="h3 mb-2">If you want the short version</h2>
-          <p class="mb-0 text-secondary">I keep my latest resume here as the compact version of this site: experience, projects, stack, and the impact numbers I want hiring teams to see quickly.</p>
+    <section id="contact" class="container contact-grid-section">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="resume-panel h-100" data-tilt>
+            <div>
+              <div class="section-kicker">Resume</div>
+              <h2 class="h3 mb-2">If you want the short version</h2>
+              <p class="mb-0 text-secondary">I keep my latest resume here as the compact version of this site: experience, projects, stack, and the impact numbers I want hiring teams to see quickly.</p>
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-light" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+              <a class="btn btn-outline-light" href="experience.html">View Experience</a>
+            </div>
+          </div>
         </div>
-        <div class="d-flex gap-2 flex-wrap">
-          <a class="btn btn-light" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
-          <a class="btn btn-outline-light" href="experience.html">View Experience</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container pb-5">
-      <div class="contact-panel">
-        <div>
-          <div class="section-kicker">Contact</div>
-          <h2 class="h4 mb-2">If you want to talk through the work</h2>
-          <p class="mb-0 text-white-50">You can reach me directly, browse the GitHub code, or open the project pages if you want to see how I explain the systems, tradeoffs, and results behind each project.</p>
-          <div class="small text-secondary mt-3" id="contactMeta"></div>
-        </div>
-        <div class="d-flex gap-2 flex-wrap">
-          <a class="btn btn-light" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-outline-light" id="emailLink" href="#">Email</a>
-          <a class="btn btn-outline-light" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+        <div class="col-lg-7">
+          <div class="contact-panel h-100" data-tilt>
+            <div>
+              <div class="section-kicker">Contact</div>
+              <h2 class="h4 mb-2">If you want to talk through the work</h2>
+              <p class="mb-0 text-white-50">You can reach me directly, browse the GitHub code, or open the project pages if you want to see how I explain the systems, tradeoffs, and results behind each project.</p>
+              <div class="small text-secondary mt-3" id="contactMeta"></div>
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-light" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-outline-light" id="emailLink" href="#">Email</a>
+              <a class="btn btn-outline-light" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

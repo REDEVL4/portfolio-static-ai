@@ -1,10 +1,13 @@
 const revealSelectors = [
   ".hero-copy",
+  ".hero-stage-panel",
   ".hero-aside-card",
   ".featured-panel",
   ".info-panel",
   ".resume-panel",
   ".contact-panel",
+  ".page-intro-shell",
+  ".project-toolbar",
   ".metric-card",
   ".project-card",
   ".detail-panel",
@@ -15,19 +18,25 @@ const revealSelectors = [
   ".related-card"
 ];
 
-function initReveal() {
-  const nodes = [...document.querySelectorAll(revealSelectors.join(","))];
+function revealNodes(nodes) {
   if (!nodes.length) {
-    return;
+    return [];
   }
 
-  nodes.forEach((node, index) => {
+  const fresh = nodes.filter((node) => !node.dataset.revealReady);
+  fresh.forEach((node, index) => {
+    node.dataset.revealReady = "true";
     node.classList.add("reveal-on-scroll");
     node.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 70}ms`);
   });
+  return fresh;
+}
+
+function initReveal() {
+  const nodes = revealNodes([...document.querySelectorAll(revealSelectors.join(","))]);
 
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    nodes.forEach((node) => node.classList.add("is-visible"));
+    document.querySelectorAll("[data-reveal-ready='true']").forEach((node) => node.classList.add("is-visible"));
     return;
   }
 
@@ -49,6 +58,8 @@ function initReveal() {
   );
 
   nodes.forEach((node) => observer.observe(node));
+
+  return observer;
 }
 
 function initHeroGlow() {
@@ -72,5 +83,71 @@ function initHeroGlow() {
   });
 }
 
-initReveal();
+function initTilt() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  const nodes = [...document.querySelectorAll("[data-tilt]")].filter((node) => !node.dataset.tiltReady);
+  nodes.forEach((node) => {
+    node.dataset.tiltReady = "true";
+    node.classList.add("tilt-surface");
+
+    const reset = () => {
+      node.style.setProperty("--tilt-rotate-x", "0deg");
+      node.style.setProperty("--tilt-rotate-y", "0deg");
+      node.style.setProperty("--tilt-shine-x", "50%");
+      node.style.setProperty("--tilt-shine-y", "50%");
+    };
+
+    node.addEventListener("pointermove", (event) => {
+      const rect = node.getBoundingClientRect();
+      const px = (event.clientX - rect.left) / rect.width;
+      const py = (event.clientY - rect.top) / rect.height;
+      const rotateY = (px - 0.5) * 8;
+      const rotateX = (0.5 - py) * 8;
+
+      node.style.setProperty("--tilt-rotate-x", `${rotateX.toFixed(2)}deg`);
+      node.style.setProperty("--tilt-rotate-y", `${rotateY.toFixed(2)}deg`);
+      node.style.setProperty("--tilt-shine-x", `${(px * 100).toFixed(1)}%`);
+      node.style.setProperty("--tilt-shine-y", `${(py * 100).toFixed(1)}%`);
+    });
+
+    node.addEventListener("pointerleave", reset);
+    reset();
+  });
+}
+
+function initNavState() {
+  const nav = document.querySelector(".site-nav");
+  if (!nav) {
+    return;
+  }
+
+  const sync = () => {
+    nav.classList.toggle("site-nav--scrolled", window.scrollY > 18);
+  };
+
+  sync();
+  window.addEventListener("scroll", sync, { passive: true });
+}
+
+const revealObserver = initReveal();
 initHeroGlow();
+initTilt();
+initNavState();
+
+if (document.body) {
+  const mutationObserver = new MutationObserver(() => {
+    const nodes = revealNodes([...document.querySelectorAll(revealSelectors.join(","))]);
+    if (revealObserver && nodes?.length) {
+      nodes.forEach((node) => revealObserver.observe(node));
+    }
+    initTilt();
+  });
+
+  mutationObserver.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+}

@@ -59,7 +59,7 @@ function projectCard(project) {
 
   return `
     <article class="col-md-6 col-xl-4">
-      <div class="project-card h-100">
+      <div class="project-card h-100" data-tilt>
         <img src="${img}" class="project-thumb" alt="${escapeHtml(project.title)} preview">
         <div class="project-body">
           <div class="d-flex justify-content-between align-items-start gap-3">

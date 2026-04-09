@@ -37,7 +37,7 @@ async function init() {
     aboutSections.innerHTML = snapshotSections
       .map(
         (section) => `
-          <div class="content-card">
+          <div class="content-card" data-tilt>
             <div class="content-card-title">${escapeHtml(section.title)}</div>
             <p class="mb-0 mt-2 text-secondary">${escapeHtml(section.copy)}</p>
           </div>
@@ -50,7 +50,7 @@ async function init() {
     focusCards.innerHTML = focusAreas
       .map(
         (item) => `
-          <div class="content-card">
+          <div class="content-card" data-tilt>
             <div class="content-card-title">${escapeHtml(item)}</div>
             <p class="mb-0 mt-2 text-secondary">${escapeHtml(
               focusAreaCopy[item] ||
@@ -70,7 +70,7 @@ async function init() {
   education.innerHTML = (profile.education || [])
     .map(
       (item) => `
-        <div class="education-card">
+        <div class="education-card" data-tilt>
           <div class="fw-semibold">${escapeHtml(item.degree)}</div>
           <div class="text-secondary">${escapeHtml(item.institution)}</div>
           <div class="text-secondary">${escapeHtml(formatDateLabel(item.start))} - ${escapeHtml(formatDateLabel(item.end))}</div>
@@ -81,7 +81,7 @@ async function init() {
 
   if (certifications) {
     certifications.innerHTML = (profile.certifications || [])
-      .map((item) => `<div class="education-card"><div class="fw-semibold">${escapeHtml(item)}</div></div>`)
+      .map((item) => `<div class="education-card" data-tilt><div class="fw-semibold">${escapeHtml(item)}</div></div>`)
       .join("");
   }
 
@@ -95,19 +95,19 @@ async function init() {
     const primaryExperience = experience[0];
     const headline = profile.headline || site.headline || "";
     contact.innerHTML = `
-      <div class="education-card">
+      <div class="education-card" data-tilt>
         <div class="fw-semibold">Location</div>
         <div class="text-secondary">${escapeHtml(site.location || "")}</div>
       </div>
-      <div class="education-card">
+      <div class="education-card" data-tilt>
         <div class="fw-semibold">Email</div>
         <a class="text-secondary text-decoration-none" href="mailto:${escapeHtml(site.email || "")}">${escapeHtml(site.email || "")}</a>
       </div>
-      <div class="education-card">
+      <div class="education-card" data-tilt>
         <div class="fw-semibold">What I Focus On</div>
         <div class="text-secondary">${escapeHtml(headline)}</div>
       </div>
-      <div class="education-card">
+      <div class="education-card" data-tilt>
         <div class="fw-semibold">Profiles</div>
         <div class="d-flex flex-wrap gap-2 mt-2">
           <a class="btn btn-sm btn-outline-light" href="${escapeHtml(site.linkedinUrl || "#")}" target="_blank" rel="noopener">LinkedIn</a>
@@ -117,7 +117,7 @@ async function init() {
       </div>
       ${
         primaryExperience
-          ? `<div class="education-card"><div class="fw-semibold">Most Recent Role</div><div class="text-secondary">${escapeHtml(primaryExperience.role)} at ${escapeHtml(primaryExperience.company)}</div></div>`
+          ? `<div class="education-card" data-tilt><div class="fw-semibold">Most Recent Role</div><div class="text-secondary">${escapeHtml(primaryExperience.role)} at ${escapeHtml(primaryExperience.company)}</div></div>`
           : ""
       }
     `;
@@ -127,7 +127,7 @@ async function init() {
     statusCards.innerHTML = currentStatus
       .map(
         (item) => `
-          <div class="education-card">
+          <div class="education-card" data-tilt>
             <div class="fw-semibold">${escapeHtml(item.title)}</div>
             <div class="text-secondary">${escapeHtml(item.copy)}</div>
           </div>

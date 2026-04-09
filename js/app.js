@@ -33,7 +33,7 @@ function projectSlide(project, active) {
 function statCard(label, value) {
   return `
     <div class="col-12 col-md-6 col-xl-3">
-      <div class="metric-card">
+      <div class="metric-card" data-tilt>
         <div class="metric-label">${escapeHtml(label)}</div>
         <div class="metric-value">${escapeHtml(value)}</div>
       </div>
@@ -53,7 +53,7 @@ function proofCard(text) {
 function valueCard(item) {
   return `
     <div class="col-lg-4">
-      <div class="info-panel h-100 value-panel">
+      <div class="info-panel h-100 value-panel" data-tilt>
         <div class="section-kicker">Core Strength</div>
         <h2 class="h4">${escapeHtml(item.title)}</h2>
         <p class="mb-0">${escapeHtml(item.copy)}</p>

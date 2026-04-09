@@ -9,7 +9,7 @@ async function init() {
       (item) => `
         <div class="timeline-item">
           <div class="timeline-line"></div>
-          <div class="timeline-card">
+          <div class="timeline-card" data-tilt>
             <div class="d-flex flex-wrap justify-content-between gap-3">
               <div>
                 <div class="fw-semibold">${escapeHtml(item.role)}</div>
