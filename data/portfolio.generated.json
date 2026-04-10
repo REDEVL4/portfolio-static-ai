@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T23:45:09.691Z",
+  "generatedAt": "2026-04-10T03:41:11.252Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -670,8 +670,8 @@
         "github": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering",
         "demo": null,
         "caseStudy": "content/case-studies/book-genre.md",
-        "notebook": "https://nbviewer.org/github/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenreClassification.ipynb",
-        "notebookSource": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenreClassification.ipynb",
+        "notebook": "https://nbviewer.org/github/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenrePipeline.ipynb",
+        "notebookSource": "https://github.com/REDEVL4/Multimodal-Book-Genre-Classification-Clustering/blob/main/BookGenrePipeline.ipynb",
         "paper": null
       },
       "images": [
@@ -689,7 +689,7 @@
         "topics": [],
         "description": "A scalable multimodal machine learning pipeline for book genre prediction, clustering, and segmentation using both book cover images and textual metadata (titles).  This project combines Computer Vision + NLP to automatically organize and segment large-scale book catalogs for recommendation systems and digital libraries.",
         "homepage": null,
-        "updatedAt": "2026-02-12T05:36:41Z"
+        "updatedAt": "2026-04-10T00:17:09Z"
       }
     },
     {
@@ -1067,7 +1067,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-09T23:35:06Z"
+        "updatedAt": "2026-04-10T02:35:17Z"
       }
     }
   ],
