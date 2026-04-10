@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T13:50:04.437Z",
+  "generatedAt": "2026-04-10T19:12:00.502Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -114,7 +114,7 @@
       "Docker"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 15
+    "githubPublicRepos": 16
   },
   "profile": {
     "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
@@ -885,6 +885,44 @@
       }
     },
     {
+      "slug": "jobfusion",
+      "repo": "jobfusion",
+      "title": "jobfusion",
+      "featured": false,
+      "type": "Project",
+      "summary": "Unified job search, AI resume tailoring, and application tracking platform",
+      "tags": [],
+      "stack": [
+        "Python"
+      ],
+      "highlights": [],
+      "links": {
+        "github": "https://github.com/REDEVL4/jobfusion",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "jobfusion",
+        "defaultBranch": "main",
+        "language": "Python",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "Unified job search, AI resume tailoring, and application tracking platform",
+        "homepage": null,
+        "updatedAt": "2026-04-10T16:26:24Z"
+      }
+    },
+    {
       "slug": "netcore-microservices",
       "repo": "MicroservicesUsingNetCore",
       "title": "Microservices Using .NET Core",
@@ -1067,12 +1105,12 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-10T07:59:31Z"
+        "updatedAt": "2026-04-10T13:50:10Z"
       }
     }
   ],
   "meta": {
-    "projectCount": 14,
+    "projectCount": 15,
     "featuredCount": 8
   }
 }
