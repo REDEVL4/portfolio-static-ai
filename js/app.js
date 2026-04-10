@@ -20,7 +20,7 @@ function projectSlide(project, active) {
             <div class="section-kicker">${escapeHtml(project.type || "Project")}</div>
             <div class="featured-title">${escapeHtml(project.title)}</div>
           </div>
-          <a class="btn btn-sm btn-outline-light hero-action" href="project.html?slug=${encodeURIComponent(project.slug)}">Open</a>
+          <a class="btn btn-sm btn-outline-dark hero-action" href="project.html?slug=${encodeURIComponent(project.slug)}">Open</a>
         </div>
         <p class="featured-copy">${escapeHtml(project.summary || "")}</p>
         <div class="d-flex flex-wrap gap-2">${tags}</div>

@@ -110,9 +110,9 @@ async function init() {
       <div class="education-card" data-tilt>
         <div class="fw-semibold">Profiles</div>
         <div class="d-flex flex-wrap gap-2 mt-2">
-          <a class="btn btn-sm btn-outline-light" href="${escapeHtml(site.linkedinUrl || "#")}" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-sm btn-outline-light" href="${escapeHtml(site.githubUrl || "#")}" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-sm btn-outline-light" href="${escapeHtml(site.resumeUrl || "#")}" target="_blank" rel="noopener">Resume</a>
+          <a class="btn btn-sm btn-outline-dark" href="${escapeHtml(site.linkedinUrl || "#")}" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-sm btn-outline-dark" href="${escapeHtml(site.githubUrl || "#")}" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-sm btn-outline-dark" href="${escapeHtml(site.resumeUrl || "#")}" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
       ${

@@ -1,7 +1,8 @@
 const revealSelectors = [
   ".hero-copy",
-  ".hero-stage-panel",
-  ".hero-aside-card",
+  ".hero-identity-panel",
+  ".hero-featured-panel",
+  ".narrative-panel",
   ".featured-panel",
   ".info-panel",
   ".resume-panel",

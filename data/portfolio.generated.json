@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T19:37:01.390Z",
+  "generatedAt": "2026-04-09T23:45:09.691Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -240,6 +240,44 @@
       "images": [
         "assets/img/realtime-commerce-platform-diagram.svg"
       ],
+      "githubAssets": [
+        {
+          "path": "public/images/product-chair.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-chair.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-chair.svg"
+        },
+        {
+          "path": "public/images/product-mixer.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-mixer.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-mixer.svg"
+        },
+        {
+          "path": "public/images/product-jacket.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-jacket.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-jacket.svg"
+        },
+        {
+          "path": "public/images/product-laptop.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-laptop.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-laptop.svg"
+        },
+        {
+          "path": "public/images/product-speaker.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-speaker.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-speaker.svg"
+        },
+        {
+          "path": "public/images/product-headphones.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/realtime-commerce-platform/main/public/images/product-headphones.svg",
+          "sourceUrl": "https://github.com/REDEVL4/realtime-commerce-platform/blob/main/public/images/product-headphones.svg"
+        }
+      ],
       "github": {
         "owner": "REDEVL4",
         "repo": "realtime-commerce-platform",
@@ -291,6 +329,38 @@
       "images": [
         "assets/img/linkedin-outreach-agent-overview.png"
       ],
+      "githubAssets": [
+        {
+          "path": "docs/media/screenshot-overview.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/linkedin-outreach-agent/main/docs/media/screenshot-overview.png",
+          "sourceUrl": "https://github.com/REDEVL4/linkedin-outreach-agent/blob/main/docs/media/screenshot-overview.png"
+        },
+        {
+          "path": "docs/media/screenshot-recruiter-reply.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/linkedin-outreach-agent/main/docs/media/screenshot-recruiter-reply.png",
+          "sourceUrl": "https://github.com/REDEVL4/linkedin-outreach-agent/blob/main/docs/media/screenshot-recruiter-reply.png"
+        },
+        {
+          "path": "docs/media/screenshot-connection-requests.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/linkedin-outreach-agent/main/docs/media/screenshot-connection-requests.png",
+          "sourceUrl": "https://github.com/REDEVL4/linkedin-outreach-agent/blob/main/docs/media/screenshot-connection-requests.png"
+        },
+        {
+          "path": "docs/media/demo-usage.gif",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/linkedin-outreach-agent/main/docs/media/demo-usage.gif",
+          "sourceUrl": "https://github.com/REDEVL4/linkedin-outreach-agent/blob/main/docs/media/demo-usage.gif"
+        },
+        {
+          "path": "docs/media/demo-install.gif",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/linkedin-outreach-agent/main/docs/media/demo-install.gif",
+          "sourceUrl": "https://github.com/REDEVL4/linkedin-outreach-agent/blob/main/docs/media/demo-install.gif"
+        }
+      ],
       "github": {
         "owner": "REDEVL4",
         "repo": "linkedin-outreach-agent",
@@ -313,7 +383,7 @@
         ],
         "description": "Natural LinkedIn replies, recruiter responses, and connection outreach with browser automation and local or cloud LLMs",
         "homepage": null,
-        "updatedAt": "2026-04-03T17:41:53Z"
+        "updatedAt": "2026-04-09T23:17:25Z"
       }
     },
     {
@@ -355,6 +425,7 @@
       "images": [
         "assets/img/adversarial-dnn-architecture.png"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Adversarial-Attacks-on-Deep-Neural-Networks",
@@ -405,6 +476,7 @@
       "images": [
         "assets/img/houston-crime-architecture.png"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Houston-Crime-Type-Classification-2010-2024-",
@@ -454,6 +526,7 @@
       "images": [
         "assets/img/disease-gcn-architecture.png"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
@@ -502,6 +575,56 @@
       },
       "images": [
         "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [
+        {
+          "path": "Public/Img/785.jpg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/785.jpg",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/785.jpg"
+        },
+        {
+          "path": "Public/Img/bg1.jpg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/bg1.jpg",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/bg1.jpg"
+        },
+        {
+          "path": "Public/Img/boom.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/boom.png",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/boom.png"
+        },
+        {
+          "path": "Public/Img/crow.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/crow.png",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/crow.png"
+        },
+        {
+          "path": "Public/Img/fire.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/fire.png",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/fire.png"
+        },
+        {
+          "path": "Public/Img/Bonus.jpg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/Bonus.jpg",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/Bonus.jpg"
+        },
+        {
+          "path": "Public/Img/heart.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/heart.png",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/heart.png"
+        },
+        {
+          "path": "Public/Img/hills.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/CivicQuest/main/Public/Img/hills.png",
+          "sourceUrl": "https://github.com/REDEVL4/CivicQuest/blob/main/Public/Img/hills.png"
+        }
       ],
       "github": {
         "owner": "REDEVL4",
@@ -554,6 +677,7 @@
       "images": [
         "assets/img/book-genre-architecture.png"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Multimodal-Book-Genre-Classification-Clustering",
@@ -603,6 +727,7 @@
       "images": [
         "assets/img/zero-hunger-architecture.png"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Zero-Hunger-Big-Data-Analytics-Pipeline-Hadoop-MapReduce-Spark-Hive-",
@@ -648,6 +773,7 @@
       "images": [
         "assets/img/placeholder-2.svg"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "AspNetCore.Docs",
@@ -697,6 +823,7 @@
       "images": [
         "assets/img/placeholder-2.svg"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Boomi",
@@ -742,6 +869,7 @@
       "images": [
         "assets/img/placeholder-1.svg"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "deploy.github.io",
@@ -793,6 +921,7 @@
       "images": [
         "assets/img/placeholder-3.svg"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "MicroservicesUsingNetCore",
@@ -839,6 +968,7 @@
       "images": [
         "assets/img/placeholder-1.svg"
       ],
+      "githubAssets": [],
       "github": {
         "owner": "REDEVL4",
         "repo": "Node-E-Com-Use-Case-",
@@ -876,6 +1006,56 @@
       "images": [
         "assets/img/placeholder-1.svg"
       ],
+      "githubAssets": [
+        {
+          "path": "assets/img/book-genre-architecture.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/book-genre-architecture.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/book-genre-architecture.png"
+        },
+        {
+          "path": "assets/img/disease-gcn-architecture.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/disease-gcn-architecture.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/disease-gcn-architecture.png"
+        },
+        {
+          "path": "assets/img/zero-hunger-architecture.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/zero-hunger-architecture.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/zero-hunger-architecture.png"
+        },
+        {
+          "path": "assets/img/houston-crime-architecture.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/houston-crime-architecture.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/houston-crime-architecture.png"
+        },
+        {
+          "path": "assets/img/adversarial-dnn-architecture.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/adversarial-dnn-architecture.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/adversarial-dnn-architecture.png"
+        },
+        {
+          "path": "assets/img/linkedin-outreach-agent-overview.png",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/linkedin-outreach-agent-overview.png",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/linkedin-outreach-agent-overview.png"
+        },
+        {
+          "path": "assets/img/placeholder-1.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/placeholder-1.svg",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/placeholder-1.svg"
+        },
+        {
+          "path": "assets/img/placeholder-2.svg",
+          "type": "image",
+          "previewUrl": "https://raw.githubusercontent.com/REDEVL4/portfolio-static-ai/main/assets/img/placeholder-2.svg",
+          "sourceUrl": "https://github.com/REDEVL4/portfolio-static-ai/blob/main/assets/img/placeholder-2.svg"
+        }
+      ],
       "github": {
         "owner": "REDEVL4",
         "repo": "portfolio-static-ai",
@@ -887,7 +1067,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-09T14:14:40Z"
+        "updatedAt": "2026-04-09T23:35:06Z"
       }
     }
   ],

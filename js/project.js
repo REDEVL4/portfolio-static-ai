@@ -9,7 +9,7 @@ function badge(text) {
 }
 
 function button(label, href, emphasis = false) {
-  const className = emphasis ? "btn btn-sm btn-light" : "btn btn-sm btn-outline-light";
+  const className = emphasis ? "btn btn-sm btn-dark" : "btn btn-sm btn-outline-dark";
   return `<a class="${className}" href="${href}" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
 }
 
@@ -24,6 +24,31 @@ async function loadText(filePath) {
 function renderGallery(images = [], title = "") {
   return images
     .map((src) => `<img class="gallery-image" src="${src}" alt="${escapeHtml(title)} preview">`)
+    .join("");
+}
+
+function renderGithubAssets(assets = []) {
+  return assets
+    .map((asset) => {
+      if (asset.type === "image" && asset.previewUrl) {
+        return `
+          <a class="github-result-card" href="${asset.sourceUrl}" target="_blank" rel="noopener">
+            <img class="github-result-image" src="${asset.previewUrl}" alt="${escapeHtml(asset.path)}">
+            <div class="github-result-meta">
+              <div class="content-card-title">GitHub Asset</div>
+              <div class="github-result-path">${escapeHtml(asset.path)}</div>
+            </div>
+          </a>
+        `;
+      }
+
+      return `
+        <a class="github-result-card github-result-card--link" href="${asset.sourceUrl}" target="_blank" rel="noopener">
+          <div class="content-card-title">GitHub File</div>
+          <div class="github-result-path">${escapeHtml(asset.path)}</div>
+        </a>
+      `;
+    })
     .join("");
 }
 
@@ -100,6 +125,11 @@ async function init() {
   document.getElementById("pStack").innerHTML = (project.stack || []).map(badge).join("");
   document.getElementById("pHighlights").innerHTML = (project.highlights || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   document.getElementById("gallery").innerHTML = renderGallery(project.images, project.title);
+
+  if (project.githubAssets?.length) {
+    document.getElementById("githubAssetsWrap").style.display = "block";
+    document.getElementById("githubAssets").innerHTML = renderGithubAssets(project.githubAssets);
+  }
 
   const repoFacts = [];
   if (project.github?.language) {

@@ -71,36 +71,88 @@ function scoreNotebookPath(notebookPath) {
   return score;
 }
 
-async function findNotebookAsset(username, repo) {
+async function fetchRepoTree(username, repo) {
   if (!repo?.name || !repo?.default_branch) {
     return null;
   }
 
   try {
-    const tree = await fetchGithubJson(
+    return await fetchGithubJson(
       `https://api.github.com/repos/${username}/${repo.name}/git/trees/${repo.default_branch}?recursive=1`
     );
-
-    const notebook = (tree.tree || [])
-      .filter((item) => item.type === "blob")
-      .filter((item) => item.path?.toLowerCase().endsWith(".ipynb") && !item.path.includes(".ipynb_checkpoints"))
-      .sort((left, right) => scoreNotebookPath(right.path) - scoreNotebookPath(left.path))[0];
-
-    if (!notebook) {
-      return null;
-    }
-
-    return {
-      path: notebook.path,
-      viewerUrl: `https://nbviewer.org/github/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`,
-      sourceUrl: `https://github.com/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`
-    };
   } catch {
     return null;
   }
 }
 
-function mergeProject(override, repo, username, featuredRepos, notebookAsset) {
+function findNotebookAsset(username, repo, tree) {
+  const notebook = (tree?.tree || [])
+    .filter((item) => item.type === "blob")
+    .filter((item) => item.path?.toLowerCase().endsWith(".ipynb") && !item.path.includes(".ipynb_checkpoints"))
+    .sort((left, right) => scoreNotebookPath(right.path) - scoreNotebookPath(left.path))[0];
+
+  if (!notebook) {
+    return null;
+  }
+
+  return {
+    path: notebook.path,
+    viewerUrl: `https://nbviewer.org/github/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`,
+    sourceUrl: `https://github.com/${username}/${repo.name}/blob/${repo.default_branch}/${notebook.path}`
+  };
+}
+
+function isVisualAsset(pathname = "") {
+  const normalized = pathname.toLowerCase();
+  if (!/\.(png|jpe?g|gif|svg|webp|html)$/.test(normalized)) {
+    return false;
+  }
+  if (/node_modules|dist\/|build\/|coverage\/|\.ipynb_checkpoints/.test(normalized)) {
+    return false;
+  }
+  return /(plot|chart|result|figure|fig|image|img|output|dashboard|report|viz|visual|roc|confusion|architecture|overview|public\/images|docs\/media)/i.test(
+    pathname
+  );
+}
+
+function scoreVisualPath(pathname) {
+  const normalized = pathname.toLowerCase();
+  let score = 0;
+
+  if (normalized.includes("docs/media")) score += 6;
+  if (normalized.includes("public/images")) score += 5;
+  if (normalized.includes("result") || normalized.includes("output")) score += 5;
+  if (normalized.includes("plot") || normalized.includes("chart") || normalized.includes("figure")) score += 4;
+  if (normalized.includes("overview") || normalized.includes("architecture")) score += 3;
+  if (normalized.endsWith(".png") || normalized.endsWith(".jpg") || normalized.endsWith(".jpeg")) score += 2;
+  if (!normalized.includes("/")) score += 2;
+
+  score -= normalized.length / 500;
+  return score;
+}
+
+function findVisualAssets(username, repo, tree) {
+  return (tree?.tree || [])
+    .filter((item) => item.type === "blob")
+    .map((item) => item.path)
+    .filter(isVisualAsset)
+    .sort((left, right) => scoreVisualPath(right) - scoreVisualPath(left))
+    .slice(0, 8)
+    .map((assetPath) => {
+      const ext = path.extname(assetPath).toLowerCase();
+      return {
+        path: assetPath,
+        type: ext === ".html" ? "html" : "image",
+        previewUrl:
+          ext === ".html"
+            ? null
+            : `https://raw.githubusercontent.com/${username}/${repo.name}/${repo.default_branch}/${assetPath}`,
+        sourceUrl: `https://github.com/${username}/${repo.name}/blob/${repo.default_branch}/${assetPath}`
+      };
+    });
+}
+
+function mergeProject(override, repo, username, featuredRepos, notebookAsset, githubAssets) {
   const repoUrl = repo?.html_url || `https://github.com/${username}/${override.repo}`;
   const github = {
     owner: username,
@@ -135,6 +187,7 @@ function mergeProject(override, repo, username, featuredRepos, notebookAsset) {
       paper: override.links?.paper || null
     },
     images: override.images || ["assets/img/placeholder-1.svg"],
+    githubAssets: override.githubAssets || githubAssets || [],
     github
   };
 }
@@ -171,9 +224,18 @@ async function main() {
     if (override?.hidden) {
       continue;
     }
-    const notebookAsset = await findNotebookAsset(username, repo);
+    const tree = await fetchRepoTree(username, repo);
+    const notebookAsset = findNotebookAsset(username, repo, tree);
+    const githubAssets = findVisualAssets(username, repo, tree);
     discoveredProjects.push(
-      mergeProject(override || { repo: repo.name, title: repo.name }, repo, username, featuredRepos, notebookAsset)
+      mergeProject(
+        override || { repo: repo.name, title: repo.name },
+        repo,
+        username,
+        featuredRepos,
+        notebookAsset,
+        githubAssets
+      )
     );
   }
 
@@ -181,7 +243,7 @@ async function main() {
     if (repoMap.has(override.repo) || override.hidden) {
       continue;
     }
-    discoveredProjects.push(mergeProject(override, null, username, featuredRepos, null));
+    discoveredProjects.push(mergeProject(override, null, username, featuredRepos, null, override.githubAssets || []));
   }
 
   discoveredProjects.sort((left, right) => {

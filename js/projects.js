@@ -13,7 +13,7 @@ function unique(values) {
 }
 
 function buttonClass(tag) {
-  return tag === activeTag ? "btn btn-sm btn-light chip-btn active" : "btn btn-sm btn-outline-light chip-btn";
+  return tag === activeTag ? "btn btn-sm btn-dark chip-btn active" : "btn btn-sm btn-outline-dark chip-btn";
 }
 
 function renderTagBar(tags) {
@@ -75,9 +75,9 @@ function projectCard(project) {
           <ul class="project-list">${highlights}</ul>
         </div>
         <div class="project-actions">
-          <a class="btn btn-sm btn-light" href="project.html?slug=${encodeURIComponent(project.slug)}">View Details</a>
-          ${project.links?.github ? `<a class="btn btn-sm btn-outline-light" href="${project.links.github}" target="_blank" rel="noopener">GitHub</a>` : ""}
-          ${project.links?.demo ? `<a class="btn btn-sm btn-outline-light" href="${project.links.demo}" target="_blank" rel="noopener">Demo</a>` : ""}
+          <a class="btn btn-sm btn-dark" href="project.html?slug=${encodeURIComponent(project.slug)}">View Details</a>
+          ${project.links?.github ? `<a class="btn btn-sm btn-outline-dark" href="${project.links.github}" target="_blank" rel="noopener">GitHub</a>` : ""}
+          ${project.links?.demo ? `<a class="btn btn-sm btn-outline-dark" href="${project.links.demo}" target="_blank" rel="noopener">Demo</a>` : ""}
         </div>
       </div>
     </article>

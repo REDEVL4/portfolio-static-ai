@@ -26,35 +26,34 @@
   </nav>
 
   <header class="hero-shell">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <div class="hero-copy-inner">
-          <div class="section-kicker">Software engineering portfolio</div>
+    <div class="container hero-shell-inner">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-topline">
+            <span class="section-kicker">Software Engineering Portfolio</span>
+            <span class="hero-status-pill">Houston-based. Open to backend, platform, and software engineering roles.</span>
+          </div>
           <h1 class="hero-title" id="heroIntro">I build production-grade data products, ML prototypes, and backend systems.</h1>
           <div class="hero-headline" id="heroHeadline"></div>
           <div class="hero-summary" id="heroSummary"></div>
-          <div class="hero-actions d-flex gap-2 flex-wrap mt-4">
-            <a class="btn btn-light btn-lg" href="projects.html">Explore Projects</a>
-            <a class="btn btn-outline-light btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-            <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+          <div class="hero-actions d-flex gap-2 flex-wrap">
+            <a class="btn btn-dark btn-lg" href="projects.html">Explore Projects</a>
+            <a class="btn btn-outline-dark btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+            <a class="btn btn-outline-dark btn-lg" href="#contact">Contact</a>
           </div>
-          <div class="hero-skill-band mt-4">
-            <div class="hero-band-label">Stack</div>
+          <div class="hero-skill-band">
+            <div class="hero-band-label">Core Stack</div>
             <div class="d-flex flex-wrap gap-2" id="heroSkills"></div>
           </div>
         </div>
-      </div>
 
-      <div class="hero-stage">
-        <div class="hero-stage-panel hero-stage-panel--identity" data-tilt>
-          <div class="hero-stage-topline">
-            <span class="hero-status-dot"></span>
-            <span>Open to software engineering, backend, and platform roles</span>
-          </div>
-          <div class="hero-aside-card">
-            <div class="section-kicker">At a glance</div>
-            <h2 class="h4 mb-2">How I usually add value</h2>
-            <p class="mb-3 text-secondary">I do my best work when I can own the backend, shape the data flow, and turn a messy operational problem into a reliable system people can actually use.</p>
+        <aside class="hero-rail">
+          <section class="hero-identity-panel" data-tilt>
+            <div class="hero-identity-copy">
+              <div class="section-kicker">How I Work</div>
+              <h2 class="h4 mb-2">I like building reliable systems under real constraints.</h2>
+              <p class="mb-0 text-secondary">The work I enjoy most sits at the intersection of APIs, distributed systems, data flow, and operational reliability. I care about how a system behaves after it ships, not just how it looks in a demo.</p>
+            </div>
             <div class="mini-fact-grid">
               <div class="mini-fact-card">
                 <div class="mini-fact-label">Location</div>
@@ -73,61 +72,66 @@
                 <a class="mini-fact-link" id="heroResumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <div class="hero-stage-panel hero-stage-panel--proof" data-tilt>
-          <div class="d-flex justify-content-between align-items-end gap-3 mb-3">
-            <div>
-              <div class="section-kicker">Selected proof</div>
-              <h2 class="h5 mb-0">A few numbers that matter in the kind of work I do</h2>
+          <section class="hero-featured-panel featured-panel" data-tilt>
+            <div class="hero-panel-header">
+              <div>
+                <div class="section-kicker">Featured Project</div>
+                <h2 class="h4 mb-0">One project spotlight</h2>
+              </div>
             </div>
-          </div>
-          <div class="hero-proof-grid" id="heroProof"></div>
-        </div>
-
-        <div class="hero-stage-panel hero-stage-panel--featured featured-panel" data-tilt>
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <div>
-              <div class="section-kicker">Featured work</div>
-              <h2 class="h4 mb-0">Projects I can walk through in detail</h2>
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="featuredSlides"></div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-          <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" id="featuredSlides"></div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
+          </section>
+        </aside>
       </div>
+
+      <div class="hero-proof-strip" id="heroProof"></div>
     </div>
   </header>
 
   <main class="home-main">
-    <section class="container proof-ribbon-section">
+    <section class="container metric-ribbon-section">
       <div class="row g-3" id="heroMetrics"></div>
     </section>
 
-    <section class="container editorial-section">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <div class="info-panel h-100" data-tilt>
+    <section class="container narrative-section">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="section-lead">
             <div class="section-kicker">What I Bring</div>
-            <h2 class="h4">I care about systems that hold up outside the demo</h2>
-            <p>Most of my experience comes from backend services, distributed integrations, data pipelines, and production support work where uptime, scale, and clarity matter just as much as the code itself.</p>
-            <p>That is also why this portfolio mixes systems work with ML work. I want it to show how I think end to end, from APIs and observability to data movement, automation, and intelligent features.</p>
+            <h2 class="section-title">Engineering depth with systems thinking.</h2>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="info-panel h-100" data-tilt>
+        <div class="col-lg-8">
+          <div class="narrative-panel" data-tilt>
+            <p>Most of my experience comes from backend services, distributed integrations, data pipelines, and production support work where uptime, scale, and clarity matter just as much as the code itself.</p>
+            <p class="mb-0">That is why this portfolio mixes systems work with ML work. I want it to show how I think end to end, from APIs and observability to data movement, automation, and intelligent features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container focus-section">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="section-lead">
             <div class="section-kicker">Best Fit</div>
-            <h2 class="h4">What I want this site to make clear</h2>
+            <h2 class="section-title">The kind of work I want this site to make obvious.</h2>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="narrative-panel narrative-panel--list" data-tilt>
             <p class="text-secondary">I want it to be easy to see the kind of work I do well: APIs, distributed systems, integrations, cloud reliability, data pipelines, and ML projects that connect back to real engineering delivery instead of staying as isolated experiments.</p>
             <ul class="focus-list" id="focusAreas"></ul>
           </div>
@@ -136,11 +140,15 @@
     </section>
 
     <section class="container strengths-section">
+      <div class="strengths-header">
+        <div class="section-kicker">Core Strengths</div>
+        <h2 class="section-title">A few themes that keep showing up in my work.</h2>
+      </div>
       <div class="row g-4" id="homeValueCards"></div>
     </section>
 
     <section id="contact" class="container contact-grid-section">
-      <div class="row g-4">
+      <div class="row g-4 align-items-stretch">
         <div class="col-lg-5">
           <div class="resume-panel h-100" data-tilt>
             <div>
@@ -149,8 +157,8 @@
               <p class="mb-0 text-secondary">I keep my latest resume here as the compact version of this site: experience, projects, stack, and the impact numbers I want hiring teams to see quickly.</p>
             </div>
             <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-light" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
-              <a class="btn btn-outline-light" href="experience.html">View Experience</a>
+              <a class="btn btn-dark" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+              <a class="btn btn-outline-dark" href="experience.html">View Experience</a>
             </div>
           </div>
         </div>
@@ -159,13 +167,13 @@
             <div>
               <div class="section-kicker">Contact</div>
               <h2 class="h4 mb-2">If you want to talk through the work</h2>
-              <p class="mb-0 text-white-50">You can reach me directly, browse the GitHub code, or open the project pages if you want to see how I explain the systems, tradeoffs, and results behind each project.</p>
+              <p class="mb-0 text-secondary">You can reach me directly, browse the GitHub code, or open the project pages if you want to see how I explain the systems, tradeoffs, and results behind each project.</p>
               <div class="small text-secondary mt-3" id="contactMeta"></div>
             </div>
             <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-light" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn-outline-light" id="emailLink" href="#">Email</a>
-              <a class="btn btn-outline-light" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-dark" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-outline-dark" id="emailLink" href="#">Email</a>
+              <a class="btn btn-outline-dark" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </div>
