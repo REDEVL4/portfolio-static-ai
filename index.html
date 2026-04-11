@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,155 +27,107 @@
 
   <header class="hero-shell">
     <div class="container hero-shell-inner">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <div class="hero-topline">
-            <span class="section-kicker">Software Engineering Portfolio</span>
-            <span class="hero-status-pill">Houston-based. Open to backend, platform, and software engineering roles.</span>
-          </div>
-          <h1 class="hero-title" id="heroIntro">I build production-grade data products, ML prototypes, and backend systems.</h1>
-          <div class="hero-headline" id="heroHeadline"></div>
-          <div class="hero-summary" id="heroSummary"></div>
-          <div class="hero-actions d-flex gap-2 flex-wrap">
-            <a class="btn btn-dark btn-lg" href="projects.html">Explore Projects</a>
-            <a class="btn btn-outline-dark btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-            <a class="btn btn-outline-dark btn-lg" href="#contact">Contact</a>
-          </div>
-          <div class="hero-skill-band">
-            <div class="hero-band-label">Core Stack</div>
-            <div class="d-flex flex-wrap gap-2" id="heroSkills"></div>
+      <div class="row g-5 align-items-center hero-layout">
+        <div class="col-lg-6">
+          <div class="hero-copy">
+            <div class="hero-topline">
+              <span class="section-kicker">Software Engineering Portfolio</span>
+              <span class="hero-status-pill">Backend, platform, and software engineering roles</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="hero-title-main" id="heroTitle">Software Engineer</span>
+              <span class="hero-title-detail" id="heroIntro">3 years of experience building event-driven backend systems and distributed platforms.</span>
+            </h1>
+            <div class="hero-headline" id="heroHeadline"></div>
+            <div class="hero-summary" id="heroSummary"></div>
+            <div class="hero-actions d-flex flex-wrap gap-2">
+              <a class="btn btn-dark btn-lg" href="projects.html">View Projects</a>
+              <a class="btn btn-outline-dark btn-lg" id="resumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+              <a class="btn btn-outline-dark btn-lg" href="#contact">Contact</a>
+            </div>
+            <div class="hero-inline-meta" id="contactMeta"></div>
+            <div class="hero-skill-band">
+              <div class="hero-band-label">Core Stack</div>
+              <div class="d-flex flex-wrap gap-2" id="heroSkills"></div>
+            </div>
           </div>
         </div>
 
-        <aside class="hero-rail">
-          <section class="hero-identity-panel" data-tilt>
-            <div class="hero-identity-copy">
-              <div class="section-kicker">How I Work</div>
-              <h2 class="h4 mb-2">I like building reliable systems under real constraints.</h2>
-              <p class="mb-0 text-secondary">The work I enjoy most sits at the intersection of APIs, distributed systems, data flow, and operational reliability. I care about how a system behaves after it ships, not just how it looks in a demo.</p>
-            </div>
-            <div class="mini-fact-grid">
-              <div class="mini-fact-card">
-                <div class="mini-fact-label">Location</div>
-                <div class="mini-fact-value" id="heroLocation">Greater Houston, TX</div>
-              </div>
-              <div class="mini-fact-card">
-                <div class="mini-fact-label">Phone</div>
-                <a class="mini-fact-link" id="heroPhone" href="#">Available on resume</a>
-              </div>
-              <div class="mini-fact-card">
-                <div class="mini-fact-label">Email</div>
-                <a class="mini-fact-link" id="heroEmail" href="#">reddygovardhan6826@gmail.com</a>
-              </div>
-              <div class="mini-fact-card">
-                <div class="mini-fact-label">Resume</div>
-                <a class="mini-fact-link" id="heroResumeLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <div class="col-lg-6">
+          <div class="spotlight-shell" data-tilt>
+            <div class="spotlight-visual" id="spotlightVisual"></div>
+            <div class="spotlight-body">
+              <div class="spotlight-label">Project Spotlight</div>
+              <div class="spotlight-meta" id="spotlightMeta"></div>
+              <h2 class="spotlight-title" id="spotlightTitle">Loading featured work...</h2>
+              <p class="spotlight-summary" id="spotlightSummary"></p>
+              <div class="d-flex flex-wrap gap-2" id="spotlightTags"></div>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-dark" id="spotlightPrimary" href="projects.html">View Project</a>
+                <a class="btn btn-outline-dark" id="spotlightSecondary" href="#" target="_blank" rel="noopener">GitHub</a>
               </div>
             </div>
-          </section>
-
-          <section class="hero-featured-panel featured-panel" data-tilt>
-            <div class="hero-panel-header">
-              <div>
-                <div class="section-kicker">Featured Project</div>
-                <h2 class="h4 mb-0">One project spotlight</h2>
-              </div>
-            </div>
-            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" id="featuredSlides"></div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </section>
-        </aside>
+          </div>
+          <div class="spotlight-nav nav nav-pills flex-column" id="spotlightNav" role="tablist" aria-label="Featured projects"></div>
+        </div>
       </div>
 
       <div class="hero-proof-strip" id="heroProof"></div>
     </div>
   </header>
 
-  <main class="home-main">
-    <section class="container metric-ribbon-section">
+  <main class="home-main pb-5">
+    <section class="container metrics-section">
       <div class="row g-3" id="heroMetrics"></div>
     </section>
 
-    <section class="container narrative-section">
-      <div class="row g-4 align-items-stretch">
-        <div class="col-lg-4">
-          <div class="section-lead">
-            <div class="section-kicker">What I Bring</div>
-            <h2 class="section-title">Engineering depth with systems thinking.</h2>
+    <section class="container home-section">
+      <div class="section-heading">
+        <div class="section-kicker">Selected Work</div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-end">
+          <div>
+            <h2 class="section-title">Projects I can walk through in detail.</h2>
+            <p class="section-copy mb-0">I use these pages to explain architecture, implementation choices, tradeoffs, and the results behind each build.</p>
           </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="narrative-panel" data-tilt>
-            <p>Most of my experience comes from backend services, distributed integrations, data pipelines, and production support work where uptime, scale, and clarity matter just as much as the code itself.</p>
-            <p class="mb-0">That is why this portfolio mixes systems work with ML work. I want it to show how I think end to end, from APIs and observability to data movement, automation, and intelligent features.</p>
-          </div>
+          <a class="btn btn-outline-dark align-self-start align-self-lg-auto" href="projects.html">Open Project Library</a>
         </div>
       </div>
+      <div class="row g-4" id="homeFeaturedGrid"></div>
     </section>
 
-    <section class="container focus-section">
-      <div class="row g-4 align-items-stretch">
-        <div class="col-lg-4">
-          <div class="section-lead">
-            <div class="section-kicker">Best Fit</div>
-            <h2 class="section-title">The kind of work I want this site to make obvious.</h2>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="narrative-panel narrative-panel--list" data-tilt>
-            <p class="text-secondary">I want it to be easy to see the kind of work I do well: APIs, distributed systems, integrations, cloud reliability, data pipelines, and ML projects that connect back to real engineering delivery instead of staying as isolated experiments.</p>
-            <ul class="focus-list" id="focusAreas"></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container strengths-section">
-      <div class="strengths-header">
-        <div class="section-kicker">Core Strengths</div>
-        <h2 class="section-title">A few themes that keep showing up in my work.</h2>
-      </div>
-      <div class="row g-4" id="homeValueCards"></div>
-    </section>
-
-    <section id="contact" class="container contact-grid-section">
-      <div class="row g-4 align-items-stretch">
+    <section class="container home-section">
+      <div class="row g-4 align-items-start">
         <div class="col-lg-5">
-          <div class="resume-panel h-100" data-tilt>
-            <div>
-              <div class="section-kicker">Resume</div>
-              <h2 class="h3 mb-2">If you want the short version</h2>
-              <p class="mb-0 text-secondary">I keep my latest resume here as the compact version of this site: experience, projects, stack, and the impact numbers I want hiring teams to see quickly.</p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-dark" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
-              <a class="btn btn-outline-dark" href="experience.html">View Experience</a>
-            </div>
+          <div class="section-heading sticky-section-heading">
+            <div class="section-kicker">How I Work</div>
+            <h2 class="section-title">I care about how systems behave after they ship.</h2>
+            <p class="section-copy mb-0">A lot of my work sits between product delivery, backend engineering, integrations, observability, and data flow. I like building systems that stay understandable under real load and real operational constraints.</p>
           </div>
         </div>
         <div class="col-lg-7">
-          <div class="contact-panel h-100" data-tilt>
-            <div>
-              <div class="section-kicker">Contact</div>
-              <h2 class="h4 mb-2">If you want to talk through the work</h2>
-              <p class="mb-0 text-secondary">You can reach me directly, browse the GitHub code, or open the project pages if you want to see how I explain the systems, tradeoffs, and results behind each project.</p>
-              <div class="small text-secondary mt-3" id="contactMeta"></div>
+          <div class="stacked-layout">
+            <div class="surface-panel surface-panel--list" data-tilt>
+              <div class="section-kicker">Focus Areas</div>
+              <ul class="focus-list focus-list--large" id="focusAreas"></ul>
             </div>
-            <div class="d-flex gap-2 flex-wrap">
-              <a class="btn btn-dark" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn-outline-dark" id="emailLink" href="#">Email</a>
-              <a class="btn btn-outline-dark" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
-            </div>
+            <div class="row g-4" id="homeValueCards"></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container home-section" id="contact">
+      <div class="contact-band" data-tilt>
+        <div class="contact-band-copy">
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">If you want to talk through the work, the code, or the systems decisions, I’m easy to reach.</h2>
+          <p class="section-copy mb-0">You can open the resume, browse GitHub, or go directly to the project pages if you want the detailed version.</p>
+        </div>
+        <div class="contact-band-actions">
+          <a class="btn btn-dark" id="resumePanelLink" href="assets/resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+          <a class="btn btn-outline-dark" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline-dark" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-outline-dark" id="emailLink" href="#">Email</a>
         </div>
       </div>
     </section>

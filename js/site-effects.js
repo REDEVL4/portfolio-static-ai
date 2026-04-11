@@ -1,13 +1,10 @@
 const revealSelectors = [
   ".hero-copy",
-  ".hero-identity-panel",
-  ".hero-featured-panel",
-  ".narrative-panel",
-  ".featured-panel",
-  ".info-panel",
-  ".resume-panel",
-  ".contact-panel",
-  ".page-intro-shell",
+  ".spotlight-shell",
+  ".spotlight-nav",
+  ".surface-panel",
+  ".contact-band",
+  ".page-hero-shell",
   ".project-toolbar",
   ".metric-card",
   ".project-card",
@@ -85,7 +82,7 @@ function initHeroGlow() {
 }
 
 function initTilt() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.matchMedia("(max-width: 991px)").matches) {
     return;
   }
 
@@ -95,8 +92,6 @@ function initTilt() {
     node.classList.add("tilt-surface");
 
     const reset = () => {
-      node.style.setProperty("--tilt-rotate-x", "0deg");
-      node.style.setProperty("--tilt-rotate-y", "0deg");
       node.style.setProperty("--tilt-shine-x", "50%");
       node.style.setProperty("--tilt-shine-y", "50%");
     };
@@ -105,11 +100,6 @@ function initTilt() {
       const rect = node.getBoundingClientRect();
       const px = (event.clientX - rect.left) / rect.width;
       const py = (event.clientY - rect.top) / rect.height;
-      const rotateY = (px - 0.5) * 8;
-      const rotateX = (0.5 - py) * 8;
-
-      node.style.setProperty("--tilt-rotate-x", `${rotateX.toFixed(2)}deg`);
-      node.style.setProperty("--tilt-rotate-y", `${rotateY.toFixed(2)}deg`);
       node.style.setProperty("--tilt-shine-x", `${(px * 100).toFixed(1)}%`);
       node.style.setProperty("--tilt-shine-y", `${(py * 100).toFixed(1)}%`);
     });

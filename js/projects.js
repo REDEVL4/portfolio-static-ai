@@ -124,7 +124,7 @@ async function init() {
 
   const summary = document.getElementById("projectSummary");
   if (summary) {
-    summary.textContent = `I am using this page to organize ${allProjects.length} projects across backend systems, full-stack platforms, data pipelines, and ML work so it is easy to jump into the technical details behind each one.`;
+    summary.textContent = `I use this page to organize ${allProjects.length} projects across backend systems, full-stack platforms, data pipelines, and ML work so it is easy to jump straight into the technical details behind each one.`;
   }
 
   const searchInput = el("searchInput");

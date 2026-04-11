@@ -4,33 +4,7 @@ function badge(text) {
   return `<span class="pill">${escapeHtml(text)}</span>`;
 }
 
-function projectSlide(project, active) {
-  const img = project.images?.[0] || "assets/img/placeholder-1.svg";
-  const tags = (project.tags || []).slice(0, 3).map(badge).join("");
-  const updated = project.github?.updatedAt
-    ? `<div class="eyebrow mt-3">Updated ${formatMonthYear(project.github.updatedAt)}</div>`
-    : "";
-
-  return `
-    <div class="carousel-item ${active ? "active" : ""}">
-      <img src="${img}" class="featured-image" alt="${escapeHtml(project.title)} preview">
-      <div class="mt-4">
-        <div class="d-flex justify-content-between align-items-start gap-3">
-          <div>
-            <div class="section-kicker">${escapeHtml(project.type || "Project")}</div>
-            <div class="featured-title">${escapeHtml(project.title)}</div>
-          </div>
-          <a class="btn btn-sm btn-outline-dark hero-action" href="project.html?slug=${encodeURIComponent(project.slug)}">Open</a>
-        </div>
-        <p class="featured-copy">${escapeHtml(project.summary || "")}</p>
-        <div class="d-flex flex-wrap gap-2">${tags}</div>
-        ${updated}
-      </div>
-    </div>
-  `;
-}
-
-function statCard(label, value) {
+function metricCard(label, value) {
   return `
     <div class="col-12 col-md-6 col-xl-3">
       <div class="metric-card" data-tilt>
@@ -52,50 +26,156 @@ function proofCard(text) {
 
 function valueCard(item) {
   return `
-    <div class="col-lg-4">
-      <div class="info-panel h-100 value-panel" data-tilt>
+    <div class="col-md-6">
+      <div class="surface-panel surface-panel--compact h-100" data-tilt>
         <div class="section-kicker">Core Strength</div>
-        <h2 class="h4">${escapeHtml(item.title)}</h2>
-        <p class="mb-0">${escapeHtml(item.copy)}</p>
+        <h3 class="surface-title">${escapeHtml(item.title)}</h3>
+        <p class="mb-0 text-secondary">${escapeHtml(item.copy)}</p>
       </div>
     </div>
   `;
 }
 
+function featuredGridCard(project) {
+  const image = project.images?.[0] || "assets/img/placeholder-1.svg";
+  const tags = (project.tags || []).slice(0, 3).map((tag) => `<span class="pill small">${escapeHtml(tag)}</span>`).join("");
+  const updated = project.github?.updatedAt ? `Updated ${formatMonthYear(project.github.updatedAt)}` : project.type || "Project";
+
+  return `
+    <article class="col-md-6 col-xl-4">
+      <div class="project-card h-100" data-tilt>
+        <img src="${image}" class="project-thumb" alt="${escapeHtml(project.title)} preview">
+        <div class="project-body">
+          <div class="project-meta project-meta--single">${escapeHtml(updated)}</div>
+          <h3 class="project-title">${escapeHtml(project.title)}</h3>
+          <p class="project-summary">${escapeHtml(project.summary || "")}</p>
+          <div class="d-flex flex-wrap gap-2">${tags}</div>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-sm btn-dark" href="project.html?slug=${encodeURIComponent(project.slug)}">View Details</a>
+          ${project.links?.github ? `<a class="btn btn-sm btn-outline-dark" href="${project.links.github}" target="_blank" rel="noopener">GitHub</a>` : ""}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function spotlightButton(project, index, isActive) {
+  const label = project.type || "Project";
+
+  return `
+    <button
+      class="spotlight-nav-btn ${isActive ? "is-active" : ""}"
+      type="button"
+      data-spotlight-index="${index}"
+      aria-pressed="${isActive ? "true" : "false"}"
+    >
+      <span class="spotlight-nav-meta">${escapeHtml(label)}</span>
+      <span class="spotlight-nav-title">${escapeHtml(project.title)}</span>
+    </button>
+  `;
+}
+
+function renderSpotlight(featured, index) {
+  const project = featured[index];
+  if (!project) {
+    return;
+  }
+
+  const visual = document.getElementById("spotlightVisual");
+  const meta = document.getElementById("spotlightMeta");
+  const title = document.getElementById("spotlightTitle");
+  const summary = document.getElementById("spotlightSummary");
+  const tags = document.getElementById("spotlightTags");
+  const primary = document.getElementById("spotlightPrimary");
+  const secondary = document.getElementById("spotlightSecondary");
+  const nav = document.getElementById("spotlightNav");
+
+  if (visual) {
+    const image = project.images?.[0] || "assets/img/placeholder-1.svg";
+    visual.innerHTML = `
+      <img src="${image}" class="spotlight-image" alt="${escapeHtml(project.title)} preview">
+      <div class="spotlight-visual-overlay">
+        <span class="spotlight-overlay-label">${escapeHtml(project.type || "Project")}</span>
+        <span class="spotlight-overlay-title">${escapeHtml(project.title)}</span>
+      </div>
+    `;
+  }
+
+  if (meta) {
+    const bits = [project.type, project.github?.updatedAt ? `Updated ${formatMonthYear(project.github.updatedAt)}` : "", project.github?.language]
+      .filter(Boolean)
+      .join(" • ");
+    meta.textContent = bits;
+  }
+
+  if (title) {
+    title.textContent = project.title;
+  }
+
+  if (summary) {
+    summary.textContent = project.summary || "";
+  }
+
+  if (tags) {
+    tags.innerHTML = (project.tags || []).slice(0, 4).map(badge).join("");
+  }
+
+  if (primary) {
+    primary.href = `project.html?slug=${encodeURIComponent(project.slug)}`;
+  }
+
+  if (secondary) {
+    const githubUrl = project.links?.github || project.github?.url || "#";
+    secondary.href = githubUrl;
+    secondary.style.display = githubUrl === "#" ? "none" : "";
+  }
+
+  if (nav) {
+    nav.innerHTML = featured.map((item, itemIndex) => spotlightButton(item, itemIndex, itemIndex === index)).join("");
+    nav.querySelectorAll("[data-spotlight-index]").forEach((button) => {
+      button.addEventListener("click", () => {
+        renderSpotlight(featured, Number(button.dataset.spotlightIndex || 0));
+      });
+    });
+  }
+}
+
 async function renderHome() {
   const data = await loadPortfolioData();
-  const featured = data.projects.filter((project) => project.featured).slice(0, 5);
+  const featured = (data.projects || []).filter((project) => project.featured);
   const profile = data.profile || {};
   const site = data.site || {};
 
   document.title = `${site.name} | Portfolio`;
 
-  const headline = document.getElementById("heroHeadline");
+  const heroTitle = document.getElementById("heroTitle");
   const intro = document.getElementById("heroIntro");
+  const headline = document.getElementById("heroHeadline");
   const summary = document.getElementById("heroSummary");
   const skills = document.getElementById("heroSkills");
   const metrics = document.getElementById("heroMetrics");
-  const slides = document.getElementById("featuredSlides");
-  const focus = document.getElementById("focusAreas");
   const proof = document.getElementById("heroProof");
+  const focus = document.getElementById("focusAreas");
   const valueCards = document.getElementById("homeValueCards");
-  const heroLocation = document.getElementById("heroLocation");
-  const heroPhone = document.getElementById("heroPhone");
-  const heroEmail = document.getElementById("heroEmail");
-  const heroResumeLink = document.getElementById("heroResumeLink");
+  const featuredGrid = document.getElementById("homeFeaturedGrid");
+  const githubLink = document.getElementById("githubLink");
+  const linkedinLink = document.getElementById("linkedinLink");
+  const emailLink = document.getElementById("emailLink");
+  const resumeLink = document.getElementById("resumeLink");
   const resumePanelLink = document.getElementById("resumePanelLink");
+  const contactMeta = document.getElementById("contactMeta");
 
-  if (headline) {
-    const headlineText = site.headline || profile.headline || "";
-    const introText = site.heroIntro || "";
-    headline.textContent = headlineText;
-    headline.hidden =
-      !headlineText ||
-      headlineText.trim().toLowerCase() === introText.trim().toLowerCase();
+  if (heroTitle) {
+    heroTitle.textContent = site.heroTitle || "Software Engineer";
   }
 
   if (intro) {
     intro.textContent = site.heroIntro || "";
+  }
+
+  if (headline) {
+    headline.textContent = site.headline || profile.headline || "";
   }
 
   if (summary) {
@@ -112,6 +192,10 @@ async function renderHome() {
     proof.innerHTML = (site.heroProofPoints || []).map(proofCard).join("");
   }
 
+  if (metrics) {
+    metrics.innerHTML = (site.heroMetrics || []).map((item) => metricCard(item.label, item.value)).join("");
+  }
+
   if (focus) {
     focus.innerHTML = (site.focusAreas || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   }
@@ -120,26 +204,11 @@ async function renderHome() {
     valueCards.innerHTML = (site.homeValueCards || []).map(valueCard).join("");
   }
 
-  if (metrics) {
-    const metricItems = site.heroMetrics?.length
-      ? site.heroMetrics
-      : [
-          { label: "Projects", value: String(data.meta?.projectCount || 0) },
-          { label: "Featured", value: String(data.meta?.featuredCount || 0) },
-          { label: "Location", value: site.location || "Available remotely" }
-        ];
-    metrics.innerHTML = metricItems.map((item) => statCard(item.label, item.value)).join("");
+  if (featuredGrid) {
+    featuredGrid.innerHTML = featured.slice(0, 3).map(featuredGridCard).join("");
   }
 
-  if (slides) {
-    slides.innerHTML = featured.map((project, index) => projectSlide(project, index === 0)).join("");
-  }
-
-  const githubLink = document.getElementById("githubLink");
-  const linkedinLink = document.getElementById("linkedinLink");
-  const emailLink = document.getElementById("emailLink");
-  const resumeLink = document.getElementById("resumeLink");
-  const contactMeta = document.getElementById("contactMeta");
+  renderSpotlight(featured.slice(0, 5), 0);
 
   if (githubLink) {
     githubLink.href = site.githubUrl || "#";
@@ -157,39 +226,21 @@ async function renderHome() {
     resumeLink.href = site.resumeUrl || "#";
   }
 
-  if (heroResumeLink) {
-    heroResumeLink.href = site.resumeUrl || "#";
-  }
-
   if (resumePanelLink) {
     resumePanelLink.href = site.resumeUrl || "#";
   }
 
-  if (heroLocation) {
-    heroLocation.textContent = site.location || "";
-  }
-
-  if (heroPhone) {
-    heroPhone.textContent = site.phone || "Available on request";
-    heroPhone.href = site.phone ? `tel:${site.phone.replaceAll(" ", "")}` : "#";
-  }
-
-  if (heroEmail) {
-    heroEmail.textContent = site.email || "";
-    heroEmail.href = site.email ? `mailto:${site.email}` : "#";
-  }
-
   if (contactMeta) {
-    contactMeta.textContent = [site.location, site.phone, site.email, "Open to software engineering and backend roles"]
+    contactMeta.textContent = [site.location, site.phone, site.email]
       .filter(Boolean)
-      .join(" | ");
+      .join(" • ");
   }
 }
 
 renderHome().catch((error) => {
   console.error(error);
-  const fallback = document.getElementById("featuredSlides");
+  const fallback = document.getElementById("spotlightTitle");
   if (fallback) {
-    fallback.innerHTML = `<div class="text-white-50">Portfolio data failed to load. Regenerate data or refresh the page.</div>`;
+    fallback.textContent = "Portfolio data failed to load.";
   }
 });

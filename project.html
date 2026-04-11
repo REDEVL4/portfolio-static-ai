@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,87 +24,93 @@
     </div>
   </nav>
 
-  <main class="container page-shell py-4">
-    <div class="page-intro page-intro--project">
-      <a class="text-decoration-none small link-lightish" href="projects.html">Back to Projects</a>
-    </div>
+  <main class="page-shell pb-5">
+    <section class="page-hero page-hero--project">
+      <div class="container">
+        <div class="project-breadcrumb">
+          <a class="link-lightish" href="projects.html">Back to Projects</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="row g-4 mt-2">
-      <div class="col-lg-8">
-        <div class="detail-panel" data-tilt>
-          <div class="section-kicker">Project walkthrough</div>
-          <h1 class="detail-title mb-2" id="pTitle">Loading...</h1>
-          <p class="detail-summary" id="pSummary"></p>
-          <div class="d-flex flex-wrap gap-2 mb-4" id="pBadges"></div>
+    <section class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="detail-panel detail-panel--project" data-tilt>
+            <div class="section-kicker">Project Walkthrough</div>
+            <h1 class="detail-title mb-2" id="pTitle">Loading...</h1>
+            <p class="detail-summary" id="pSummary"></p>
+            <div class="d-flex flex-wrap gap-2 mb-4" id="pBadges"></div>
 
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="content-card">
-                <div class="content-card-title">Tech Stack</div>
-                <div id="pStack" class="d-flex flex-wrap gap-2 mt-2"></div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="content-card">
+                  <div class="content-card-title">Tech Stack</div>
+                  <div id="pStack" class="d-flex flex-wrap gap-2 mt-2"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="content-card">
+                  <div class="content-card-title">Quick Links</div>
+                  <div class="d-flex gap-2 flex-wrap mt-2" id="pLinks"></div>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="content-card">
-                <div class="content-card-title">Quick Links</div>
-                <div class="d-flex gap-2 flex-wrap mt-2" id="pLinks"></div>
+
+            <div class="row g-3 my-1" id="pFacts"></div>
+
+            <h2 class="h6 fw-semibold mt-4">Highlights</h2>
+            <ul class="detail-list" id="pHighlights"></ul>
+
+            <div class="mt-4 ai-panel" data-tilt>
+              <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
+                <div>
+                  <h2 class="h6 fw-semibold mb-1">Project Snapshot</h2>
+                  <div class="small text-secondary">This section pulls from project data, GitHub context, profile notes, and the project write-up to summarize how I usually explain the work.</div>
+                </div>
+                <button class="btn btn-sm btn-outline-dark" id="refreshAiInsights" type="button">Refresh Snapshot</button>
+              </div>
+              <div id="aiInsights" class="mt-3">
+                <div class="small text-secondary">Loading project snapshot...</div>
               </div>
             </div>
-          </div>
 
-          <div class="row g-3 my-1" id="pFacts"></div>
+            <div class="mt-4" id="caseStudyWrap" style="display:none;">
+              <h2 class="h6 fw-semibold">Case Study</h2>
+              <div id="caseStudy" class="prose"></div>
+            </div>
 
-          <h2 class="h6 fw-semibold mt-4">Highlights</h2>
-          <ul class="detail-list" id="pHighlights"></ul>
+            <div class="mt-4" id="githubAssetsWrap" style="display:none;">
+              <h2 class="h6 fw-semibold">GitHub Results</h2>
+              <div class="github-results-grid" id="githubAssets"></div>
+              <div class="small text-secondary mt-2">Pulled directly from the GitHub repository when plots, screenshots, or result artifacts are available.</div>
+            </div>
 
-          <div class="mt-4 ai-panel" data-tilt>
-            <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
-              <div>
-                <h2 class="h6 fw-semibold mb-1">Project Snapshot</h2>
-                <div class="small text-secondary">This section pulls from project data, GitHub context, profile notes, and the project write-up to summarize how I usually explain the work.</div>
+            <div class="mt-4" id="notebookWrap" style="display:none;">
+              <h2 class="h6 fw-semibold">Notebook Output</h2>
+              <div class="notebook-shell">
+                <iframe id="notebookFrame" title="Notebook output" loading="lazy"></iframe>
               </div>
-              <button class="btn btn-sm btn-outline-light" id="refreshAiInsights" type="button">Refresh Snapshot</button>
-            </div>
-            <div id="aiInsights" class="mt-3">
-              <div class="small text-secondary">Loading project snapshot...</div>
+              <div class="small text-secondary mt-2" id="notebookNote">If the embedded view is blocked by your browser, open the notebook directly.</div>
             </div>
           </div>
+        </div>
 
-          <div class="mt-4" id="caseStudyWrap" style="display:none;">
-            <h2 class="h6 fw-semibold">Case Study</h2>
-            <div id="caseStudy" class="prose"></div>
-          </div>
-
-          <div class="mt-4" id="githubAssetsWrap" style="display:none;">
-            <h2 class="h6 fw-semibold">GitHub Results</h2>
-            <div class="github-results-grid" id="githubAssets"></div>
-            <div class="small text-secondary mt-2">Pulled directly from the GitHub repository when plots, screenshots, or result artifacts are available.</div>
-          </div>
-
-          <div class="mt-4" id="notebookWrap" style="display:none;">
-            <h2 class="h6 fw-semibold">Notebook Output</h2>
-            <div class="notebook-shell">
-              <iframe id="notebookFrame" title="Notebook output" loading="lazy"></iframe>
+        <div class="col-lg-4">
+          <div class="sidebar-stack">
+            <div class="detail-panel" data-tilt>
+              <h3 class="h6 fw-semibold mb-3">Gallery</h3>
+              <div id="gallery" class="d-grid gap-2"></div>
+              <div class="small text-secondary mt-3">I use diagrams, screenshots, and notebook output here when they help explain the build.</div>
             </div>
-            <div class="small text-secondary mt-2" id="notebookNote">If the embedded view is blocked by your browser, open the notebook directly.</div>
+            <div class="detail-panel" data-tilt>
+              <h3 class="h6 fw-semibold mb-3">Related Projects</h3>
+              <div id="relatedProjects" class="d-grid gap-3"></div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4">
-        <div class="sidebar-stack">
-          <div class="detail-panel" data-tilt>
-            <h3 class="h6 fw-semibold mb-3">Gallery</h3>
-            <div id="gallery" class="d-grid gap-2"></div>
-            <div class="small text-secondary mt-3">I use diagrams, screenshots, and notebook output here when they help explain the build.</div>
-          </div>
-          <div class="detail-panel" data-tilt>
-            <h3 class="h6 fw-semibold mb-3">Related Projects</h3>
-            <div id="relatedProjects" class="d-grid gap-3"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 
   <div id="chatbotRoot"></div>

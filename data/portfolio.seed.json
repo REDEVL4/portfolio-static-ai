@@ -2,6 +2,7 @@
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
+    "heroTitle": "Software Engineer",
     "location": "Greater Houston, TX",
     "phone": "+1 (314) 617-4272",
     "email": "reddygovardhan6826@gmail.com",
@@ -9,10 +10,10 @@
     "githubUrl": "https://github.com/REDEVL4",
     "linkedinUrl": "https://www.linkedin.com/in/govardhan-reddy-narala",
     "resumeUrl": "assets/resume.pdf",
-    "heroIntro": "Software Engineer with 3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
+    "heroIntro": "3 years of experience building event-driven backend systems and distributed platforms processing 50M+ monthly transactions at 99.9% SLA.",
     "heroSummary": [
-      "Most of my recent work has been in backend services, distributed integrations, full-stack applications, and data workflows that had to perform under real production constraints.",
-      "This portfolio is where I walk through the systems I have built, the tradeoffs behind them, and the results they produced: 50M+ monthly records, 99.9% SLA targets, 400% traffic spikes, and faster incident response."
+      "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
+      "Most of my recent work has been in backend services, distributed integrations, full-stack applications, and data workflows that had to perform under real production constraints. This site is where I walk through what I built, the tradeoffs behind it, and the outcomes that mattered."
     ],
     "heroMetrics": [
       { "label": "Experience", "value": "3 years" },

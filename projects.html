@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,31 +24,35 @@
     </div>
   </nav>
 
-  <header class="container page-intro page-intro--projects py-5">
-    <div class="page-intro-shell">
-      <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between gap-4">
-        <div>
-          <div class="section-kicker">Project library</div>
-          <h1 class="page-title mb-1">Projects</h1>
-          <div class="page-copy" id="projectSummary">I use this page to organize the projects I can talk through in detail, including architecture, implementation decisions, and the outcomes that mattered most.</div>
-        </div>
-        <div class="d-flex flex-column flex-md-row gap-2 w-100 w-xl-auto project-controls">
-          <input id="searchInput" class="form-control" placeholder="Search by title, tag, stack, or highlight" />
-          <select id="sortSelect" class="form-select">
-            <option value="featured">Featured first</option>
-            <option value="updated">Recently updated</option>
-            <option value="alpha">Alphabetical</option>
-          </select>
+  <main class="page-shell pb-5">
+    <section class="page-hero">
+      <div class="container">
+        <div class="row g-4 align-items-end page-hero-shell">
+          <div class="col-xl-7">
+            <div class="section-kicker">Project Library</div>
+            <h1 class="page-title">A portfolio organized around architecture, execution, and outcomes.</h1>
+            <p class="page-copy mb-0" id="projectSummary">I use this page to organize the projects I can talk through in detail, including architecture, implementation decisions, and the outcomes that mattered most.</p>
+          </div>
+          <div class="col-xl-5">
+            <div class="project-toolbar">
+              <div class="project-toolbar-grid">
+                <input id="searchInput" class="form-control" placeholder="Search by title, tag, stack, or highlight" />
+                <select id="sortSelect" class="form-select">
+                  <option value="featured">Featured first</option>
+                  <option value="updated">Recently updated</option>
+                  <option value="alpha">Alphabetical</option>
+                </select>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-3" id="tagBar"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="project-toolbar mt-4">
-        <div class="d-flex flex-wrap gap-2" id="tagBar"></div>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <main class="container page-shell pb-5">
-    <div class="row g-4" id="projectGrid"></div>
+    <section class="container">
+      <div class="row g-4" id="projectGrid"></div>
+    </section>
   </main>
 
   <div id="chatbotRoot"></div>

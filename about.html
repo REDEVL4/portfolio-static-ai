@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,51 +24,70 @@
     </div>
   </nav>
 
-  <main class="container page-shell py-4 pb-5">
-    <section class="page-intro">
-      <div class="section-kicker">Profile</div>
-      <h1 class="page-title mb-1">About</h1>
-      <p class="page-copy mb-0">I am a software engineer with 3 years of experience building event-driven backend systems and distributed platforms that process 50M+ monthly transactions at 99.9% SLA.</p>
+  <main class="page-shell pb-5">
+    <section class="page-hero">
+      <div class="container">
+        <div class="row g-4 align-items-end page-hero-shell">
+          <div class="col-lg-8">
+            <div class="section-kicker">About</div>
+            <h1 class="page-title">The background behind the systems work.</h1>
+            <p class="page-copy mb-0">I’m a software engineer with experience across backend systems, distributed integrations, data pipelines, observability, and applied ML work. This page is the longer version of how I describe what I do and where I fit best.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="page-hero-aside">
+              <span class="pill">Backend Systems</span>
+              <span class="pill">Distributed Platforms</span>
+              <span class="pill">Data Pipelines</span>
+              <span class="pill">Applied ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="row g-4">
-      <div class="col-lg-8">
-        <div class="detail-panel mb-4" data-tilt>
-          <div id="aboutCopy" class="prose"></div>
+    <section class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-4">
+          <div class="about-sidebar">
+            <div class="detail-panel mb-4" data-tilt>
+              <h2 class="h6 fw-semibold mb-3">Contact</h2>
+              <div class="d-grid gap-3" id="aboutContact"></div>
+            </div>
+            <div class="detail-panel mb-4" data-tilt>
+              <h2 class="h6 fw-semibold mb-3">Right Now</h2>
+              <div id="statusCards" class="d-grid gap-3"></div>
+            </div>
+            <div class="detail-panel mb-4" data-tilt>
+              <h2 class="h6 fw-semibold mb-3">Core Skills</h2>
+              <div class="d-flex flex-wrap gap-2" id="skillCloud"></div>
+            </div>
+            <div class="detail-panel" data-tilt>
+              <h2 class="h6 fw-semibold mb-3">Education</h2>
+              <div class="d-grid gap-3" id="educationList"></div>
+            </div>
+          </div>
         </div>
-        <div class="detail-panel mb-4" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">How I Think About My Work</h2>
-          <div id="aboutSections" class="d-grid gap-3"></div>
-        </div>
-        <div class="detail-panel" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">Areas I Keep Coming Back To</h2>
-          <div id="focusCards" class="d-grid gap-3"></div>
+
+        <div class="col-lg-8">
+          <div class="detail-panel mb-4" data-tilt>
+            <div id="aboutCopy" class="prose"></div>
+          </div>
+          <div class="detail-panel mb-4" data-tilt>
+            <div class="section-kicker mb-2">How I Think About My Work</div>
+            <div id="aboutSections" class="d-grid gap-3"></div>
+          </div>
+          <div class="detail-panel mb-4" data-tilt>
+            <div class="section-kicker mb-2">Areas I Keep Coming Back To</div>
+            <div id="focusCards" class="d-grid gap-3"></div>
+          </div>
+          <div class="detail-panel" data-tilt>
+            <div class="section-kicker mb-2">LinkedIn Highlights</div>
+            <div class="d-grid gap-3" id="certificationList"></div>
+            <div class="mt-3 d-flex flex-wrap gap-2" id="honorList"></div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="detail-panel mb-4" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">Contact</h2>
-          <div class="d-grid gap-3" id="aboutContact"></div>
-        </div>
-        <div class="detail-panel mb-4" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">Right Now</h2>
-          <div id="statusCards" class="d-grid gap-3"></div>
-        </div>
-        <div class="detail-panel mb-4" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">Core Skills</h2>
-          <div class="d-flex flex-wrap gap-2" id="skillCloud"></div>
-        </div>
-        <div class="detail-panel" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">Education</h2>
-          <div class="d-grid gap-3" id="educationList"></div>
-        </div>
-        <div class="detail-panel mt-4" data-tilt>
-          <h2 class="h6 fw-semibold mb-3">LinkedIn Highlights</h2>
-          <div class="d-grid gap-3" id="certificationList"></div>
-          <div class="mt-3" id="honorList"></div>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 
   <div id="chatbotRoot"></div>
