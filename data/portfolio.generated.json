@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T14:41:16.175Z",
+  "generatedAt": "2026-04-28T19:56:27.266Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -115,7 +115,7 @@
       "Docker"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 16
+    "githubPublicRepos": 17
   },
   "profile": {
     "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
@@ -1106,7 +1106,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-04-28T08:39:22Z"
+        "updatedAt": "2026-04-28T14:46:57Z"
       }
     }
   ],
