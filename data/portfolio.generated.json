@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T19:38:15.583Z",
+  "generatedAt": "2026-05-02T03:50:46.952Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -115,7 +115,7 @@
       "Docker"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 17
+    "githubPublicRepos": 18
   },
   "profile": {
     "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
@@ -924,6 +924,44 @@
       }
     },
     {
+      "slug": "journey-builder",
+      "repo": "journey-builder",
+      "title": "journey-builder",
+      "featured": false,
+      "type": "Project",
+      "summary": "Repository synced from GitHub.",
+      "tags": [],
+      "stack": [
+        "TypeScript"
+      ],
+      "highlights": [],
+      "links": {
+        "github": "https://github.com/REDEVL4/journey-builder",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "journey-builder",
+        "defaultBranch": "master",
+        "language": "TypeScript",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2026-05-02T02:33:31Z"
+      }
+    },
+    {
       "slug": "netcore-microservices",
       "repo": "MicroservicesUsingNetCore",
       "title": "Microservices Using .NET Core",
@@ -1106,12 +1144,12 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-05-01T13:54:35Z"
+        "updatedAt": "2026-05-01T19:38:19Z"
       }
     }
   ],
   "meta": {
-    "projectCount": 15,
+    "projectCount": 16,
     "featuredCount": 8
   }
 }
