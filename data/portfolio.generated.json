@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-03T11:22:24.137Z",
+  "generatedAt": "2026-06-03T17:17:00.610Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -115,7 +115,7 @@
       "Docker"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 18
+    "githubPublicRepos": 19
   },
   "profile": {
     "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
@@ -840,6 +840,42 @@
       }
     },
     {
+      "slug": "clinical-chest-x-ray-classification",
+      "repo": "Clinical-Chest-X-Ray-Classification",
+      "title": "Clinical-Chest-X-Ray-Classification",
+      "featured": false,
+      "type": "Project",
+      "summary": " A research-oriented PyTorch project from an empty workspace for NIH ChestX-ray14 multi-label classification",
+      "tags": [],
+      "stack": [],
+      "highlights": [],
+      "links": {
+        "github": "https://github.com/REDEVL4/Clinical-Chest-X-Ray-Classification",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "Clinical-Chest-X-Ray-Classification",
+        "defaultBranch": "main",
+        "language": null,
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": " A research-oriented PyTorch project from an empty workspace for NIH ChestX-ray14 multi-label classification",
+        "homepage": null,
+        "updatedAt": "2026-06-03T12:25:46Z"
+      }
+    },
+    {
       "slug": "deploy-gh",
       "repo": "deploy.github.io",
       "title": "deploy.github.io",
@@ -1144,12 +1180,12 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-06-03T05:16:07Z"
+        "updatedAt": "2026-06-03T11:22:29Z"
       }
     }
   ],
   "meta": {
-    "projectCount": 16,
+    "projectCount": 17,
     "featuredCount": 8
   }
 }
