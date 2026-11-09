@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T22:03:07.667Z",
+  "generatedAt": "2026-11-09T06:25:04.476Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -115,7 +115,7 @@
       "Docker"
     ],
     "githubFollowers": 1,
-    "githubPublicRepos": 19
+    "githubPublicRepos": 20
   },
   "profile": {
     "headline": "Software Engineer | Full Stack & Data/ML Systems | Python | SQL | C# .NET | Azure | Spark | PyTorch | 50M+ Transactions | 99.9% SLA",
@@ -922,6 +922,44 @@
       }
     },
     {
+      "slug": "jobfarmingdashboard",
+      "repo": "JobFarmingDashboard",
+      "title": "JobFarmingDashboard",
+      "featured": false,
+      "type": "Project",
+      "summary": "Repository synced from GitHub.",
+      "tags": [],
+      "stack": [
+        "TypeScript"
+      ],
+      "highlights": [],
+      "links": {
+        "github": "https://github.com/REDEVL4/JobFarmingDashboard",
+        "demo": null,
+        "caseStudy": null,
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "JobFarmingDashboard",
+        "defaultBranch": "master",
+        "language": "TypeScript",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": "2026-11-09T05:44:37Z"
+      }
+    },
+    {
       "slug": "jobfusion",
       "repo": "jobfusion",
       "title": "jobfusion",
@@ -1180,12 +1218,12 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-11-08T13:23:19Z"
+        "updatedAt": "2026-11-08T22:03:12Z"
       }
     }
   ],
   "meta": {
-    "projectCount": 17,
+    "projectCount": 18,
     "featuredCount": 8
   }
 }
