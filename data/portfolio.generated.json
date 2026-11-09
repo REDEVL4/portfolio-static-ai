@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:25:04.476Z",
+  "generatedAt": "2026-11-09T22:19:57.842Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -935,7 +935,7 @@
       "highlights": [],
       "links": {
         "github": "https://github.com/REDEVL4/JobFarmingDashboard",
-        "demo": null,
+        "demo": "https://job-farming-dashboard.vercel.app",
         "caseStudy": null,
         "notebook": null,
         "notebookSource": null,
@@ -955,8 +955,8 @@
         "openIssues": 0,
         "topics": [],
         "description": null,
-        "homepage": null,
-        "updatedAt": "2026-11-09T05:44:37Z"
+        "homepage": "https://job-farming-dashboard.vercel.app",
+        "updatedAt": "2026-11-09T20:26:58Z"
       }
     },
     {
@@ -1218,7 +1218,7 @@
         "topics": [],
         "description": "AI-powered portfolio site with GitHub sync and ChatGPT-backed project insights",
         "homepage": null,
-        "updatedAt": "2026-11-08T22:03:12Z"
+        "updatedAt": "2026-11-09T06:25:09Z"
       }
     }
   ],
