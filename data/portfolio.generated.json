@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T06:43:53.292Z",
+  "generatedAt": "2026-11-13T19:40:45.108Z",
   "site": {
     "name": "Govardhan Reddy Narala",
     "headline": "I specialize in APIs, data pipelines, and scalable systems with measurable performance impact.",
@@ -202,6 +202,114 @@
     ]
   },
   "projects": [
+    {
+      "slug": "job-farming-dashboard",
+      "repo": "JobFarmingDashboard",
+      "title": "Job Farming Command Center",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "Live job-search platform that tracks applications, watches Gmail for hiring updates, drafts LinkedIn outreach, and keeps the owner in control of sends.",
+      "tags": [
+        "Next.js",
+        "Supabase",
+        "Gmail",
+        "LinkedIn",
+        "Automation"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "Supabase",
+        "PostgreSQL",
+        "Vercel",
+        "Gmail API"
+      ],
+      "highlights": [
+        "Centralized jobs, applications, documents, and hiring stage in one dashboard.",
+        "Gmail monitoring updates interview, assessment, and rejection stages from clear evidence without a manual click.",
+        "LinkedIn outreach drafts connection notes and replies, sends after approval or in auto mode, and keeps a thread timeline."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/JobFarmingDashboard",
+        "demo": "https://job-farming-dashboard.vercel.app",
+        "caseStudy": "content/case-studies/job-farming-dashboard.md",
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-1.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "JobFarmingDashboard",
+        "defaultBranch": "master",
+        "language": "TypeScript",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 1,
+        "topics": [],
+        "description": null,
+        "homepage": "https://job-farming-dashboard.vercel.app",
+        "updatedAt": "2026-11-12T01:44:46Z"
+      }
+    },
+    {
+      "slug": "jobfusion",
+      "repo": "jobfusion",
+      "title": "JobFusion",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "Personal system that joins job search, multi-resume management, AI tailoring, and application tracking in one workflow.",
+      "tags": [
+        "Next.js",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "LLM"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Celery",
+        "OpenSearch",
+        "Docker"
+      ],
+      "highlights": [
+        "Searches roles through Greenhouse and Lever style feeds plus Tavily and Apify discovery.",
+        "Stores multiple resumes and generates a tailored resume and cover letter against a job description.",
+        "Switches LLM backends across local Ollama, OpenAI, and Azure-style deployments."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/jobfusion",
+        "demo": null,
+        "caseStudy": "content/case-studies/jobfusion.md",
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "jobfusion",
+        "defaultBranch": "main",
+        "language": "Python",
+        "stars": 0,
+        "forks": 0,
+        "openIssues": 0,
+        "topics": [],
+        "description": "Unified job search, AI resume tailoring, and application tracking platform",
+        "homepage": null,
+        "updatedAt": "2026-04-10T16:26:24Z"
+      }
+    },
     {
       "slug": "realtime-commerce-platform",
       "repo": "realtime-commerce-platform",
@@ -548,7 +656,7 @@
       "title": "CivicQuest",
       "featured": true,
       "type": "Full Stack",
-      "summary": "AI-supported community engagement platform for volunteering discovery, sustainability learning, and guided interaction.",
+      "summary": "Hexathon prototype that helps employees find local volunteering events, register, play a sustainability game, and ask an Azure chatbot.",
       "tags": [
         "Azure",
         "Full Stack",
@@ -557,14 +665,17 @@
       ],
       "stack": [
         "Node.js",
+        "Express",
         "EJS",
+        "Sequelize",
+        "SQLite",
         "Azure Bot",
-        "Azure"
+        "Azure Logic Apps"
       ],
       "highlights": [
-        "AI-powered community engagement platform",
-        "Volunteer discovery and registration journeys",
-        "Gamified sustainability learning plus Azure bot integration"
+        "GeoIP city lookup filters volunteering events. Users register. Admins manage capacity, status, and categories.",
+        "Eco Guardians is a side-scroller that shows sustainability facts during play.",
+        "Azure Bot Framework WebChat answers from a curated local-resource set. Azure Logic Apps can send event emails."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/CivicQuest",
@@ -744,52 +855,6 @@
       }
     },
     {
-      "slug": "aspnetcore-docs",
-      "repo": "AspNetCore.Docs",
-      "title": "ASP.NET Core Docs (Fork)",
-      "featured": false,
-      "type": "Documentation",
-      "summary": "Reference fork of ASP.NET Core documentation used for study and internal notes.",
-      "tags": [
-        ".NET",
-        "Docs"
-      ],
-      "stack": [
-        "C#",
-        "ASP.NET Core"
-      ],
-      "highlights": [
-        "Maintained as a working reference repo",
-        "Useful for .NET architecture and API patterns",
-        "Supports learning and implementation review"
-      ],
-      "links": {
-        "github": "https://github.com/REDEVL4/AspNetCore.Docs",
-        "demo": null,
-        "caseStudy": null,
-        "notebook": null,
-        "notebookSource": null,
-        "paper": null
-      },
-      "images": [
-        "assets/img/placeholder-2.svg"
-      ],
-      "githubAssets": [],
-      "github": {
-        "owner": "REDEVL4",
-        "repo": "AspNetCore.Docs",
-        "defaultBranch": null,
-        "language": null,
-        "stars": null,
-        "forks": null,
-        "openIssues": null,
-        "topics": [],
-        "description": null,
-        "homepage": null,
-        "updatedAt": null
-      }
-    },
-    {
       "slug": "boomi-cicd",
       "repo": "Boomi",
       "title": "Boomi CI/CD Experiments",
@@ -876,25 +941,17 @@
       }
     },
     {
-      "slug": "deploy-gh",
+      "slug": "deploy-github-io",
       "repo": "deploy.github.io",
       "title": "deploy.github.io",
       "featured": false,
-      "type": "Static Site",
-      "summary": "Minimal static deployment experiment for lightweight hosting and GitHub Pages-style publication.",
-      "tags": [
-        "HTML",
-        "Static"
-      ],
+      "type": "Project",
+      "summary": "Repository synced from GitHub.",
+      "tags": [],
       "stack": [
-        "HTML",
-        "CSS"
+        "HTML"
       ],
-      "highlights": [
-        "Lightweight static deployment setup",
-        "Useful baseline for simple hosting workflows",
-        "Small experiment in publishing and delivery"
-      ],
+      "highlights": [],
       "links": {
         "github": "https://github.com/REDEVL4/deploy.github.io",
         "demo": null,
@@ -922,103 +979,39 @@
       }
     },
     {
-      "slug": "jobfarmingdashboard",
-      "repo": "JobFarmingDashboard",
-      "title": "JobFarmingDashboard",
-      "featured": false,
-      "type": "Project",
-      "summary": "Repository synced from GitHub.",
-      "tags": [],
-      "stack": [
-        "TypeScript"
-      ],
-      "highlights": [],
-      "links": {
-        "github": "https://github.com/REDEVL4/JobFarmingDashboard",
-        "demo": "https://job-farming-dashboard.vercel.app",
-        "caseStudy": null,
-        "notebook": null,
-        "notebookSource": null,
-        "paper": null
-      },
-      "images": [
-        "assets/img/placeholder-1.svg"
-      ],
-      "githubAssets": [],
-      "github": {
-        "owner": "REDEVL4",
-        "repo": "JobFarmingDashboard",
-        "defaultBranch": "master",
-        "language": "TypeScript",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 1,
-        "topics": [],
-        "description": null,
-        "homepage": "https://job-farming-dashboard.vercel.app",
-        "updatedAt": "2026-11-12T01:44:46Z"
-      }
-    },
-    {
-      "slug": "jobfusion",
-      "repo": "jobfusion",
-      "title": "jobfusion",
-      "featured": false,
-      "type": "Project",
-      "summary": "Unified job search, AI resume tailoring, and application tracking platform",
-      "tags": [],
-      "stack": [
-        "Python"
-      ],
-      "highlights": [],
-      "links": {
-        "github": "https://github.com/REDEVL4/jobfusion",
-        "demo": null,
-        "caseStudy": null,
-        "notebook": null,
-        "notebookSource": null,
-        "paper": null
-      },
-      "images": [
-        "assets/img/placeholder-1.svg"
-      ],
-      "githubAssets": [],
-      "github": {
-        "owner": "REDEVL4",
-        "repo": "jobfusion",
-        "defaultBranch": "main",
-        "language": "Python",
-        "stars": 0,
-        "forks": 0,
-        "openIssues": 0,
-        "topics": [],
-        "description": "Unified job search, AI resume tailoring, and application tracking platform",
-        "homepage": null,
-        "updatedAt": "2026-04-10T16:26:24Z"
-      }
-    },
-    {
       "slug": "journey-builder",
       "repo": "journey-builder",
-      "title": "journey-builder",
+      "title": "Journey Builder",
       "featured": false,
-      "type": "Project",
-      "summary": "Repository synced from GitHub.",
-      "tags": [],
-      "stack": [
-        "TypeScript"
+      "type": "Frontend",
+      "summary": "React and TypeScript UI for editing prefill mappings on a DAG of forms, with pluggable data sources.",
+      "tags": [
+        "React",
+        "TypeScript",
+        "DAG",
+        "Forms"
       ],
-      "highlights": [],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Vitest"
+      ],
+      "highlights": [
+        "Loads a blueprint graph and lists every form node with mapped and unmapped fields.",
+        "Sources include upstream form fields, including transitive ancestors, plus global client and action properties.",
+        "New data sources plug in through one interface and a registry. Tests cover DAG walks and the prefill panel."
+      ],
       "links": {
         "github": "https://github.com/REDEVL4/journey-builder",
         "demo": null,
-        "caseStudy": null,
+        "caseStudy": "content/case-studies/journey-builder.md",
         "notebook": null,
         "notebookSource": null,
         "paper": null
       },
       "images": [
-        "assets/img/placeholder-1.svg"
+        "assets/img/placeholder-3.svg"
       ],
       "githubAssets": [],
       "github": {
@@ -1041,7 +1034,7 @@
       "title": "Microservices Using .NET Core",
       "featured": false,
       "type": "Software Engineering",
-      "summary": "Clean-architecture microservices system using messaging, RPC, caching, and multiple persistence layers.",
+      "summary": "Loosely coupled .NET Core services with an Ocelot gateway, RabbitMQ, gRPC, and mixed persistence.",
       "tags": [
         ".NET",
         "Microservices",
@@ -1054,12 +1047,14 @@
         "gRPC",
         "Redis",
         "PostgreSQL",
-        "MongoDB"
+        "MongoDB",
+        "Ocelot",
+        "Docker"
       ],
       "highlights": [
-        "Designed loosely coupled services with clean architecture",
-        "Used RabbitMQ and gRPC for inter-service communication",
-        "Applied cache and polyglot persistence patterns"
+        "BuildingBlocks and Services layout with clean architecture.",
+        "Ocelot gateway in front of the services. RabbitMQ for messaging and gRPC for service calls.",
+        "PostgreSQL, MongoDB, SQL Server, and Redis, brought up with Docker Compose."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/MicroservicesUsingNetCore",
@@ -1093,7 +1088,7 @@
       "title": "Node E-Commerce Use Case",
       "featured": false,
       "type": "Full Stack",
-      "summary": "API-oriented e-commerce use case covering shopping flows, backend logic, and service design basics.",
+      "summary": "Early Node.js and Express e-commerce API. It is the seed that later became the Realtime Commerce Platform.",
       "tags": [
         "Node.js",
         "E-Commerce",
@@ -1101,12 +1096,13 @@
       ],
       "stack": [
         "Node.js",
+        "Express",
         "JavaScript"
       ],
       "highlights": [
-        "Implemented core e-commerce backend flows",
-        "Used API-first design for shopping interactions",
-        "Built a foundation for larger full-stack demos"
+        "API-only shopping backend with Controllers, Models, Routes, and Utils.",
+        "Covered product, cart, and order style flows without a frontend.",
+        "Rebuilt later as realtime-commerce-platform after the original Postman setup was lost."
       ],
       "links": {
         "github": "https://github.com/REDEVL4/Node-E-Com-Use-Case-",
@@ -1220,10 +1216,57 @@
         "homepage": null,
         "updatedAt": "2026-11-12T16:13:17Z"
       }
+    },
+    {
+      "slug": "recruitment-bot",
+      "repo": "RecruitmentBot",
+      "title": "Recruitment Bot",
+      "featured": false,
+      "type": "AI Tooling",
+      "summary": "Early C# Bot Framework sample for candidate intake and screening questions. It led to JobFusion and the Job Farming Command Center.",
+      "tags": [
+        "C#",
+        "Bot Framework",
+        "Dialogs"
+      ],
+      "stack": [
+        "C#",
+        "Bot Framework"
+      ],
+      "highlights": [
+        "Dialog-based candidate intake and routing.",
+        "FAQ and knowledge-base answers for common screening questions.",
+        "The same idea later became the job-search and outreach system."
+      ],
+      "links": {
+        "github": "https://github.com/REDEVL4/RecruitmentBot",
+        "demo": null,
+        "caseStudy": "content/case-studies/recruitment-bot.md",
+        "notebook": null,
+        "notebookSource": null,
+        "paper": null
+      },
+      "images": [
+        "assets/img/placeholder-2.svg"
+      ],
+      "githubAssets": [],
+      "github": {
+        "owner": "REDEVL4",
+        "repo": "RecruitmentBot",
+        "defaultBranch": null,
+        "language": null,
+        "stars": null,
+        "forks": null,
+        "openIssues": null,
+        "topics": [],
+        "description": null,
+        "homepage": null,
+        "updatedAt": null
+      }
     }
   ],
   "meta": {
     "projectCount": 18,
-    "featuredCount": 8
+    "featuredCount": 10
   }
 }
