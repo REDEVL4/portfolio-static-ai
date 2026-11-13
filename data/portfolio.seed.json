@@ -105,6 +105,8 @@
   "github": {
     "includeForks": false,
     "featuredRepos": [
+      "JobFarmingDashboard",
+      "jobfusion",
       "realtime-commerce-platform",
       "linkedin-outreach-agent",
       "Adversarial-Attacks-on-Deep-Neural-Networks",
@@ -114,6 +116,40 @@
     ]
   },
   "projectOverrides": [
+    {
+      "repo": "JobFarmingDashboard",
+      "slug": "job-farming-dashboard",
+      "title": "Job Farming Command Center",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "Live job-search platform that tracks applications, watches Gmail for hiring updates, drafts LinkedIn outreach, and keeps the owner in control of sends.",
+      "tags": ["Next.js", "Supabase", "Gmail", "LinkedIn", "Automation"],
+      "stack": ["Next.js", "React", "Supabase", "PostgreSQL", "Vercel", "Gmail API"],
+      "highlights": [
+        "Centralized jobs, applications, documents, and hiring stage in one dashboard.",
+        "Gmail monitoring updates interview, assessment, and rejection stages from clear evidence without a manual click.",
+        "LinkedIn outreach drafts connection notes and replies, sends after approval or in auto mode, and keeps a thread timeline."
+      ],
+      "links": { "caseStudy": "content/case-studies/job-farming-dashboard.md" },
+      "images": ["assets/img/placeholder-1.svg"]
+    },
+    {
+      "repo": "jobfusion",
+      "slug": "jobfusion",
+      "title": "JobFusion",
+      "featured": true,
+      "type": "Full Stack",
+      "summary": "Personal system that joins job search, multi-resume management, AI tailoring, and application tracking in one workflow.",
+      "tags": ["Next.js", "FastAPI", "PostgreSQL", "Redis", "LLM"],
+      "stack": ["Next.js", "React", "FastAPI", "PostgreSQL", "Redis", "Celery", "OpenSearch", "Docker"],
+      "highlights": [
+        "Searches roles through Greenhouse and Lever style feeds plus Tavily and Apify discovery.",
+        "Stores multiple resumes and generates a tailored resume and cover letter against a job description.",
+        "Switches LLM backends across local Ollama, OpenAI, and Azure-style deployments."
+      ],
+      "links": { "caseStudy": "content/case-studies/jobfusion.md" },
+      "images": ["assets/img/placeholder-2.svg"]
+    },
     {
       "repo": "realtime-commerce-platform",
       "slug": "realtime-commerce-platform",
@@ -128,9 +164,7 @@
         "Managed the full cart-to-fulfillment lifecycle with event-driven order processing, real-time inventory flows, customer storefront experience, and admin-side operational views.",
         "Combined gateway, recommendations, search, caching, and asynchronous messaging patterns into a more production-like marketplace platform."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/realtime-commerce-platform.md"
-      },
+      "links": { "caseStudy": "content/case-studies/realtime-commerce-platform.md" },
       "images": ["assets/img/realtime-commerce-platform-diagram.svg"]
     },
     {
@@ -147,9 +181,7 @@
         "Supported OpenAI, Ollama, and OpenAI-compatible local LLM servers so the tool can run in either cloud or privacy-first local mode.",
         "Added browser automation for repetitive flows while keeping a review-first design so every message remains human-approved."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/linkedin-outreach-agent.md"
-      },
+      "links": { "caseStudy": "content/case-studies/linkedin-outreach-agent.md" },
       "images": ["assets/img/linkedin-outreach-agent-overview.png"]
     },
     {
@@ -158,18 +190,32 @@
       "title": "CivicQuest",
       "featured": true,
       "type": "Full Stack",
-      "summary": "AI-supported community engagement platform for volunteering discovery, sustainability learning, and guided interaction.",
+      "summary": "Hexathon prototype that helps employees find local volunteering events, register, play a sustainability game, and ask an Azure chatbot.",
       "tags": ["Azure", "Full Stack", "Community", "Chatbot"],
-      "stack": ["Node.js", "EJS", "Azure Bot", "Azure"],
+      "stack": ["Node.js", "Express", "EJS", "Sequelize", "SQLite", "Azure Bot", "Azure Logic Apps"],
       "highlights": [
-        "AI-powered community engagement platform",
-        "Volunteer discovery and registration journeys",
-        "Gamified sustainability learning plus Azure bot integration"
+        "GeoIP city lookup filters volunteering events. Users register. Admins manage capacity, status, and categories.",
+        "Eco Guardians is a side-scroller that shows sustainability facts during play.",
+        "Azure Bot Framework WebChat answers from a curated local-resource set. Azure Logic Apps can send event emails."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/civicquest.md"
-      },
+      "links": { "caseStudy": "content/case-studies/civicquest.md" },
       "images": ["assets/img/placeholder-1.svg"]
+    },
+    {
+      "repo": "journey-builder",
+      "slug": "journey-builder",
+      "title": "Journey Builder",
+      "type": "Frontend",
+      "summary": "React and TypeScript UI for editing prefill mappings on a DAG of forms, with pluggable data sources.",
+      "tags": ["React", "TypeScript", "DAG", "Forms"],
+      "stack": ["React", "TypeScript", "Vite", "Vitest"],
+      "highlights": [
+        "Loads a blueprint graph and lists every form node with mapped and unmapped fields.",
+        "Sources include upstream form fields, including transitive ancestors, plus global client and action properties.",
+        "New data sources plug in through one interface and a registry. Tests cover DAG walks and the prefill panel."
+      ],
+      "links": { "caseStudy": "content/case-studies/journey-builder.md" },
+      "images": ["assets/img/placeholder-3.svg"]
     },
     {
       "repo": "Disease-Networks-for-Disease-Clustering-GCN-Unsupervised",
@@ -185,9 +231,7 @@
         "Trained a 3-layer GCN encoder and clustered learned latent embeddings with KMeans for stronger disease-group separation.",
         "Improved inter-vs-intra cluster distance separation from 0.90 to 1.45, 0.85 to 1.25, and 1.10 to 1.85 across 40, 50, and 60-disease subsets."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/disease-gcn.md"
-      },
+      "links": { "caseStudy": "content/case-studies/disease-gcn.md" },
       "images": ["assets/img/disease-gcn-architecture.png"]
     },
     {
@@ -204,9 +248,7 @@
         "Normalized public data sources including FAO, World Bank, and UNICEF-style datasets into analysis-ready tables for hunger hotspot detection.",
         "Built forecasting and visualization workflows, with project materials reporting about 95% prediction accuracy for hunger-trend evaluation."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/zero-hunger.md"
-      },
+      "links": { "caseStudy": "content/case-studies/zero-hunger.md" },
       "images": ["assets/img/zero-hunger-architecture.png"]
     },
     {
@@ -223,9 +265,7 @@
         "Engineered Beat, Premise, Month, Weekday, and Hour Group features and cleaned multi-label crime records into separate observations.",
         "Selected MLPClassifier as the best model, reaching 29.37% accuracy and 0.5895 macro AUC on the 2024 holdout set."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/houston-crime.md"
-      },
+      "links": { "caseStudy": "content/case-studies/houston-crime.md" },
       "images": ["assets/img/houston-crime-architecture.png"]
     },
     {
@@ -242,9 +282,7 @@
         "Performed large-scale preprocessing and missing-data analysis before classification and clustering.",
         "Validated genre separation with KMeans and PCA, surfacing interpretable clusters such as Self-Help, Religion and Spirituality, and Education."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/book-genre.md"
-      },
+      "links": { "caseStudy": "content/case-studies/book-genre.md" },
       "images": ["assets/img/book-genre-architecture.png"]
     },
     {
@@ -260,9 +298,7 @@
         "Built a preprocessing workflow with resizing, normalization, CLAHE enhancement, bone windowing, and smart cropping for clinically consistent inputs.",
         "Implemented FGSM adversarial training with 50% clean and 50% adversarial batches over 50 epochs, improving FGSM robustness and yielding moderate PGD gains."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/adversarial-dnn.md"
-      },
+      "links": { "caseStudy": "content/case-studies/adversarial-dnn.md" },
       "images": ["assets/img/adversarial-dnn-architecture.png"]
     },
     {
@@ -278,9 +314,7 @@
         "Implemented validation and control checks across 6 ingestion pipelines to reduce downstream failures and improve data consistency.",
         "Automated health checks, restart workflows, and runbooks to eliminate recurring failures and reduce onboarding time for new engineers."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/boomi.md"
-      },
+      "links": { "caseStudy": "content/case-studies/boomi.md" },
       "images": ["assets/img/placeholder-2.svg"]
     },
     {
@@ -288,17 +322,15 @@
       "slug": "node-ecom",
       "title": "Node E-Commerce Use Case",
       "type": "Full Stack",
-      "summary": "API-oriented e-commerce use case covering shopping flows, backend logic, and service design basics.",
+      "summary": "Early Node.js and Express e-commerce API. It is the seed that later became the Realtime Commerce Platform.",
       "tags": ["Node.js", "E-Commerce", "APIs"],
-      "stack": ["Node.js", "JavaScript"],
+      "stack": ["Node.js", "Express", "JavaScript"],
       "highlights": [
-        "Implemented core e-commerce backend flows",
-        "Used API-first design for shopping interactions",
-        "Built a foundation for larger full-stack demos"
+        "API-only shopping backend with Controllers, Models, Routes, and Utils.",
+        "Covered product, cart, and order style flows without a frontend.",
+        "Rebuilt later as realtime-commerce-platform after the original Postman setup was lost."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/node-ecom.md"
-      },
+      "links": { "caseStudy": "content/case-studies/node-ecom.md" },
       "images": ["assets/img/placeholder-1.svg"]
     },
     {
@@ -306,48 +338,32 @@
       "slug": "netcore-microservices",
       "title": "Microservices Using .NET Core",
       "type": "Software Engineering",
-      "summary": "Clean-architecture microservices system using messaging, RPC, caching, and multiple persistence layers.",
+      "summary": "Loosely coupled .NET Core services with an Ocelot gateway, RabbitMQ, gRPC, and mixed persistence.",
       "tags": [".NET", "Microservices", "RabbitMQ", "gRPC"],
-      "stack": [".NET Core", "RabbitMQ", "gRPC", "Redis", "PostgreSQL", "MongoDB"],
+      "stack": [".NET Core", "RabbitMQ", "gRPC", "Redis", "PostgreSQL", "MongoDB", "Ocelot", "Docker"],
       "highlights": [
-        "Designed loosely coupled services with clean architecture",
-        "Used RabbitMQ and gRPC for inter-service communication",
-        "Applied cache and polyglot persistence patterns"
+        "BuildingBlocks and Services layout with clean architecture.",
+        "Ocelot gateway in front of the services. RabbitMQ for messaging and gRPC for service calls.",
+        "PostgreSQL, MongoDB, SQL Server, and Redis, brought up with Docker Compose."
       ],
-      "links": {
-        "caseStudy": "content/case-studies/netcore-microservices.md"
-      },
+      "links": { "caseStudy": "content/case-studies/netcore-microservices.md" },
       "images": ["assets/img/placeholder-3.svg"]
     },
     {
-      "repo": "AspNetCore.Docs",
-      "slug": "aspnetcore-docs",
-      "title": "ASP.NET Core Docs (Fork)",
-      "type": "Documentation",
-      "summary": "Reference fork of ASP.NET Core documentation used for study and internal notes.",
-      "tags": [".NET", "Docs"],
-      "stack": ["C#", "ASP.NET Core"],
+      "repo": "RecruitmentBot",
+      "slug": "recruitment-bot",
+      "title": "Recruitment Bot",
+      "type": "AI Tooling",
+      "summary": "Early C# Bot Framework sample for candidate intake and screening questions. It led to JobFusion and the Job Farming Command Center.",
+      "tags": ["C#", "Bot Framework", "Dialogs"],
+      "stack": ["C#", "Bot Framework"],
       "highlights": [
-        "Maintained as a working reference repo",
-        "Useful for .NET architecture and API patterns",
-        "Supports learning and implementation review"
+        "Dialog-based candidate intake and routing.",
+        "FAQ and knowledge-base answers for common screening questions.",
+        "The same idea later became the job-search and outreach system."
       ],
+      "links": { "caseStudy": "content/case-studies/recruitment-bot.md" },
       "images": ["assets/img/placeholder-2.svg"]
-    },
-    {
-      "repo": "deploy.github.io",
-      "slug": "deploy-gh",
-      "title": "deploy.github.io",
-      "type": "Static Site",
-      "summary": "Minimal static deployment experiment for lightweight hosting and GitHub Pages-style publication.",
-      "tags": ["HTML", "Static"],
-      "stack": ["HTML", "CSS"],
-      "highlights": [
-        "Lightweight static deployment setup",
-        "Useful baseline for simple hosting workflows",
-        "Small experiment in publishing and delivery"
-      ],
-      "images": ["assets/img/placeholder-1.svg"]
     }
   ]
 }
